@@ -1,0 +1,20 @@
+\contentsline {chapter}{List of Figures}{v}{chapter*.2}
+\contentsline {chapter}{List of Tables}{vi}{chapter*.3}
+\contentsline {chapter}{Abstract}{vii}{chapter*.3}
+\contentsline {chapter}{Dedication}{viii}{chapter*.3}
+\contentsline {chapter}{Acknowledgments}{ix}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {part}{I\hspace {1em}Theoretical Motivations and the Standard Model}{3}{part.1}
+\contentsline {chapter}{\numberline {2}The Standard Model and Beyond}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Broken Symmetries and Nobel Prizes}{4}{section.2.1}
+\contentsline {part}{II\hspace {1em}Experimental Apparatus and Associated Facilities}{5}{part.2}
+\contentsline {chapter}{\numberline {3}The Large Hadron Collider and ATLAS detector}{6}{chapter.3}
+\contentsline {section}{\numberline {3.1}The Large Hadron Collider}{6}{section.3.1}
+\contentsline {section}{\numberline {3.2}A Torroidal Large Hadron Collider Apparatus (ATLAS)}{7}{section.3.2}
+\contentsline {part}{III\hspace {1em}The HbbISR Analysis}{8}{part.3}
+\contentsline {chapter}{\numberline {4}Triggering and Data Aquisition}{9}{chapter.4}
+\contentsline {chapter}{\numberline {5}ATHENA Event Reconstruction}{10}{chapter.5}
+\contentsline {part}{IV\hspace {1em}Previous Analysis}{11}{part.4}
+\contentsline {chapter}{\numberline {6}Vector Boson Fusion + \relax \mathversion {bold}$\gamma $ production of Higgs decaying to $b\mathaccent "7016\relax {b}$}{12}{chapter.6}
+\contentsline {chapter}{Bibliography}{13}{chapter*.4}
+\contentsline {chapter}{\numberline {A}Some Ancillary Stuff}{15}{appendix.A}

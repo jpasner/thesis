@@ -1,0 +1,82 @@
+\begin{thebibliography}{10}
+
+\bibitem{des:tex}
+Jacques D{\'e}sarm{\'e}nien.
+\newblock How to run {\TeX} in french.
+\newblock Technical Report SATN-CS-1013, Computer Science Department, Stanford
+  University, Stanford, California, August 1984.
+
+\bibitem{fuchs:dvi0}
+David Fuchs.
+\newblock The format of {\TeX}'s {DVI} files version 1.
+\newblock {\em TUGboat}, 2(2):12--16, July 1981.
+
+\bibitem{fuchs:dvi}
+David Fuchs.
+\newblock Device independent file format.
+\newblock {\em TUGboat}, 3(2):14--19, October 1982.
+
+\bibitem{furuta:pctex}
+Richard~K. Furuta and Pierre~A. MacKay.
+\newblock Two {\TeX} implementations for the {IBM PC}.
+\newblock {\em Dr. Dobb's Journal}, 10(9):80--91, September 1985.
+
+\bibitem{knuth:web}
+Donald~E. Knuth.
+\newblock The {WEB} system for structured documentation, version 2.3.
+\newblock Technical Report STAN-CS-83-980, Computer Science Department,
+  Stanford University, Stanford, California, September 1983.
+
+\bibitem{knuth:tex}
+Donald~E. Knuth.
+\newblock {\em The {\TeX} Book}.
+\newblock Addison-Wesley, Reading, Massachusetts, 1984.
+\newblock Reprinted as Vol. A of {\it Computers \& Typesetting\/}, 1986.
+
+\bibitem{knuth:lp}
+Donald~E. Knuth.
+\newblock Literate programming.
+\newblock {\em The Computer Journal}, 27(2):97--111, May 1984.
+
+\bibitem{knuth:tor}
+Donald~E. Knuth.
+\newblock A torture test for {\TeX}, version 1.3.
+\newblock Technical Report STAN-CS-84-1027, Computer Science Department,
+  Stanford University, Stanford, California, November 1984.
+
+\bibitem{knuth:pgm}
+Donald~E. Knuth.
+\newblock {\em {\TeX}: The Program}, volume~B of {\em Computers \&
+  Typesetting}.
+\newblock Addison-Wesley, Reading, Massachusetts, 1986.
+
+\bibitem{lamport:latex}
+Leslie Lamport.
+\newblock {\em {\LaTeX}: A Document Preparation System. User's Guide and
+  Reference Manual}.
+\newblock Addison-Wesley, Reading, Massachusetts, 1986.
+
+\bibitem{patashnik:bibtex}
+Oren Patashnik.
+\newblock {\em Bib{\TeX}ing}.
+\newblock Computer Science Department, Stanford University, Stanford,
+  California, January 1988.
+\newblock Available in the Bib{\TeX} release.
+
+\bibitem{patashnik:bibhax}
+Oren Patashnik.
+\newblock {\em Designing Bib{\TeX} Styles}.
+\newblock Computer Science Department, Stanford University, January 1988.
+
+\bibitem{samuel:tex}
+Arthur~L. Samuel.
+\newblock First grade {\TeX}: A beginner's {\TeX} manual.
+\newblock Technical Report SATN-CS-83-985, Computer Science Department,
+  Stanford University, Stanford, California, November 1983.
+
+\bibitem{spivak:ams}
+Michael~D. Spivak.
+\newblock {\em The Joy of {\TeX}}.
+\newblock American Mathematical Society, 1985.
+
+\end{thebibliography}
