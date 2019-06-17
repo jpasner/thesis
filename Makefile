@@ -30,7 +30,7 @@ EPSGRAPHICSFILES =
 # for PDF output, pdftex is probably best
 PDFMETHOD = pdftex
 
-default: view
+default: clean-all view
 
 # other likely defaults that you can use
 #default: view-mac

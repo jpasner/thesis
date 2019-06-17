@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 JUN 2019 11:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 JUN 2019 14:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -280,39 +280,39 @@ Chapter 2.
 Chapter 3.
 [6
 
-] (./chapters/lhc/layout.tex) (./chapters/lhc/injection.tex)
-(./chapters/lhc/performance.tex)) (./chapters/atlas/head.tex [7]
+] (./chapters/lhc/layout.tex) (./chapters/lhc/injection.tex [7])
+(./chapters/lhc/performance.tex)) (./chapters/atlas/head.tex [8]
 Chapter 4.
 (./chapters/atlas/tracking.tex) (./chapters/atlas/calorimetry.tex)
-(./chapters/atlas/muons.tex)) (./chapters/higgs/head.tex [8
+(./chapters/atlas/muons.tex)) (./chapters/higgs/head.tex [9
 
 ]
 Chapter 5.
 (./chapters/higgs/beyondSM.tex) (./chapters/higgs/production.tex)
 (./chapters/higgs/branching.tex) (./chapters/higgs/discovery.tex)
-(./chapters/higgs/decays.tex) (./chapters/higgs/boosted.tex)) [9
+(./chapters/higgs/decays.tex) (./chapters/higgs/boosted.tex)) [10
 
-] [10] [11
+] [11]
+[12
 
-]
-(./chapters/data/head.tex
+] (./chapters/data/head.tex
 Chapter 6.
 (./chapters/data/real.tex) (./chapters/data/mc.tex))
-(./chapters/objects/head.tex [12
+(./chapters/objects/head.tex [13
 
 ]
 Chapter 7.
 (./chapters/objects/calo_jets.tex) (./chapters/objects/track_jets.tex)
 (./chapters/objects/fat_jets.tex) (./chapters/objects/b_jets.tex)
 (./chapters/objects/muons.tex) (./chapters/objects/overlap.tex))
-(./chapters/selection/head.tex [13
+(./chapters/selection/head.tex [14
 
-] [14]
+] [15]
 Chapter 8.
 (./chapters/selection/triggers.tex) (./chapters/selection/pre_selection.tex)
 (./chapters/selection/signal_selection.tex)
 (./chapters/selection/optimisation.tex)) (./chapters/backgrounds/head.tex
-[15
+[16
 
 ]
 Chapter 9.
@@ -335,40 +335,40 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
 ) (./chapters/backgrounds/single_top.tex) (./chapters/backgrounds/vqq.tex))
-(./chapters/systematics/head.tex [16
+(./chapters/systematics/head.tex [17
 
 ]
 Chapter 10.
 (./chapters/systematics/theoretical.tex)
-(./chapters/systematics/experimental.tex)) (./chapters/fit/head.tex [17
+(./chapters/systematics/experimental.tex)) (./chapters/fit/head.tex [18
 
 ]
 Chapter 11.
 (./chapters/fit/likelihood.tex) (./chapters/fit/config.tex)
-(./chapters/fit/tests.tex)) (./chapters/results/head.tex [18
+(./chapters/fit/tests.tex)) (./chapters/results/head.tex [19
 
 ]
 Chapter 12.
 (./chapters/results/expectation.tex) (./chapters/results/analysis.tex)
-(./chapters/results/limits.tex)) [19
+(./chapters/results/limits.tex)) [20
 
-] [20
+] [21
 
 ] (./chapters/conclusion/head.tex
 Chapter 13.
-) (./pasner_thesis.bbl [21
+) (./pasner_thesis.bbl [22
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) (./appendices/hadronicVqq.tex [22
+) (./appendices/hadronicVqq.tex [23
 
 ]
 Appendix A.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
- [23
+ [24
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
@@ -384,9 +384,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 5296 strings out of 493014
- 79587 string characters out of 6133351
- 166017 words of memory out of 5000000
+ 5297 strings out of 493014
+ 79594 string characters out of 6133351
+ 166018 words of memory out of 5000000
  8557 multiletter control sequences out of 15000+600000
  10040 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -400,10 +400,10 @@ r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
 al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on pasner_thesis.pdf (33 pages, 146110 bytes).
+Output written on pasner_thesis.pdf (34 pages, 148465 bytes).
 PDF statistics:
- 603 PDF objects out of 1000 (max. 8388607)
- 553 compressed objects within 6 object streams
- 98 named destinations out of 1000 (max. 500000)
+ 607 PDF objects out of 1000 (max. 8388607)
+ 556 compressed objects within 6 object streams
+ 99 named destinations out of 1000 (max. 500000)
  529 words of extra memory for PDF output out of 10000 (max. 10000000)
 
