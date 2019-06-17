@@ -2,45 +2,51 @@ This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: pasner_thesis.aux
 The style file: plain.bst
-Database file #1: pasner_thesis.bib
-You've used 14 entries,
+I couldn't open database file /bibliography/pasner_thesis.bib
+---line 164 of file pasner_thesis.aux
+ : \bibdata{/bibliography/pasner_thesis
+ :                                     }
+I'm skipping whatever remains of this command
+I found no database files---while reading file pasner_thesis.aux
+You've used 0 entries,
             2118 wiz_defined-function locations,
-            562 strings with 5178 characters,
-and the built_in function-call counts, 3347 in all, are:
-= -- 337
-> -- 104
-< -- 5
-+ -- 49
-- -- 30
-* -- 206
-:= -- 603
-add.period$ -- 44
-call.type$ -- 14
-change.case$ -- 51
+            497 strings with 4026 characters,
+and the built_in function-call counts, 18 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 7
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 147
-empty$ -- 287
-format.name$ -- 30
-if$ -- 679
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 12
-newline$ -- 75
-num.names$ -- 28
-pop$ -- 52
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 3
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 43
+purify$ -- 0
 quote$ -- 0
-skip$ -- 82
+skip$ -- 1
 stack$ -- 0
-substring$ -- 154
-swap$ -- 18
-text.length$ -- 5
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
+type$ -- 0
 warning$ -- 0
-while$ -- 36
-width$ -- 16
-write$ -- 163
+while$ -- 0
+width$ -- 0
+write$ -- 2
+(There were 2 error messages)

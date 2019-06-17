@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  28 NOV 2018 11:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 JUN 2019 11:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -158,7 +158,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 31.
 
-(./pasner_thesis.aux)
+(./pasner_thesis.aux
+
+LaTeX Warning: Label `sec:results:analysis' multiply defined.
+
+)
 \openout1 = `pasner_thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -175,8 +179,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
-
-(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count99
 \scratchdimen=\dimen107
@@ -240,126 +243,167 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 9.
  [3
 
-])
+] [4])
 \tf@toc=\write4
 \openout4 = `pasner_thesis.toc'.
 
- [4] (./pasner_thesis.lof)
+ [5] (./pasner_thesis.lof)
 \tf@lof=\write5
 \openout5 = `pasner_thesis.lof'.
 
- [5
+ [6
 
-] (./pasner_thesis.lot)
+]
+(./pasner_thesis.lot)
 \tf@lot=\write6
 \openout6 = `pasner_thesis.lot'.
 
+ [7
 
-[6
-
-] (./text/abstract.tex) [7] [8] (./text/acknowledgements.tex) [9]
+] (./abstract.tex) [8] [9] (./acknowledgements.tex)
+[10] (./chapters/introduction/head.tex
 Chapter 1.
-(./text/introduction.tex
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 21.
 ) [1
 
-] [2] [3
+] [2
 
-]
+] (./chapters/theory/head.tex
 Chapter 2.
-(./text/standard_model.tex) (./text/higgs.tex) [4
+(./chapters/theory/standardmodel.tex) (./chapters/theory/qcd.tex)
+(./chapters/theory/qed.tex) (./chapters/theory/ssb.tex)
+(./chapters/theory/higgs.tex [3
 
-] [5
+]) (./chapters/theory/pdf.tex)) [4] [5
 
 ]
+(./chapters/lhc/head.tex
 Chapter 3.
-(./text/experiment.tex) (./text/large_hadron_collider.tex) (./text/atlas.tex)
 [6
 
-] [7] [8
-
-]
+] (./chapters/lhc/layout.tex) (./chapters/lhc/injection.tex)
+(./chapters/lhc/performance.tex)) (./chapters/atlas/head.tex [7]
 Chapter 4.
-[9
+(./chapters/atlas/tracking.tex) (./chapters/atlas/calorimetry.tex)
+(./chapters/atlas/muons.tex)) (./chapters/higgs/head.tex [8
 
 ]
 Chapter 5.
-[10
+(./chapters/higgs/beyondSM.tex) (./chapters/higgs/production.tex)
+(./chapters/higgs/branching.tex) (./chapters/higgs/discovery.tex)
+(./chapters/higgs/decays.tex) (./chapters/higgs/boosted.tex)) [9
 
-] [11
+] [10] [11
 
 ]
+(./chapters/data/head.tex
 Chapter 6.
+(./chapters/data/real.tex) (./chapters/data/mc.tex))
+(./chapters/objects/head.tex [12
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 139.
+]
+Chapter 7.
+(./chapters/objects/calo_jets.tex) (./chapters/objects/track_jets.tex)
+(./chapters/objects/fat_jets.tex) (./chapters/objects/b_jets.tex)
+(./chapters/objects/muons.tex) (./chapters/objects/overlap.tex))
+(./chapters/selection/head.tex [13
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gamma' on input line 139.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 139.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 139.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathaccent' on input line 139.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 139.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <20.74> on input line 139.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 139.
-(./pasner_thesis.bbl [12
-
-] [13
-
-]) [14]
-Appendix A.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
+] [14]
+Chapter 8.
+(./chapters/selection/triggers.tex) (./chapters/selection/pre_selection.tex)
+(./chapters/selection/signal_selection.tex)
+(./chapters/selection/optimisation.tex)) (./chapters/backgrounds/head.tex
 [15
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
+Chapter 9.
+(./chapters/backgrounds/qcd.tex) (./chapters/backgrounds/ttbar.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\overline' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+) (./chapters/backgrounds/single_top.tex) (./chapters/backgrounds/vqq.tex))
+(./chapters/systematics/head.tex [16
+
+]
+Chapter 10.
+(./chapters/systematics/theoretical.tex)
+(./chapters/systematics/experimental.tex)) (./chapters/fit/head.tex [17
+
+]
+Chapter 11.
+(./chapters/fit/likelihood.tex) (./chapters/fit/config.tex)
+(./chapters/fit/tests.tex)) (./chapters/results/head.tex [18
+
+]
+Chapter 12.
+(./chapters/results/expectation.tex) (./chapters/results/analysis.tex)
+(./chapters/results/limits.tex)) [19
+
+] [20
+
+] (./chapters/conclusion/head.tex
+Chapter 13.
+) (./pasner_thesis.bbl [21
+
+]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+) (./appendices/hadronicVqq.tex [22
+
+]
+Appendix A.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
+ [23
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
  (./pasner_thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
 Package rerunfilecheck Info: File `pasner_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8CA599FDB10872A2FCD9189A85358321;1340.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
+(rerunfilecheck)             Checksum: A6AB7DAA9E5D05F796DADFFDEC4040F8;4235.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 5055 strings out of 493014
- 74831 string characters out of 6133351
- 160206 words of memory out of 5000000
- 8493 multiletter control sequences out of 15000+600000
- 14424 words of font info for 49 fonts, out of 8000000 for 9000
+ 5296 strings out of 493014
+ 79587 string characters out of 6133351
+ 166017 words of memory out of 5000000
+ 8557 multiletter control sequences out of 15000+600000
+ 10040 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,8n,28p,275b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,6n,31p,255b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
 al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on pasner_thesis.pdf (24 pages, 162434 bytes).
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on pasner_thesis.pdf (33 pages, 146110 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 268 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 603 PDF objects out of 1000 (max. 8388607)
+ 553 compressed objects within 6 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 529 words of extra memory for PDF output out of 10000 (max. 10000000)
 

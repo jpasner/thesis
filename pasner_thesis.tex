@@ -38,7 +38,7 @@
 \rightarrow$ \MakeLowercase{$b\overline{b}$} channel with the ATLAS detector}
 \author{Jacob Martin Pasner}
 \degreeyear{2019}
-\degreemonth{June}
+\degreemonth{October}
 \degree{DOCTOR OF PHILOSOPHY}
 \chair{Professor Jason Nielsen}
 \committeememberone{Professor Abraham Seiden}
@@ -61,8 +61,7 @@
 
 \begin{abstract}
 
-\label{sec:abstract}
-\input{text/abstract.tex}
+\input{abstract.tex}
 
 \end{abstract}
 
@@ -80,70 +79,48 @@ And always made me laugh
 
 \begin{acknowledgements}
 
-\label{sec:acknowledgements}
-\input{text/acknowledgements.tex}
+\input{acknowledgements.tex}
 
 \end{acknowledgements}
 
 \end{frontmatter}
 
 
-\chapter{Introduction}
-
-\label{sec:introduction}
-\input{text/introduction.tex}
+\input{chapters/introduction/head.tex}
 
 \part{Theoretical Motivations and the Standard Model}
-
 % The Standard Model and Beyond
 
-\chapter{The Standard Model and Beyond}
-
-\label{sec:standard_model}
-\input{text/standard_model.tex}
-
-\section{Broken Symmetries and Nobel Prizes}
-
-\label{sec:higgs}
-\input{text/higgs.tex}
+\input{chapters/theory/head.tex}
 
 \part{Experimental Apparatus and Associated Facilities}
-
 % The Large Hadron Collider and ATLAS Detector
 
-\chapter{The Large Hadron Collider and ATLAS detector}
-
-\label{sec:experiment.tex}
-\input{text/experiment.tex}
-
-\section{The Large Hadron Collider}
-
-\label{sec:large_hadron_collider.tex}
-\input{text/large_hadron_collider.tex}
-
-\section{A Torroidal Large Hadron Collider Apparatus (ATLAS)}
-
-\label{sec:atlas.tex}
-\input{text/atlas.tex}
-
+\input{chapters/lhc/head.tex}
+\input{chapters/atlas/head.tex}
+\input{chapters/higgs/head.tex}
 
 \part{The HbbISR Analysis}
+% The analysis 
 
-\chapter{Triggering and Data Aquisition}
+\input{chapters/data/head.tex}
+\input{chapters/objects/head.tex}
+\input{chapters/selection/head.tex}
+\input{chapters/backgrounds/head.tex}
+\input{chapters/systematics/head.tex}
+\input{chapters/fit/head.tex}
+\input{chapters/results/head.tex}
 
-\chapter{ATHENA Event Reconstruction}
-
-\part{Previous Analysis}
-
-\chapter{Vector Boson Fusion + \boldmath$\gamma$ production of Higgs decaying to
-$b\bar{b}$}
+\part{Conclusion}
+\input{chapters/conclusion/head.tex}
 
 \nocite{*}
 \bibliographystyle{plain}
-\bibliography{pasner_thesis}
+\bibliography{/bibliography/pasner_thesis}
 
 \appendix
-\chapter{Some Ancillary Stuff}
+
+\input{appendices/hadronicVqq}
 
 Ancillary material should be put in appendices, which appear after the
 bibliography. 
