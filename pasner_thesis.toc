@@ -14,53 +14,54 @@
 \contentsline {section}{\numberline {2.6}Parton Distribution Function}{4}{section.2.6}
 \contentsline {part}{II\hspace {1em}Experimental Apparatus and Associated Facilities}{5}{part.2}
 \contentsline {chapter}{\numberline {3}The Large Hadron Collider}{6}{chapter.3}
-\contentsline {section}{\numberline {3.1}Accelerator complex layout and design}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Particle Incjecton Chain}{7}{section.3.2}
-\contentsline {section}{\numberline {3.3}Performance}{8}{section.3.3}
-\contentsline {chapter}{\numberline {4}The ATLAS Detector}{9}{chapter.4}
-\contentsline {section}{\numberline {4.1}Tracking with the Inner Detector}{9}{section.4.1}
-\contentsline {section}{\numberline {4.2}Calorimetry}{9}{section.4.2}
-\contentsline {section}{\numberline {4.3}Muon Spectrometer}{9}{section.4.3}
-\contentsline {chapter}{\numberline {5}Boosted Higgs at the LHC}{10}{chapter.5}
-\contentsline {section}{\numberline {5.1}Physics beyond the Stnadard Model}{11}{section.5.1}
-\contentsline {section}{\numberline {5.2}Higgs Production Mechanisms}{11}{section.5.2}
-\contentsline {section}{\numberline {5.3}Branching Ratios}{11}{section.5.3}
-\contentsline {section}{\numberline {5.4}Discovery}{11}{section.5.4}
-\contentsline {section}{\numberline {5.5}Fermion Decay Modes}{11}{section.5.5}
-\contentsline {section}{\numberline {5.6}Boosted Higgs}{11}{section.5.6}
-\contentsline {part}{III\hspace {1em}The HbbISR Analysis}{12}{part.3}
-\contentsline {chapter}{\numberline {6}Data and Simulation Preparation}{13}{chapter.6}
-\contentsline {section}{\numberline {6.1}Data Used}{13}{section.6.1}
-\contentsline {section}{\numberline {6.2}Monte Carlo Samples}{13}{section.6.2}
-\contentsline {chapter}{\numberline {7}Physics Object Selection}{14}{chapter.7}
-\contentsline {section}{\numberline {7.1}Calorimeter Jets}{15}{section.7.1}
-\contentsline {section}{\numberline {7.2}Track Jets}{15}{section.7.2}
-\contentsline {section}{\numberline {7.3}Fat Jets}{15}{section.7.3}
-\contentsline {section}{\numberline {7.4}B-tagged Jets}{15}{section.7.4}
-\contentsline {section}{\numberline {7.5}Muons}{15}{section.7.5}
-\contentsline {section}{\numberline {7.6}Overlap Removal}{15}{section.7.6}
-\contentsline {chapter}{\numberline {8}Event Selection}{16}{chapter.8}
-\contentsline {section}{\numberline {8.1}Selected Triggers}{16}{section.8.1}
-\contentsline {section}{\numberline {8.2}Pre-selection Studies}{16}{section.8.2}
-\contentsline {section}{\numberline {8.3}Signal Selection}{16}{section.8.3}
-\contentsline {section}{\numberline {8.4}Optimisation}{16}{section.8.4}
-\contentsline {chapter}{\numberline {9}Background Estimation}{17}{chapter.9}
-\contentsline {section}{\numberline {9.1}Multi-jet QCD estimation}{17}{section.9.1}
-\contentsline {section}{\numberline {9.2}t$\overline {t}$ control region}{17}{section.9.2}
-\contentsline {section}{\numberline {9.3}Single top estimation}{17}{section.9.3}
-\contentsline {section}{\numberline {9.4}Hadronic vector boson channel}{17}{section.9.4}
-\contentsline {chapter}{\numberline {10}Systematic Uncertanties}{18}{chapter.10}
-\contentsline {section}{\numberline {10.1}Theoretical Uncertanties}{18}{section.10.1}
-\contentsline {section}{\numberline {10.2}Experimental Uncertanties}{18}{section.10.2}
-\contentsline {chapter}{\numberline {11}Statistical Fit}{19}{chapter.11}
-\contentsline {section}{\numberline {11.1}Profile Likelihood Function}{19}{section.11.1}
-\contentsline {section}{\numberline {11.2}Fit Configruation}{19}{section.11.2}
-\contentsline {section}{\numberline {11.3}Statistical Tests}{19}{section.11.3}
-\contentsline {chapter}{\numberline {12}Results}{20}{chapter.12}
-\contentsline {section}{\numberline {12.1}Expectations}{20}{section.12.1}
-\contentsline {section}{\numberline {12.2}Statistical Analysis Results}{20}{section.12.2}
-\contentsline {section}{\numberline {12.3}Measurements and Limits}{20}{section.12.3}
-\contentsline {part}{IV\hspace {1em}Conclusion}{21}{part.4}
-\contentsline {chapter}{\numberline {13}Conclusion}{22}{chapter.13}
-\contentsline {chapter}{Bibliography}{23}{chapter*.4}
-\contentsline {chapter}{\numberline {A}Hadronic Vqq Sherpa Studies}{24}{appendix.A}
+\contentsline {section}{\numberline {3.1}Particle Incjecton Chain}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}LHC layout and design}{8}{section.3.2}
+\contentsline {section}{\numberline {3.3}Performance}{9}{section.3.3}
+\contentsline {section}{\numberline {3.4}Pile-up at the LHC}{11}{section.3.4}
+\contentsline {chapter}{\numberline {4}The ATLAS Detector}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Tracking with the Inner Detector}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}Calorimetry}{12}{section.4.2}
+\contentsline {section}{\numberline {4.3}Muon Spectrometer}{12}{section.4.3}
+\contentsline {chapter}{\numberline {5}Boosted Higgs at the LHC}{13}{chapter.5}
+\contentsline {section}{\numberline {5.1}Physics beyond the Stnadard Model}{14}{section.5.1}
+\contentsline {section}{\numberline {5.2}Higgs Production Mechanisms}{14}{section.5.2}
+\contentsline {section}{\numberline {5.3}Branching Ratios}{14}{section.5.3}
+\contentsline {section}{\numberline {5.4}Discovery}{14}{section.5.4}
+\contentsline {section}{\numberline {5.5}Fermion Decay Modes}{14}{section.5.5}
+\contentsline {section}{\numberline {5.6}Boosted Higgs}{14}{section.5.6}
+\contentsline {part}{III\hspace {1em}The HbbISR Analysis}{15}{part.3}
+\contentsline {chapter}{\numberline {6}Data and Simulation Preparation}{16}{chapter.6}
+\contentsline {section}{\numberline {6.1}Data Used}{16}{section.6.1}
+\contentsline {section}{\numberline {6.2}Monte Carlo Samples}{16}{section.6.2}
+\contentsline {chapter}{\numberline {7}Physics Object Selection}{17}{chapter.7}
+\contentsline {section}{\numberline {7.1}Calorimeter Jets}{18}{section.7.1}
+\contentsline {section}{\numberline {7.2}Track Jets}{18}{section.7.2}
+\contentsline {section}{\numberline {7.3}Fat Jets}{18}{section.7.3}
+\contentsline {section}{\numberline {7.4}B-tagged Jets}{18}{section.7.4}
+\contentsline {section}{\numberline {7.5}Muons}{18}{section.7.5}
+\contentsline {section}{\numberline {7.6}Overlap Removal}{18}{section.7.6}
+\contentsline {chapter}{\numberline {8}Event Selection}{19}{chapter.8}
+\contentsline {section}{\numberline {8.1}Selected Triggers}{19}{section.8.1}
+\contentsline {section}{\numberline {8.2}Pre-selection Studies}{19}{section.8.2}
+\contentsline {section}{\numberline {8.3}Signal Selection}{19}{section.8.3}
+\contentsline {section}{\numberline {8.4}Optimisation}{19}{section.8.4}
+\contentsline {chapter}{\numberline {9}Background Estimation}{20}{chapter.9}
+\contentsline {section}{\numberline {9.1}Multi-jet QCD estimation}{20}{section.9.1}
+\contentsline {section}{\numberline {9.2}t$\overline {t}$ control region}{20}{section.9.2}
+\contentsline {section}{\numberline {9.3}Single top estimation}{20}{section.9.3}
+\contentsline {section}{\numberline {9.4}Hadronic vector boson channel}{20}{section.9.4}
+\contentsline {chapter}{\numberline {10}Systematic Uncertanties}{21}{chapter.10}
+\contentsline {section}{\numberline {10.1}Theoretical Uncertanties}{21}{section.10.1}
+\contentsline {section}{\numberline {10.2}Experimental Uncertanties}{21}{section.10.2}
+\contentsline {chapter}{\numberline {11}Statistical Fit}{22}{chapter.11}
+\contentsline {section}{\numberline {11.1}Profile Likelihood Function}{22}{section.11.1}
+\contentsline {section}{\numberline {11.2}Fit Configruation}{22}{section.11.2}
+\contentsline {section}{\numberline {11.3}Statistical Tests}{22}{section.11.3}
+\contentsline {chapter}{\numberline {12}Results}{23}{chapter.12}
+\contentsline {section}{\numberline {12.1}Expectations}{23}{section.12.1}
+\contentsline {section}{\numberline {12.2}Statistical Analysis Results}{23}{section.12.2}
+\contentsline {section}{\numberline {12.3}Measurements and Limits}{23}{section.12.3}
+\contentsline {part}{IV\hspace {1em}Conclusion}{24}{part.4}
+\contentsline {chapter}{\numberline {13}Conclusion}{25}{chapter.13}
+\contentsline {chapter}{Bibliography}{26}{chapter*.4}
+\contentsline {chapter}{\numberline {A}Hadronic Vqq Sherpa Studies}{27}{appendix.A}

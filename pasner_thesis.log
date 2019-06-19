@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 JUN 2019 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 JUN 2019 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -280,39 +280,40 @@ Chapter 2.
 Chapter 3.
 [6
 
-] (./chapters/lhc/layout.tex) (./chapters/lhc/injection.tex [7])
-(./chapters/lhc/performance.tex)) (./chapters/atlas/head.tex [8]
+] (./chapters/lhc/injection.tex [7]) (./chapters/lhc/layout.tex [8])
+(./chapters/lhc/performance.tex [9]) (./chapters/lhc/pileup.tex [10]))
+(./chapters/atlas/head.tex [11]
 Chapter 4.
 (./chapters/atlas/tracking.tex) (./chapters/atlas/calorimetry.tex)
-(./chapters/atlas/muons.tex)) (./chapters/higgs/head.tex [9
+(./chapters/atlas/muons.tex)) (./chapters/higgs/head.tex [12
 
 ]
 Chapter 5.
 (./chapters/higgs/beyondSM.tex) (./chapters/higgs/production.tex)
 (./chapters/higgs/branching.tex) (./chapters/higgs/discovery.tex)
-(./chapters/higgs/decays.tex) (./chapters/higgs/boosted.tex)) [10
+(./chapters/higgs/decays.tex) (./chapters/higgs/boosted.tex)) [13
 
-] [11]
-[12
+] [14]
+[15
 
 ] (./chapters/data/head.tex
 Chapter 6.
 (./chapters/data/real.tex) (./chapters/data/mc.tex))
-(./chapters/objects/head.tex [13
+(./chapters/objects/head.tex [16
 
 ]
 Chapter 7.
 (./chapters/objects/calo_jets.tex) (./chapters/objects/track_jets.tex)
 (./chapters/objects/fat_jets.tex) (./chapters/objects/b_jets.tex)
 (./chapters/objects/muons.tex) (./chapters/objects/overlap.tex))
-(./chapters/selection/head.tex [14
+(./chapters/selection/head.tex [17
 
-] [15]
+] [18]
 Chapter 8.
 (./chapters/selection/triggers.tex) (./chapters/selection/pre_selection.tex)
 (./chapters/selection/signal_selection.tex)
 (./chapters/selection/optimisation.tex)) (./chapters/backgrounds/head.tex
-[16
+[19
 
 ]
 Chapter 9.
@@ -335,40 +336,40 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
 ) (./chapters/backgrounds/single_top.tex) (./chapters/backgrounds/vqq.tex))
-(./chapters/systematics/head.tex [17
+(./chapters/systematics/head.tex [20
 
 ]
 Chapter 10.
 (./chapters/systematics/theoretical.tex)
-(./chapters/systematics/experimental.tex)) (./chapters/fit/head.tex [18
+(./chapters/systematics/experimental.tex)) (./chapters/fit/head.tex [21
 
 ]
 Chapter 11.
 (./chapters/fit/likelihood.tex) (./chapters/fit/config.tex)
-(./chapters/fit/tests.tex)) (./chapters/results/head.tex [19
+(./chapters/fit/tests.tex)) (./chapters/results/head.tex [22
 
 ]
 Chapter 12.
 (./chapters/results/expectation.tex) (./chapters/results/analysis.tex)
-(./chapters/results/limits.tex)) [20
+(./chapters/results/limits.tex)) [23
 
-] [21
+] [24
 
 ] (./chapters/conclusion/head.tex
 Chapter 13.
-) (./pasner_thesis.bbl [22
+) (./pasner_thesis.bbl [25
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) (./appendices/hadronicVqq.tex [23
+) (./appendices/hadronicVqq.tex [26
 
 ]
 Appendix A.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
- [24
+ [27
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
@@ -376,7 +377,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
 Package rerunfilecheck Info: File `pasner_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A6AB7DAA9E5D05F796DADFFDEC4040F8;4235.
+(rerunfilecheck)             Checksum: 830A3C6B7E9BBF12DB723A7A81DE8A25;4284.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -384,26 +385,29 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 5297 strings out of 493014
- 79594 string characters out of 6133351
- 166018 words of memory out of 5000000
- 8557 multiletter control sequences out of 15000+600000
+ 5306 strings out of 493014
+ 79709 string characters out of 6133351
+ 166052 words of memory out of 5000000
+ 8559 multiletter control sequences out of 15000+600000
  10040 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,6n,31p,255b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on pasner_thesis.pdf (34 pages, 148465 bytes).
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on pasner_thesis.pdf (37 pages, 182240 bytes).
 PDF statistics:
- 607 PDF objects out of 1000 (max. 8388607)
- 556 compressed objects within 6 object streams
- 99 named destinations out of 1000 (max. 500000)
- 529 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 641 PDF objects out of 1000 (max. 8388607)
+ 584 compressed objects within 6 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 537 words of extra memory for PDF output out of 10000 (max. 10000000)
 
