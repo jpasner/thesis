@@ -22,7 +22,7 @@ PAPER = pasner_thesis
 DIRNAME = thesis-phd
 GRAPHICS =
 BIBS = pasner_thesis.bib
-BIBTEX = bibtex
+BIBTEX = biber
 TEX = latex
 EPSGRAPHICSFILES =
 
@@ -135,7 +135,7 @@ pdf: $(PAPER).pdf
 # clean: remove intermediate files (leave .ps and .pdf alone)
 #
 clean:
-	$(RM) -f *.aux *.bbl *.blg *.dvi *.lof *.log *.lot *.toc $(PAPER).out
+	$(RM) -f *.aux *.bbl *.blg *.bcf *.run.xml *.dvi *.lof *.log *.lot *.toc $(PAPER).out
 
 #
 # clean-all: all files PLUS pdf and ps files
