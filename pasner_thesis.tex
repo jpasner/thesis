@@ -21,6 +21,7 @@
 % Declare usepackages here:
 \usepackage{color}   % May be necessary if you want to color links
 \usepackage{hyperref} % Makes Chapter titles into links
+\usepackage{amsmath}
 \hypersetup{
   colorlinks=true, % set true if you want colored links
   linktoc=all,     % set to all if you want both sections and subsections linked
@@ -29,6 +30,21 @@
   linkcolor=black, % choose some color if you want links to stand out
   urlcolor=black
 }
+
+% Definitions for using atlas latex
+\newcommand*{\ATLASLATEXPATH}{atlaslatex/latex/}
+\usepackage[particle,misc]{atlaslatex/latex/atlasphysics}
+\usepackage[backend=biber,sorting=none,backref=true]{biblatex}
+
+% Define biliography resources for lookup by biber
+\addbibresource{atlaslatex/bib/ATLAS-useful.bib}
+\addbibresource{atlaslatex/bib/ATLAS-errata.bib}
+\addbibresource{atlaslatex/bib/ATLAS.bib}
+\addbibresource{atlaslatex/bib/CMS.bib}
+\addbibresource{atlaslatex/bib/ConfNotes.bib}
+\addbibresource{atlaslatex/bib/PubNotes.bib}
+\addbibresource{pasner_thesis.bib}
+
 
 \begin{document}
 
@@ -114,9 +130,8 @@ And always made me laugh
 \part{Conclusion}
 \input{chapters/conclusion/head.tex}
 
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{/bibliography/pasner_thesis}
+\addcontentsline{toc}{chapter}{Bibliography}
+\printbibliography
 
 \appendix
 
