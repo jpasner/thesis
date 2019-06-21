@@ -1,0 +1,3 @@
+[submodule "atlaslatex"]
+	path = atlaslatex
+	url = ssh://git@gitlab.cern.ch:7999/atlas-physics-office/atlaslatex.git
