@@ -1,8 +1,47 @@
 \chapter{The ATLAS Detector} \label{chap:atlas}
 
+Given the immense energies availalbe at the LHC, and the veritable zoo of
+paricles we are trying to detect, we require a general-purpose experiment in
+order to fully exploit the full range of physics opportunities provided.  Two
+international collaborations rose to this challenge, the CMS (Compact Muon
+Solenoid) and ATLAS (A Torroidal LHC ApparatuS) experiments.  While both have
+similar physics goals and each of them strengths and weaknesses, this
+dissertation will focus on the ATLAS experiment and the intricacies of its three
+main sub-detectors and two massive magnet systems.  
 
+Located approximately 100 meters underground in a vast excavated chamber, the
+ATLAS detector rests its 7000 metric tonnes on a bed of concrete reinforced
+steel.  Out of it flows the signals of over 100 million electronic channels
+through a zip tied mass of greater than 3000 kilometers of cabling.  At its very
+center is one of the four interaction points of the LHC, specifically Point 1,
+where the two counter circulating proton beams are skillfully shaped and then
+collided by a series of magnets.  The energetic particles resultant from this
+collision then fly out in all directions into the bulk of the ATLAS detector.
 
+The first sub-system they meet is the Inner Detector (ID) and its many layers of
+strip and pixel silcon detectors along with a transition radiation gaseous wire
+detector, all bathed in the 2T mangnetic field of the surronding superconducting
+solenoidal magnet.  This system exploits the ionization of charged particles to
+track their curved trajectory through the magnetic field.  This curvature gives
+us charge information, a momentum measurement, and precision 3D verticies
+crucial to the identification of the secondary verticies of a b-hadron decay. 
 
-\input{chapters/atlas/tracking.tex}
+Outside of the solenoid the particles are faced with first the Electromagnetic
+and then the Hadronic sampling calorimeters. Here, layers of scintillator and 
+high radiation length materials are implemented to measure the energy of
+electrons, photons, and hadrons.  The goal being to absorb all of the energy of
+the partilces in order to have an accurate measurement.
+
+Finally we have the muon system surrounding the calorimeter and equipped with
+its own torroidal magnet system.  Here the charged muon bends in the magnetic
+field while leaving a trail of ionization in the muon spectrometer before
+exiting the detector completely.  Neutrinos are the only other standard model
+particle that leave the detector, however they do so without detection.
+
+In the following sections I will explain our choosen coordinate system and give 
+a more detailed reveiw of these 3 detector sub-systems.  
+
+\input{chapters/atlas/coordinates.tex} 
+\input{chapters/atlas/tracking.tex} 
 \input{chapters/atlas/calorimetry.tex}
 \input{chapters/atlas/muons.tex}
