@@ -7,7 +7,27 @@ international collaborations rose to this challenge, the CMS (Compact Muon
 Solenoid) and ATLAS (A Torroidal LHC ApparatuS) experiments.  While both have
 similar physics goals and each of them strengths and weaknesses, this
 dissertation will focus on the ATLAS experiment and the intricacies of its three
-main sub-detectors and two massive magnet systems.  
+main sub-detectors and two massive magnet systems depicted in figure
+\ref{atlas_cutaway}.
+
+\begin{figure}[!htbp]
+  \begin{center}
+    \includegraphics[width=0.9\linewidth]{figures/atlas/atlas_cutaway}
+    \caption{ \cite{PERF-2007-01} Here we see a cut-away side view of the ATLAS
+detector with the major components labeled.  Note that within each of these
+labeled components there may exist multiple different detector technologies.
+For scale two people in red are shown standing between the disk muon chambers on the
+left side of the figure. }
+    \label{fig:atlas_cutaway}
+  \end{center}
+\end{figure}
+
+Originally proposed in 1994 the ATLAS experiment was completed in 2008. On
+July 4th, 2012 in a joint announcment the ATLAS and CMS experiments announced
+the discovery of the long predicted Higgs Boson.  The collaboration now boasts
+over 3000 physicists from 175 instituations spread accross 38 countries and
+continues to probe the limits of the Standard Model in pursuit of answers to
+some of Humanities deepest questions.
 
 Located approximately 100 meters underground in a vast excavated chamber, the
 ATLAS detector rests its 7000 metric tonnes on a bed of concrete reinforced
@@ -27,19 +47,38 @@ us charge information, a momentum measurement, and precision 3D verticies
 crucial to the identification of the secondary verticies of a b-hadron decay. 
 
 Outside of the solenoid the particles are faced with first the Electromagnetic
-and then the Hadronic sampling calorimeters. Here, layers of scintillator and 
+and then the Hadronic sampling calorimeters. Here, layers of scintillator and
 high radiation length materials are implemented to measure the energy of
-electrons, photons, and hadrons.  The goal being to absorb all of the energy of
-the partilces in order to have an accurate measurement.
+electrons, photons, and hadrons. As the goal is to completely absorb the energy
+of all outgoing particles the calorimeter has a nearly $4\pi$ solid angle
+coverage.
 
 Finally we have the muon system surrounding the calorimeter and equipped with
 its own torroidal magnet system.  Here the charged muon bends in the magnetic
 field while leaving a trail of ionization in the muon spectrometer before
 exiting the detector completely.  Neutrinos are the only other standard model
-particle that leave the detector, however they do so without detection.
+particle that leave the detector, however they do so without detection.  A
+depiction of the various particle interactions with the different detector
+sub-systems can be seen in figure \ref{fig:detector_interactions}
 
 In the following sections I will explain our choosen coordinate system and give 
-a more detailed reveiw of these 3 detector sub-systems.  
+a more detailed reveiw of these 3 detector sub-systems.
+
+\begin{figure}[!htbp]
+  \begin{center}
+    \includegraphics[width=0.9\linewidth]{figures/atlas/detector_interactions}
+    \caption{This slice of the ATLAS detector depicts how different particles
+interact with each component of the detector it crosses.  A dashed line
+indicates no interaction while a solid line indicates interaction. Electrons
+(yellow/green) and charged hadrons (red) interact with the tracker and curve in
+the solenoid's magnetic field.  Electrons and photons (yellow/green) are
+absorbed by the Electromagnetic calorimeter.  All hadrons (red/yellow) are
+absorbed by the Hadronic calorimeter. The muons (orange) curve in both the
+solenoid and torroid magnetic fields before exiting the detector. Finally, the
+neutrinos (white) pass through the entire detector without interacting.  }
+    \label{fig:detector_interactions}
+  \end{center}
+\end{figure}
 
 \input{chapters/atlas/coordinates.tex} 
 \input{chapters/atlas/tracking.tex} 
