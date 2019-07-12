@@ -38,7 +38,7 @@ following sections.
 
 \subsection{Pixel Detector}
 
-The ATLAS Pixel Detector, the innermost subdetector of the ID, is designed to
+The ATLAS Pixel Detector \cite{PERF-2007-01}, the innermost subdetector of the ID, is designed to
 give the best resolution possible as close as possible to the interaction point.
 This is accomplished using the 4 barrel layers and the 3 disks per endcap as
 indicated in figure \ref{fig:inner_detector_schematic}. The inner most barrel
@@ -56,21 +56,39 @@ of the analysis presented in this thesis.
 
 \subsection{Semiconductor Tracker}
 
-Encompassing the Pixel Detector, the Semiconductor Tracker (SCT) is composed of
-double sided silicon microstrips modules.  Each side of the 4088 modules
-contains 768 active strips each one $12.6$cm long, alligned with $\hat{z}$ in
-the barrel and $\hat{r}$ in the end caps, and separated by a $80 \mu$m pitch
-width in the $\hat{\phi}$ direction. The two sides are rotated with respect to
-eachother by $40 \mu$m to allow for position measurement in the $z$ direction.
-These modules are then used to tile the 4 barrel layers and 9 disks per endcap
-(18 disks in total) as seen in figure \ref{fig:inner_detector_schematic}.  This
-design is choosen to ensure that each charged track interacts with 8 strip
-layers (4 module assemblies).  This information is used to further measure the
-momentum, impact parameter, and vertex identification of charged particles.
+Encompassing the Pixel Detector, the Semiconductor Tracker (SCT) \cite{PERF-2007-01} is composed of
+double sided silicon microstrips modules.  Each side of the 4088 modules is
+constructed out of two silison strip sensors that are daisy chained togeather.
+The result is 768 composite strips each $12.6$cm with an inter-strip pitch of
+$80 \mu$m. In the barrel the strips are alligned with the $\hat{z}$ direction,
+while in the end caps they are aligned with the $\hat{r}$ direction. In both
+cases the separation of the strips is constant in $\hat{\phi}$. The two sides
+are rotated with respect to eachother by $40 \mu$m to allow for position
+measurement along the length of the strip.  These modules are then used to tile
+the 4 barrel layers and 9 disks per endcap (18 disks in total) as seen in figure
+\ref{fig:inner_detector_schematic}.  This design is choosen to ensure that each
+charged track interacts with 8 strip layers (equivalent to four space points).
+This information is used to further measure the momentum and impact parameter,
+and as well as vertex identification of charged particles.
 
 \subsection{Transition Radiation Tracker}
 
-
-
-
-
+The Transition Radiation Tracker \cite{PERF-2007-01}, the outermoust subdetector
+of the ID, provides tracking through the detection of transition radiation from
+ultra-relativistic charged particles for $\eta < 2.0$ using 350,000 drift tube
+channels also known as straws.  The 4mm diameter straws are filled with a $70\%$
+Xe, $27\%$ CO$_2$, and $3\%$ O$_2$ gas mixture and a 31$\mu$m diameter
+gold-plated tungsten wire anode at the center for the collection of the
+ionization signal. In the barrel 73 azimuthally symetric layers of 144cm straws
+are oriented parallel to the beam pipe with an electrical division in the center
+of each allowing the two sides to be read out separately.  For each endcap the
+straws are radially oriented in 160 symmetric planes each containing 768 37cm
+long drift tubes showin in figure \ref{fig:inner_detector_schematic}.  In both
+the barrel and the end caps polypropylene fibers (barrel) or foils (encaps)
+function as the transition radiation material which causes the relativistic
+charged particles to radiate and thus ionize the gas in the straw.  The ammount
+of transition radiation produced is proportional to the Lorentz factor meaning
+that lighter particles (e.g. electrons) will produce more radiation.  Thus, by
+defining a high and low threshold, we can identify tracks belonging to electrons
+by requiring they register more high-threshold hits. There are typically 36 TRT
+hits per charged track. 
