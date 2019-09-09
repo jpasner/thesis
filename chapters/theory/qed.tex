@@ -1,3 +1,73 @@
-\section{Quandum Electrodynamics} \label{sec:theory:qed}
+\section{Quantum Electrodynamics} \label{sec:theory:qed}
+
+In the SM the Electromagnetic and Weak nuclear forces are unified into the
+Electroweak interaction which is represented by the $SU(2)_L \times U(1)_Y$
+gauge group. The L represents the physical observable that the Weak interaction,
+and thus the $SU(2)$ transformation, only acts on left handed particle states.
+The Y states that this is the $U(1)$ symmetry for the weak hypercharge Y instead
+of the electromagnetic charge.  The particle states for these interactions are
+solutions to the Dirac equation and are represented as Dirac spinor doublets
+($\boldsymbol{\Psi_L}$) for the left handed states, and as Dirac spinor singlets
+($\Phi_R$) for the right handed states.  Thus when a general transformation from
+the Electroweak gague group is applied to the left handed spinor doublet you get
+equation \ref{eq:qed:doublet}
+
+\begin{equation} \label{eq:qed:doublet} 
+\boldsymbol{\Psi_L} \rightarrow \boldsymbol{\Psi_L}^{'} = exp \left(
+\underbrace{ ig^{'} \frac{Y_L}{2}
+\zeta (x) }_{U(1)_Y} + \underbrace{ ig_{W} \boldsymbol{\alpha}(x) \cdot
+\text{\bf{T}} }_{SU(2)_L} \right) \boldsymbol{\Psi_L}.
+\end{equation}
+
+For the right handed spinor singlet the $SU(2)_L$ doesn't contribute and
+you get equation \ref{eq:qed:singlet}
+
+\begin{equation} \label{eq:qed:singlet} 
+{\Phi_R} \rightarrow \Phi_R^{'} = exp \left( \underbrace{ ig^{'} \frac{Y_R}{2}
+\zeta (x) }_{U(1)_Y} \right) \Phi_R.
+\end{equation}
+
+We can see that these local gauge transformations have introduced space-time
+depended terms $\boldsymbol{\alpha}$ and $\zeta$ into our electroweak
+Lagrangian.  Due to the derivatives contained within the kinetic term of this
+lagrangian, this new configuration would introduce additional terms, thus
+violating our required local gauge invariance.  Luckily, we can remove these
+additional terms by replacing the standard derivative ($\partial_{\mu}$) with th
+covariant derivative ($D_{\mu}$) as seen in equation \ref{eq:qed:left} for the
+left handed states and \ref{eq:qed:right} for the right handed states.
+
+\begin{equation} \label{eq:qed:left} 
+D_\mu = \partial_{\mu}
+- \underbrace{\frac{1}{2}ig^{'}B_{\mu}Y_{L}}_{U(1)_Y} -
+  \underbrace{\frac{1}{2}ig_{W}\bf{W}_\mu \cdot \boldsymbol{\tau}}_{SU(2)_L}
+\end{equation}
+
+\begin{equation} \label{eq:qed:right} 
+D_\mu = \partial_{\mu}  - \underbrace{\frac{1}{2}ig^{'}B_{\mu}Y_{R}}_{U(1)_Y} 
+\end{equation}
+
+Here we see two new gauge fields; $B_\mu$ the weak hypercharge field and
+$\boldsymbol{W_\mu}$ the charged weak field.  The form of these fields is chosen
+such that the final Lagrangian is invariant under $SU(2)_L \times U(1)_Y$
+transformations, and thus we have restored gauge invariance for the kinetic term
+of our electroweak Lagrangian!  Inserting these new definitions into the
+Lagrangian for the spinor field $\Psi$ which satisfies the free-particle Dirac
+equation we get
+
+\begin{equation} \label{eq:qed:lagrangian}
+\mathcal{L} = i\bar{\boldsymbol{\Psi_L}}\gamma^{\mu} \left( \partial_{\mu}
+- \frac{1}{2}ig^{'}B_{\mu}Y_{L} - \frac{1}{2}ig_{W}\bf{W}_\mu \cdot
+  \boldsymbol{\tau} \right) \boldsymbol{\Psi_L} + i \Phi_{R}\gamma^{\mu}
+\left(\partial_{\mu} - \frac{1}{2}ig^{'}B_{\mu}Y_{R} \right) \Phi_{R}
+\end{equation}
+
+Wavefunction
+Transformation
+Covariant Derivative
+Lagrangian
+Identify Terms
+
+In the SM the electromagnetic and weak nuclear forces are unified into the
+electroweak interaction which . . . 
 
 Quantum Electrodynamics is the first model created in the QFT image.
