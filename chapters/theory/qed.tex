@@ -54,20 +54,55 @@ of our electroweak Lagrangian!  Inserting these new definitions into the
 Lagrangian for the spinor field $\Psi$ which satisfies the free-particle Dirac
 equation we get
 
-\begin{equation} \label{eq:qed:lagrangian}
-\mathcal{L} = i\bar{\boldsymbol{\Psi_L}}\gamma^{\mu} \left( \partial_{\mu}
+\begin{equation} \label{eq:qed:fermion_lagrangian}
+\mathcal{L} = i\boldsymbol{\bar{\Psi}_L}\gamma^{\mu} \left( \partial_{\mu}
 - \frac{1}{2}ig^{'}B_{\mu}Y_{L} - \frac{1}{2}ig_{W}\bf{W}_\mu \cdot
-  \boldsymbol{\tau} \right) \boldsymbol{\Psi_L} + i \Phi_{R}\gamma^{\mu}
+  \boldsymbol{\tau} \right) \boldsymbol{\Psi_L} + i \bar{\Phi}_{R}\gamma^{\mu}
 \left(\partial_{\mu} - \frac{1}{2}ig^{'}B_{\mu}Y_{R} \right) \Phi_{R}
 \end{equation}
 
-Wavefunction
-Transformation
-Covariant Derivative
-Lagrangian
-Identify Terms
+Next we must construct the gauge field self interaction and mass terms
 
-In the SM the electromagnetic and weak nuclear forces are unified into the
-electroweak interaction which . . . 
+\begin{equation} \label{eq:qed:gauge_lagrangian}
+\mathcal{L} = -\frac{1}{4}\boldsymbol{F}_{\mu\nu}\boldsymbol{F}^{\mu\nu}
+-\frac{1}{4}B_{\mu\nu}B^{\mu\nu} +
+\frac{1}{2}M_{W}^{2}\boldsymbol{W}_{\mu}\boldsymbol{W}^{\mu} +
+\frac{1}{2}M_{B}^{2}B_{\mu}B^{\mu}
+\end{equation}
 
-Quantum Electrodynamics is the first model created in the QFT image.
+where the field tensors $\boldsymbol{F}^{\mu\nu}$ and $B^{\mu\nu}$ are defined
+to be
+
+\begin{equation}
+\boldsymbol{F}^{\mu\nu}  = \partial^{\mu}\boldsymbol{W}^{\nu} -
+\partial^{\nu}\boldsymbol{W}^{\mu} + g\boldsymbol{W}^{\mu} \times
+\boldsymbol{W}^{\nu}
+\end{equation}
+
+\begin{equation}
+B^{\mu\nu} =  \partial^{\mu}\boldsymbol{B}^{\nu} -
+\partial^{\nu}\boldsymbol{B}^{\mu}
+\end{equation}
+
+The field tensor terms in equation \ref{eq:qed:gauge_lagrangian} are invariant
+under our gauge transformations, but simply plugging in equation
+\ref{eq:qed:left} or equation \ref{eq:qed:right} into the mass terms shows that
+these terms violate gauge invariance thus implying $M_{W} = 0$ and $M_{B} = 0$
+in direct contradiction of the observed masses of the weak gauge bosons.  The
+issue of gauge violating mass terms comes up again when you try to include a
+mass term for farmion fields expanded here in their chiral basis
+
+\begin{equation}
+m\bar{\phi}\phi = m \left( \begin{matrix}\phi^{\dagger}_{R} &
+\phi^{\dagger}_{L} \end{matrix} \right) \left( \begin{matrix} \phi_{L}
+\\ \phi_{R} \end{matrix} \right) = m(\phi^{\dagger}_{R}\phi_{L} +
+\phi^{\dagger}_{L}\phi_{R})
+\end{equation}
+
+Remembering that the left and right handed spinors of the electroweak
+interaction transform differently we see that this mixture of right and left
+fields violates gauge invariance. This again forces us to conclude that $m = 0$
+in contradiction to the observation that fermions do indeed have mass. As
+mentioned in section \ref{sec:theory:bosons} the resolution to these mass
+mysteries lies in the Higgs mechanism discussed in section
+\ref{sec:theory:higgs}
