@@ -8,7 +8,7 @@ The Y states that this is the $U(1)$ symmetry for the weak hypercharge Y instead
 of the electromagnetic charge.  The particle states for these interactions are
 solutions to the Dirac equation and are represented as Dirac spinor doublets
 ($\boldsymbol{\Psi_L}$) for the left handed states, and as Dirac spinor singlets
-($\Phi_R$) for the right handed states.  Thus when a general transformation from
+($\Psi_R$) for the right handed states.  Thus when a general transformation from
 the Electroweak gague group is applied to the left handed spinor doublet you get
 equation \ref{eq:qed:doublet}
 
@@ -23,12 +23,12 @@ For the right handed spinor singlet the $SU(2)_L$ doesn't contribute and
 you get equation \ref{eq:qed:singlet}
 
 \begin{equation} \label{eq:qed:singlet} 
-{\Phi_R} \rightarrow \Phi_R^{'} = exp \left( \underbrace{ ig^{'} \frac{Y_R}{2}
-\zeta (x) }_{U(1)_Y} \right) \Phi_R.
+{\Psi_R} \rightarrow \Psi_R^{'} = exp \left( \underbrace{ ig^{'} \frac{Y_R}{2}
+\zeta (x) }_{U(1)_Y} \right) \Psi_R.
 \end{equation}
 
 We can see that these local gauge transformations have introduced space-time
-dependant terms $\boldsymbol{\alpha(x)}$ and $\zeta(x)$ into our electroweak
+dependant terms $\boldsymbol{\alpha}(x)$ and $\zeta(x)$ into our electroweak
 Lagrangian.  Due to the derivatives contained within the kinetic term of this
 lagrangian, this new configuration would introduce additional terms, thus
 violating our required local gauge invariance.  Luckily, we can remove these
@@ -36,23 +36,35 @@ additional terms by replacing the standard derivative ($\partial_{\mu}$) with th
 covariant derivative ($D_{\mu}$) as seen in equation \ref{eq:qed:left} for the
 left handed states and \ref{eq:qed:right} for the right handed states.
 
-\begin{equation} \label{eq:qed:left} 
-D_\mu = \partial_{\mu}
+\begin{align} 
+\label{eq:qed:left} 
+D_\mu &= \partial_{\mu}
 - \underbrace{\frac{1}{2}ig^{'}B_{\mu}Y_{L}}_{U(1)_Y} -
-  \underbrace{\frac{1}{2}ig_{W}\bf{W}_\mu \cdot \boldsymbol{\tau}}_{SU(2)_L}
-\end{equation}
-
-\begin{equation} \label{eq:qed:right} 
-D_\mu = \partial_{\mu}  - \underbrace{\frac{1}{2}ig^{'}B_{\mu}Y_{R}}_{U(1)_Y} 
-\end{equation}
+  \underbrace{\frac{1}{2}ig_{W}\bf{W}_\mu \cdot \boldsymbol{\tau}}_{SU(2)_L} \\
+\label{eq:qed:right} 
+D_\mu &= \partial_{\mu}  - \underbrace{\frac{1}{2}ig^{'}B_{\mu}Y_{R}}_{U(1)_Y} 
+\end{align}
 
 Here we see two new gauge fields; $B_\mu$ the weak hypercharge field and
-$\boldsymbol{W_\mu}$ the charged weak field.  The form of these fields is chosen
-such that the final Lagrangian is invariant under $SU(2)_L \times U(1)_Y$
-transformations, and thus we have restored gauge invariance for the kinetic term
-of our electroweak Lagrangian!  Inserting these new definitions into the
-Lagrangian for the spinor field $\Psi$ which satisfies the free-particle Dirac
-equation we get
+$\boldsymbol{W_\mu}$ the charged weak field as well as the associated coupling
+constants $g^{'}, g_{W}, Y_{L}, Y_{R}$ and the $SU(2)$ generators
+$\boldsymbol{\tau}$.   Next we right down the transformation properies of these
+new fields 
+
+\begin{align}
+\boldsymbol{W}_{\mu}(x) &\rightarrow \boldsymbol{W}_{\mu}^{'}(x) =
+\boldsymbol{W}_{\mu} + \partial_{\mu} \boldsymbol{\alpha}(x) +
+g\boldsymbol{W}_{\mu}(x) \times \boldsymbol{\alpha}(x)
+\\ 
+B_{\mu} &\rightarrow B_{\mu}^{'} = B_{\mu} +
+\frac{1}{g^{'}}\partial_{\mu}\zeta(x)
+\end{align}
+
+The form of these fields is choosen such that the final Lagrangian is invariant
+under $SU(2)_L \times U(1)_Y$ transformations, and thus we have restored gauge
+invariance for the kinetic term of our electroweak Lagrangian!  Inserting these
+new definitions into the Lagrangian for the spinor field $\Psi$ which satisfies
+the free-particle Dirac equation we get
 
 \begin{equation} \label{eq:qed:fermion_lagrangian}
 \mathcal{L} = i\boldsymbol{\bar{\Psi}_L}\gamma^{\mu} \left( \partial_{\mu}
@@ -73,16 +85,13 @@ Next we must construct the gauge field self interaction and mass terms
 where the field tensors $\boldsymbol{F}^{\mu\nu}$ and $B^{\mu\nu}$ are defined
 to be
 
-\begin{equation}
-\boldsymbol{F}^{\mu\nu}  = \partial^{\mu}\boldsymbol{W}^{\nu} -
+\begin{align}
+\boldsymbol{F}^{\mu\nu}  &= \partial^{\mu}\boldsymbol{W}^{\nu} -
 \partial^{\nu}\boldsymbol{W}^{\mu} + g\boldsymbol{W}^{\mu} \times
-\boldsymbol{W}^{\nu}
-\end{equation}
-
-\begin{equation}
-B^{\mu\nu} =  \partial^{\mu}\boldsymbol{B}^{\nu} -
+\boldsymbol{W}^{\nu} \\
+B^{\mu\nu} &=  \partial^{\mu}\boldsymbol{B}^{\nu} -
 \partial^{\nu}\boldsymbol{B}^{\mu}
-\end{equation}
+\end{align}
 
 The field tensor terms in equation \ref{eq:qed:gauge_lagrangian} are invariant
 under our gauge transformations, but simply plugging in equation
@@ -90,19 +99,19 @@ under our gauge transformations, but simply plugging in equation
 these terms violate gauge invariance thus implying $M_{W} = 0$ and $M_{B} = 0$
 in direct contradiction of the observed masses of the weak gauge bosons.  This
 issue arises again for fermion mass terms as illustrated below for the elctron
-field ($e$)expanded in its chiral basis.
+field ($e$) expanded in its chiral basis.
 
 \begin{equation}
-m\bar{e}e = m \left( \begin{matrix}e^{\dagger}_{R} &
+m_{e}\bar{e}e = m_{e} \left( \begin{matrix}e^{\dagger}_{R} &
 e^{\dagger}_{L} \end{matrix} \right) \left( \begin{matrix} e_{L}
-\\ e_{R} \end{matrix} \right) = m(e^{\dagger}_{R}e_{L} +
+\\ e_{R} \end{matrix} \right) = m_{e}(e^{\dagger}_{R}e_{L} +
 e^{\dagger}_{L}e_{R})
 \end{equation}
 
 Remembering that the left and right handed spinors of the electroweak
 interaction transform differently we see that this mixture of right and left
-fields violates gauge invariance. This again forces us to conclude that $m = 0$
-in contradiction to the observation that fermions do indeed have mass. As
+fields violates gauge invariance. This again forces us to conclude that $m_{e} = 0$
+in contradiction to the observation that the electron does indeed have mass. As
 mentioned in section \ref{sec:theory:bosons} the resolution to these mass
 mysteries lies in the Higgs mechanism discussed in section
 \ref{sec:theory:higgs}
