@@ -18,13 +18,20 @@
 \def\dsp{\def\baselinestretch{2.0}\large\normalsize}
 \dsp
 
+% Feynman Diagram Stuff
+\RequirePackage{luatex85}
+\usepackage{tikz-feynman}
+\tikzfeynmanset{compat=1.1.0} 
+
 % Declare usepackages here:
 \usepackage{lineno}
 \usepackage{color}   % May be necessary if you want to color links
 \usepackage{hyperref} % Makes Chapter titles into links
 \usepackage{amsmath}
+\usepackage{booktabs}
 \usepackage{bm}
 \usepackage{caption,subcaption,epsfig}
+\usepackage{cleveref}
 \hypersetup{
   colorlinks=true, % set true if you want colored links
   linktoc=all,     % set to all if you want both sections and subsections linked

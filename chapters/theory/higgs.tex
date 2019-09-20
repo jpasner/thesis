@@ -8,7 +8,7 @@ boson to massive particles, as well as it's self couplings.
 \subsection{Electroweak Symmetry Breaking}
 
 The Higgs field is expressed as a complex doublet, $\boldsymbol{\Phi}$, and thus
-has four components as shown in equation \ref{eq:higgs:higgs_field}
+has four components as shown in \cref{eq:higgs:higgs_field}
 
 \begin{equation} \label{eq:higgs:higgs_field}
 \boldsymbol{\Phi}(x) = \left( \begin{matrix} \phi^{+} \\ \phi^{0} \end{matrix}
@@ -30,8 +30,8 @@ invariant under the Electroweak gauge symmetry $SU(2)_L \times U(1)_Y$
 \end{equation}
 
 Here we constrain $\mu^{2} < 0$ and $\lambda > 0$ such that the potential forms
-a stable minima.  The shape of this potential is shown in figure
-\ref{fig:higgs_potential} and is often refered to as the "Mexican-hat" or
+a stable minima.  The shape of this potential is shown in
+\cref{fig:higgs_potential} and is often refered to as the "Mexican-hat" or
 "Wine-bottle" potential. 
 
 \begin{figure}[!h]
@@ -73,8 +73,8 @@ i\frac{\tau^{i}}{2}\theta^{i}(x) \right)
 Here the real scalar field $h(x)$ corresponds to radial perturbations of the
 minima and while the three $\theta^{i}(x)$ are the Nambu-Goldstone fields with
 values determined by your choice of gauge.  Choosing the unitary gauge of
-$\theta^{i}(x) = 0$ and expanding the kinetic term of equation
-\ref{eq:higgs:lagrangian} around the vev we get
+$\theta^{i}(x) = 0$ and expanding the kinetic term of
+\cref{eq:higgs:lagrangian} around the vev we get
 
 \begin{equation} \label{eq:higgs:boson_masses}
 \mathcal{L}_{\text{Higgs},K} = \frac{g^{2}v^{2}}{8} \left(
@@ -94,7 +94,7 @@ physical fields of the photon ($\gamma$) and the $Z$ boson
 
 \begin{equation}
 \boldsymbol{M}_{Diagonalized}^{2} = \left( \begin{matrix} 0 & 0 \\ 0 &
-\frac{v^{2}}{4}(g^{2} + g^{'2)}   \end{matrix} \right)
+\frac{v^{2}}{4}(g_{W}^{2} + g^{'2)}   \end{matrix} \right)
 \end{equation}
 
 The upper left diagonal element corresponds to the massless photon
@@ -102,7 +102,7 @@ while the lower right diagonal element gives the mass of the massive $Z$ boson.
 This leaves us with the following masses for the 4 Electroweak bosons
 
 \begin{equation}
-m_{W} = \frac{1}{2}gv \quad , \quad m_Z = \frac{1}{2}v\sqrt{g^{2} + g^{'2}}
+m_{W} = \frac{1}{2}g_{W}v \quad , \quad m_Z = \frac{1}{2}v\sqrt{g_{W}^{2} + g^{'2}}
 \quad , \quad m_\gamma = 0
 \end{equation}
 
@@ -110,7 +110,7 @@ The masses of the $W^{\pm}$ and $Z$ gauge bosons can be related through the
 Wineberg angle or mixing angle which
 
 \begin{equation}
-\theta_W = cos^{-1}\left( \frac{g}{\sqrt{g^{2}+g^{'2}}} \right) \rightarrow m_{Z} =
+\theta_W = cos^{-1}\left( \frac{g_{W}}{\sqrt{g_{W}^{2}+g^{'2}}} \right) \rightarrow m_{Z} =
 \frac{m_{W}}{cos{\theta_{W}}}
 \end{equation}
 
@@ -122,16 +122,16 @@ make up the photon and $Z$ boson
 Z &= -\text{sin}(\theta_{W})B + \text{cos}(\theta_{W})W^{3}
 \end{align}
 
-\subsection{Fermion Mass Terms}
+\subsection{Fermion Mass Terms} \label{sec:theory:fermion_mass}
 
-In section \ref{sec:theory:qed} we saw that fermion mass terms violate gauge
+In \cref{sec:theory:qed} we saw that fermion mass terms violate gauge
 invariance due to the mixing of the left and right chiral states.  The Higgs
 mechanism again allows for a gauge invariant method of generating mass terms but
 this time through the Yukawa coupling of the Higgs field to the fermion fields.
 To see an example of this here is the Yukawa coupling term for the electron
 doublet ($\boldsymbol{\Psi_L}$) and singlet ($\Psi_R$) coupling to the Higgs
 field ($\boldsymbol{\Phi}$) after spontaneous symmetry breaking giving it the
-form shown in equation \ref{eq:higgs:broken_higgs} where we have again choosen
+form shown in \cref{eq:higgs:broken_higgs} where we have again choosen
 the unitary gauge $\Phi^{i}(x) = 0$.
 
 \begin{align}
@@ -170,9 +170,9 @@ step then is to determine an observable of the theory that can be tested in
 experiment, namely the existence of a massive scalar particle, the Higgs boson
 intself.
 
-Turning our attention to the potential term (V) of equation
-\ref{eq:higgs:lagrangian} and substituting in our definition for
-$\boldsymbol{\Phi}$ given in equation \ref{eq:higgs:broken_higgs} we find
+Turning our attention to the potential term (V) of
+\cref{eq:higgs:lagrangian} and substituting in our definition for
+$\boldsymbol{\Phi}$ given in \cref{eq:higgs:broken_higgs} we find
 
 \begin{equation}
 \mathcal{L}_\text{Higgs,V} = \frac{1}{2} \mu^{2} \nu^{2} - \mu^{2} h^{2} +
@@ -186,5 +186,5 @@ petrubrations of the Higgs field we can identify the Higgs boson simply as an
 excitation of the Higgs field.  Finally, the third and fourth terms represent
 the Higgs boson self-couplings.  With these couplings and mass terms in hand we
 can now move on to the experimental verification of this theory as discussed
-next in chapter \ref{chap:higgs}.
+next in \cref{chap:higgs}.
 

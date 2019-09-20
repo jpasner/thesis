@@ -75,7 +75,7 @@ PDFGRAPHICSFILES := $(patsubst %.eps,%.pdf,$(EPSGRAPHICSFILES))
 # b. use pdflatex to combine the PDFs containing EPS into the LaTeX-generated PDF
 #
 
-TEX = pdflatex
+TEX = lualatex #pdflatex 
 $(PAPER).pdf: $(PAPER).tex *.tex $(BIBS) $(PDFGRAPHICSFILES)
 	$(TEX) $(PAPER); ${BIBTEX} $(PAPER); $(TEX) $(PAPER); $(TEX) $(PAPER)
 endif # pdftex
