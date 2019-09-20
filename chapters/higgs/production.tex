@@ -1,1 +1,147 @@
 \section{Higgs Production Mechanisms} \label{sec:higgs:production}
+
+At the LHC the dominate production mechanisms for the higgs in order of
+decreasing cross section are: gluon-fluon fusion (ggF), vector boson fusion
+(VBF), vector boson associated production or ``Higgsstrahlung" (VH), and
+associated production with $t\bar{t}$ ($t\bar{t}H$) and $b\bar{b}$
+($b\bar{b}H$).  The cross sections with associated theoretical uncertainties for
+each is shown as a function of the center of mass energy $\sqrt{s}$ in
+\cref{fig:higgs_xsection} and the actual feynman diagrams can be seen in
+\cref{fig:higgs_production}.
+
+\begin{figure}[!htbp]
+  \begin{center}
+    \includegraphics[width=0.5\linewidth]{figures/higgs/higgs_xsection.pdf}
+    \caption{ Cross section for the production of the SM Higgs boson as a
+function of the center of mass energy ($\sqrt{s}$) at the LHC. \cite{PDG2018:Ch11}}
+    \label{fig:higgs_xsection}
+  \end{center}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+
+\subcaptionbox{ggF}{
+\resizebox{0.48\textwidth}{!}{
+\begin{tikzpicture}[thick]
+ \begin{feynman}
+  \vertex (origin);
+  \vertex [right=1.5cm of origin] (H);
+  \vertex [above left=1cm and 1.2cm of origin] (v1);
+  \vertex [below left=1cm and 1.2cm of origin] (v2);
+  \vertex [left=1.75cm of v1] (g1) {\(g\)};
+  \vertex [left=1.75cm of v2] (g2) {\(g\)};
+  \diagram* {
+  (origin) -- [red, scalar, edge label={\(H\)}] (H),
+  (origin) -- [fermion] (v1) -- [fermion] (v2) -- [fermion] (origin),
+  (g1) -- [gluon] (v1),
+  (g2) -- [gluon] (v2),
+  };
+ \end{feynman}
+\end{tikzpicture}
+}}
+\subcaptionbox{VBF}{
+\resizebox{0.48\textwidth}{!}{
+\begin{tikzpicture}[thick]
+ \begin{feynman}
+  \vertex (origin);
+  \vertex [right=1.5cm of origin] (H);
+  \vertex [above left=1cm and 1.2cm of origin] (v1);
+  \vertex [below left=1cm and 1.2cm of origin] (v2);
+  \vertex [left=1.75cm of v1] (q1) {\(q\)};
+  \vertex [left=1.75cm of v2] (q2) {\(q\)};
+  \vertex [above right=0.25cm and 1.75cm of v1] (q3) {\(q'\)};
+  \vertex [below right=0.25cm and 1.75cm of v2] (q4) {\(q'\)};
+  \diagram* {
+  (v1) -- [boson, edge label={\(V\)}] (origin),
+  (origin) -- [boson, edge label={\(V\)}] (v2),
+  (origin) -- [red, scalar, edge label={\(H\)}] (H),
+  (q1) -- [fermion] (v1),
+  (q2) -- [fermion] (v2),
+  (v1) -- [fermion] (q3),
+  (v2) -- [fermion] (q4),
+  };
+ \end{feynman}
+\end{tikzpicture}
+}} \\
+\subcaptionbox{Higgsstrahlung}{
+\resizebox{0.48\textwidth}{!}{
+\begin{tikzpicture}[thick]
+ \begin{feynman}
+  \vertex (origin);
+  \vertex [right=1.2cm of origin] (Vstar);
+  \vertex [above right=0.50cm and 1.0cm of Vstar] (V1) {\(V\)};
+  \vertex [red, below right=0.50cm and 1.0cm of Vstar] (H) {\(H\)};
+  \vertex [above left=0.50cm and 1.0cm of origin] (g1) {\(\bar{q}\)};
+  \vertex [below left=0.50cm and 1.0cm of origin] (g2) {\(q\)};
+  \diagram* {
+  (origin) -- [boson, edge label={\(V^{*}\)}] (Vstar) -- [boson] (V1),
+  (Vstar) -- [red, scalar] (H),
+  (origin) -- [fermion] (g1),
+  (g2) -- [fermion] (origin),
+  };
+ \end{feynman}
+\end{tikzpicture}
+}}
+\subcaptionbox{$t\bar{t}$ ($t\bar{t}H$) and $b\bar{b}$ ($b\bar{b}H$)}{
+\resizebox{0.48\textwidth}{!}{
+\begin{tikzpicture}[thick]
+ \begin{feynman}
+  \vertex (origin);
+  \vertex [right=1.5cm of origin] (H);
+  \vertex [above left=1cm and 0.2cm of origin] (v1);
+  \vertex [below left=1cm and 0.2cm of origin] (v2);
+  \vertex [left=1.75cm of v1] (g1) {\(g\)};
+  \vertex [left=1.75cm of v2] (g2) {\(g\)};
+  \vertex [above right=1.2cm and 1.4cm of origin] (t1) {\(t,b\)};
+  \vertex [below right=1.2cm and 1.4cm of origin] (t2) {\(\bar{t},\bar{b}\)};
+  \diagram* {
+  (g1) -- [gluon] (v1),
+  (g2) -- [gluon] (v2),
+  (origin) -- [red, scalar, edge label={\(H\)}] (H),
+  (origin) -- [fermion] (v1) -- [fermion] (t1),
+  (t2) -- [fermion] (v2) -- [fermion] (origin),
+  };
+ \end{feynman}
+\end{tikzpicture}
+}}
+
+\caption{Feynman diagrams representing the dominant Higgs production modes at
+the LHC.}
+
+\label{fig:higgs_production}
+\end{figure}
+
+The dominant Higgs production mechanism at hadron colliders is ggF.  This may
+seem strange as gluons are massless and thus do not couple directly to the
+Higgs.  Instead the gluons indirectly couple to the Higgs via a quark loop.  As
+discussed in \cref{sec:theory:fermion_mass}, the coupling of a fermion
+is proportional to $m_f$ so the dominant contribution to this quark loop comes
+from the top quark.  
+
+The second largest cross section for Higgs production at the LHC comes from the VBF
+mechanism.  In VBF the initial state quarks scatter via the exchange of a
+$W^{\pm}$ or $Z$ boson which subsequently radiates the Higgs boson.  Unlike ggF
+this production mechanism scatters the initial state quarks which allows them to
+be observed as part of the interaction.  The existence of these extra quarks
+makes these interactions easier to select for during analysis.
+
+Next we have Higgs production in association with a vector boson. The cross
+section for this is even lower than the above two, but remains important due to
+the easily selected signature of the decaying vector boson.  The largest
+background at the LHC is multijet events coming from interactions that
+produce strong force objects.  Thus the leptons from the boson's decay act as a
+discriminator from this multijet background greatly reducing its effect on
+sensitivity.
+
+With the lowest cross section of the four methods discussed we have the production of
+the Higgs in assocaiation with either $b\bar{b}$ or $t\bar{t}$.  This channel is
+important due to our ability to measure not only the Higgs, but also the quarks
+that it directly coupled with.  This allowes us to directly measure the coupling of
+the Higgs to that quark, unlike the ggF method where the quark in the loop is
+never directly observed.
+
+As we can see, each of these methods has its advantages and disadvantages as
+well as different valuable information that can be extracted.  The result is a
+need for many different analysis using different techniques to search for each
+mechanism.
