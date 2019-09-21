@@ -2,7 +2,16 @@
 
 The coupling of the SM Higgs with the gauge bosons and fermions has been shown
 to give these particles their mass, however it also means that the Higgs can
-decay into all of these particles. 
+decay into all of these particles.  In order of most to least likely final
+states of a Higgs decay we have the decay to; a pair of $b$-quarks ($b\bar{b}$),
+a pair of weak vector bosons where one is off-shell ($VV^{*}$), two gluons
+($gg$), a duo of tau leptons ($\tau^{+}\tau^{-}$), or a pair of photons
+($\gamma\gamma$).  Similar to the ggF production mechanism discussed in
+\cref{sec:higgs:production} the decays to massless gauge bosons (photons and
+gluons) are facilitated through loops of massive particles. The exact feynman
+diagrams depicting the above process' are shown in \cref{fig:higgs_decay} while
+information about their branching ratios is detailed in
+\cref{table:higgs_branching_ratios}.
 
 \begin{figure}[!htbp]
 \centering
@@ -116,8 +125,7 @@ decay into all of these particles.
 
 \begin{table}[htpb]
  \centering
- \caption[The branching ratios and the relative uncertainty for a Standard Model Higgs boson with $m_{H}=125~\GeV$.]{%
-  The branching ratios and the relative uncertainty for a Standard Model Higgs boson with $m_{H}=125~\GeV$~\cite{PDG2018:Ch11}.}
+ \caption{ The branching ratios and the relative uncertainty for a Standard Model Higgs boson with $m_{H}=125~\GeV$ \cite{PDG2018:Ch11}.}
  \begin{tabular}{@{}lrr@{}} \toprule
   Decay Channel           & Branching Ratio       & Relative Uncertainty \\ \midrule
   $H\to b\bar{b}$         & $5.84 \times 10^{-1}$ & $_{-3.3\%}^{+3.2\%}$ \\
@@ -134,5 +142,21 @@ decay into all of these particles.
   \addlinespace[0.3em]
   $H\to \mu^{+}\mu^{-}$   & $2.18 \times 10^{-4}$ & $_{-5.9\%}^{+6.0\%}$ \\
   \bottomrule
- \end{tabular}\label{table:Higgs_branchingratios}%
+ \end{tabular}\label{table:higgs_branching_ratios}
 \end{table} 
+
+In \cref{table:higgs_branching_ratios} the order is determined by two distinct effects; 
+the proportionality of the Higgs couplings to the mass of the decay product, and whether 
+or not the rest mass of the higgs is sufficient to produce the two final state objects.  
+In \cref{fig:higgs_decay_plot} you can see that as the mass of the higgs boson gets 
+closer to $2m_W$ the cross section for $H \rightarrow WW$ grows.
+
+\begin{figure}[!htbp]
+  \begin{center}
+    \includegraphics[width=0.5\linewidth]{figures/higgs/higgs_decay_plot.eps}
+    \caption{Branching ratios for the decay of the SM Higgs boson near $m_{H} = 125$GeV including theoretical uncertainty bands \cite{PDG2018:Ch11}}
+    \label{fig:higgs_decay_plot}
+  \end{center}
+\end{figure}
+
+
