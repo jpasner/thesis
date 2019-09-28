@@ -1,15 +1,116 @@
 \section{Boosted Higgs} \label{sec:higgs:boosted}
 
 The strong agreement between the theoretical predictions of the SM Higgs boson
-and experiment shown in \cref{sec:higgs:higgs_evidence} represents the
+and experiment shown in \Cref{sec:higgs:higgs_evidence} represents the
 fulfillment of a generation of incredible technological and theoretical
 achievement.  The next step is to push the search for deviations from the model
-that might hint at the physics of mysteries like the matter / anti-matter
+that might hint at the physics of mysteries like the matter~/~anti-matter
 asymmetry of the universe, dark matter, the particle nature of gravity and dark
-energy.  One such avenue for search comes in the transfer of large ammounts of
-momenum in massive particle loops like that of the ggF Higgs production
-mechanism.  By more accurately measuring the couplling of the Higgs to the
-quarks in these loops, we not only increase our confidence in the SM, we are
-also gain access to this possible new physics. To this end, and for the
-purposes of suppresing the QCD multijet background, a study of Boosted Higgs
-production was undertaken and is discussed further in \cref{part:HbbISR}.
+energy. 
+
+Effective field theory arguments for extensions of the SM suggest that precise
+measurments of the shape of the momentum distribution for highly boosted (high
+momentum) Higgs offer the opportunity to see the effects of natural new
+physics.  In particular, at high enough energies $-$ $p_{T,H} \geq \text{500
+GeV}$ $-$ the ggF production mode of the Higgs becomes sensitive to the heavy
+heavy fermion loop \cite{Schlaffer:2014osa}.  New resonances that run in the
+loop would contribute to the coupling strength of the effective
+gluon-gluon-Higgs interaction and would give an anomalous result compared to
+the SM. In references \cite{Schlaffer:2014osa,Grojean:2013nya,Dawson:2015gka}
+the effect on the production cross section for boosted Higgs through ggF can
+exceed 50\% for $p_{T,H} \geq \text{500 GeV}$.
+
+Searches for boosted Higgs are also made easier as the LHC produces a large
+number of soft (low momentum) QCD interactions.  Thus a boosted signal is
+easier to differentiate from the common QCD interactions which fall off
+exponentially as a function of momentum.  However, to achieve this boost, the
+Higgs must recoil off of a high energy jet or photon \cite{Aaboud:2018zba}
+produced through initial state radiation (ISR) as seen in \Cref{fig:Hbb_ISR}
+with $H \rightarrow b\bar{b}$. In this thesis only strongly produced ISR is
+considered in order to simplify the analysis.
+
+\begin{figure}[!htbp]
+\centering
+\begin{tikzpicture}[thick]
+ \begin{feynman}
+  \vertex (origin);
+  \vertex [right=1.5cm of origin] (H);
+  \vertex [above right=0.50cm and 1.5cm of H] (b1) {\(\bar{b}\)};
+  \vertex [below right=0.50cm and 1.5cm of H] (b2) {\(b\)};
+  \vertex [above left=1cm and 1.2cm of origin] (v1);
+  \vertex [below left=1cm and 1.2cm of origin] (v2);
+  \vertex [left=1.75cm of v1] (g1) {\(g\)};
+  \vertex [left=1.75cm of v2] (g2) {\(g\)};
+  \vertex at ($(g1)!0.5!(v1)$) (ISR_start);
+  \vertex [above right=0.8cm and 1.5 cm of ISR_start] (ISR) {ISR};
+  \diagram* {
+  (origin) -- [red, scalar, edge label={\(H\)}] (H) -- [anti fermion] (b1),
+  (H) -- [fermion] (b2),
+  (origin) -- [fermion] (v1) -- [fermion] (v2) -- [fermion] (origin),
+  (g1) -- [gluon] (v1),
+  (g2) -- [gluon] (v2),
+  (ISR_start) -- [gluon] (ISR),
+  };
+ \end{feynman}
+\end{tikzpicture}
+\caption{Feynman diagram for boosted Higgs decaying to $b\bar{b}$}
+\label{fig:Hbb_ISR}
+\end{figure}
+
+As a result of this boost, the decay products of the Higgs and the
+hadronization products of the ISR become highly collimated as shown in
+\Cref{fig:Hbb_ISR_FatJets}.  The two pronged structure of the jet that results
+from the $H \rightarrow b\bar{b}$ decay provides a unique signature that can be
+used to differentiate the Higgs signal from other QCD process.
+
+% c.f. https://tex.stackexchange.com/a/298288/152544
+\tikzset{
+ pics/fatjet/.style args={#1}{
+  % default rotation: 0 degrees (jet progressing to right)
+  code={
+   \draw [fill=#1!30, thick,join=round](0, 0) -- (4, -1) -- (4, 1) --cycle;
+   \draw [fill=#1!30, thick](4, 0) ellipse (.25 and 1);
+  }
+ }
+}
+
+\begin{figure}[!htbp]
+\centering
+\resizebox{0.99\textwidth}{!}{
+\begin{tikzpicture}[thick]
+ \path (0, 0)  pic {fatjet=blue};
+ \path (0, 0)  pic [rotate=-180] {fatjet=green};
+
+ \begin{feynman}
+  \vertex [dot] (origin) {};
+  \vertex [right=1cm of origin, label={[red, xshift=-0.5cm, yshift=0.15cm]\(H\)}] (H);
+  \vertex [above right=0.20cm and 2.3cm of H] (b1) {\(\bar{b}\)};
+  \vertex [below right=0.20cm and 2.3cm of H] (b2) {\(b\)};
+  \vertex [left=1cm of origin, label={[xshift=0.5cm, yshift=0.15cm]\(g\)}] (jet);
+  \vertex [above left=0.20cm and 2.3cm of jet] (q1);
+  \vertex [below left=0.20cm and 2.3cm of jet] (q2);
+  \vertex [above left=0.40cm and 2.5cm of jet] (q3);
+  \vertex [below left=0.40cm and 2.1cm of jet] (q4);
+  \vertex [above left=0.05cm and 2.0cm of jet] (q5);
+  \vertex [right=5cm of origin] (largeR_signal);
+  \vertex [left=5cm of origin] (largeR_jet);
+  \diagram* {
+  (origin) -- [red, scalar, momentum'={}, style={pos=0.2}] (H) -- [anti fermion] (b1),
+  (H) -- [fermion] (b2),
+  (origin) -- [gluon, momentum={}] (jet),
+  (jet) -- (q1),
+  (jet) -- (q2),
+  (jet) -- (q3),
+  (jet) -- (q4),
+  (jet) -- (q5),
+  };
+ \end{feynman}
+\end{tikzpicture}
+}
+\caption{Cartoon showing columnated Higgs and ISR as a result of the large
+boost due to their mutual recoil.} 
+\label{fig:Hbb_ISR_FatJets}
+\end{figure}
+
+In pursuit of the rich physics potential discussed above an analysis of Boosted
+Higgs signatures was undertaken and is discussed further in \Cref{part:HbbISR}.
