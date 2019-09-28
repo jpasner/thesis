@@ -1,8 +1,18 @@
-\chapter{Data and Simulation Preparation} \label{chap:data}
+\chapter{Data and Monte-Carlo Simulation} \label{chap:data}
 
-In order to compare data to theory ATLAS has developed an anlysis chain which
-runs both real data and simulated samples through the same processing, assuring
-a final result which is as comprable as possible.
+This analysis focuses on the data collected by the ATLAS detector from \pp
+collisions produced by the LHC at the center-of-mass-energy of 13 TeV.  In
+particular the analysis shown uses datasets collected in 2015, 2016, and 2017
+and ammounts to an integrated luminosity of $80.5 \text{ fb}^{-1}$ after beam,
+detector and data-quality requirements are taken into account. 
 
-\input{chapters/data/real.tex}
-\input{chapters/data/mc.tex}
+In order to compare our findings with theory, we use the predictions of the SM
+to produce Monte-Carlo (MC) simulated events to model the signal and background
+processes.  These MC samples go through a full simulation of the ATLAS detector
+and are processed such that the MC and Data have the same format at analysis
+level. This allows us to analyze the MC and Data using the same framework such 
+that we can make direct comparisons between theory and reality as our final product.
+
+\input{chapters/data/data.tex}
+\input{chapters/data/signal_mc.tex}
+\input{chapters/data/bkg_mc.tex}
