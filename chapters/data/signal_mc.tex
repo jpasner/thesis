@@ -1,13 +1,34 @@
 \section{Signal Monte Carlo} \label{sec:data:signal_mc}
 
-In order to simulate Boosted Higgs events the three leading production mechanisms at
+In order to simulate Higgs events the three leading production mechanisms at
 the LHC were considered, shown in \Cref{fig:higgs_production}: gluon-gluon
 fusion, vector boson fusion and Higgstralungh.  These three production modes
 correspondingly represent 50\%, 30\% and 20\% of the total Higgs signal before
-analysis cuts are applied. 
+analysis cuts are applied.  In all samples the simulated Higgs is decayed to
+the $b\bar{b}$ final state our analysis focused on.
 
 The ggF plus an associated jet events were generated using the
-\textsc{HJ+MiNLO} prescription~\cite{Hamilton2015} with the finite top mass
-assumption with the \textsc{Powheg-Box} 2 generator~\cite{Campbell:2012} and
-the NNPDF30 NNLO parton distribution function~\cite{Hamilton:2012rf}.  After the events 
-are generated the 
+HJ+MiNLO~\cite{Hamilton2015} prescription, assuming a finite top quark mass,
+with the \textsc{Powheg-Box}~\cite{Campbell2012} 2 generator and the NNPDF30
+NNLO~\cite{Hamilton:2012rf} parton distribution function.  After generation the
+events are showered using \textsc{Pythia} 8.212~\cite{Sjostrand:2014zea} with
+the AZNLO tune and the CTEQ6L1~\cite{Pumplin:2002vw} parton distribution
+function. Any $b$-hadrons produced during this process are decayed using
+\textsc{EvtGen}~\cite{LANGE2001152}.
+
+The VBF Higgs events also generated using the
+\textsc{Powheg-Box}~\cite{Nason:2009ai} generator with the NNPDF30
+NLO~\cite{Hamilton:2012rf} parton distribution function. Again the showering is
+performed with \textsc{Pythia} 8.212~\cite{Sjostrand:2014zea} using the AZNLO
+tune and the CTEQ6L1~\cite{Pumplin:2002vw} parton distribution function.  The
+decay of $b$-hadrons is again performed using
+\textsc{EvtGen}~\cite{LANGE2001152}.
+
+Higgstralung events were generated using the \textsc{Pythia}
+8.212~\cite{Sjostrand:2014zea} generator, the AZNLO tune and the
+CTEQ6L1~\cite{Pumplin:2002vw} parton distribution function.  Again the decay of
+$b$-hadrons is handled by \textsc{EvtGen}~\cite{LANGE2001152}. Unfortunately
+the \textsc{Pythia} process doesn't include the $gg \rightarrow ZH$
+contribution.  To account for this we corrected the cross section to the LHC
+Higgs cross section working group's (LHCHXSWG) recommendation
+\cite{MelladoGarcia:2150771}.
