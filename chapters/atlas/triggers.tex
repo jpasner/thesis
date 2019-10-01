@@ -1,3 +1,22 @@
 \section{Trigger} \label{sec:atlas:trigger}
 
+The 25ns spacing of proton bunches at the LHC results in a crossing rate of
+proton bunches of 40MHz with roughly 33 \pp interaction events per crossing as
+seen in \Cref{fig:pileup}.  Given that each event we store takes up 1.6 MB of
+storage this would result in a data rate of 64 TB/s.  Given the limits of
+technology and budget this rate of data is far beyond what we could read out,
+much less store for analysis. The answer is the ATLAS trigger system which
+decides in real time whether or not the current interaction contains something
+we're interested in keeping, or whether to dump all sensor output and prepare
+for the next bunch crossing.
 
+ATLAS uses a two-level trigger system to reduce the event rate while making
+sure to not skip any event of interest.  The Level-One (L1) trigger is hardware
+based and uses coarse granularity inputs from the muon spectrometer and
+calorimetery systems to make a decision within 2.5 $\mu s$ of the bunch
+crossing for the event in question. This results in a event rate reduction from
+40 MHz to 100 kHz.  The second level of the system, the High Level Trigger
+(HLT), is software based and uses the full detector output to make its decision
+within a 200ms window. This final triggering step reduces the event rate down
+to a more manageable 1 kHz which is then written to disk at a rate of over a
+Gigabyte per second.
