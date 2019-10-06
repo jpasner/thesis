@@ -1,14 +1,19 @@
-\chapter{Physics Object Selection} \label{chap:objects}
+\chapter{Physics Object Definitions} \label{chap:objects}
 
-After the ATHENA Digitization step both data and monte carlo have the same
-format, representing the three dimentional energy deposits.  In order to analyze
-these deposits they are cleaned, clustered and checked for overlap resulting in
-physics objects useful for our specific analysis.
+In order to analyze our data we must first give definitions for how we
+reconstruct the detector level output into representations of real physical
+particles (physics objects).  This process begins once an event is accepted by
+the ATLAS trigger system, discussed in \Cref{sec:atlas:trigger}, to be recorded
+to disk.  This low-level detector output, such as energy deposits in the
+calorimeters or hits in the inner detector, is then fed into a system of
+algorithms which build objects of interest such as jets and muons.  These
+complex objects can then be used as representations of the true SM particles as
+part of our analysis.  Since these representations are only as good as our
+measurment and reconstruction algorithms, they are then calibrated and given an
+uncertainty as discussed in \Cref{chap:systematics}. This chapter gives an
+overview of the methodology used to reconstruct the objects required for the
+Boosted $H \rightarrow b\bar{b}$ analysis.
 
-\input{chapters/objects/calo_jets.tex}
-\input{chapters/objects/track_jets.tex}
-\input{chapters/objects/fat_jets.tex}
-\input{chapters/objects/b_jets.tex}
+\input{chapters/objects/jets.tex}
+\input{chapters/objects/flavor_tagging.tex}
 \input{chapters/objects/muons.tex}
-\input{chapters/objects/overlap.tex}
-
