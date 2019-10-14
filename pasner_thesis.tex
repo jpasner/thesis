@@ -15,13 +15,47 @@
 % The Current Maintainer of this work is Daniel Gildea.
 
 \documentclass[11pt]{ucthesis}
-\def\dsp{\def\baselinestretch{2.0}\large\normalsize}
-\dsp
+
+% Fix for errors with ucthesis format and setspce package
+% Found here: https://github.com/mohseniaref/ucsd-thesis/issues/51
+\makeatletter
+% taken from uct11.clo and adapted to LaTeX2e nomenclature
+\renewcommand{\normalsize}{\@setfontsize\normalsize\@xipt{13.6}%
+\abovedisplayskip 11\p@ plus3\p@ minus6\p@
+\belowdisplayskip \abovedisplayskip
+\abovedisplayshortskip  \z@ plus3\p@   
+\belowdisplayshortskip  6.5\p@ plus3.5\p@ minus3\p@
+\let\@listi\@listI}   % Setting of \@listi added 9 Jun 87
+\renewcommand{\small}{\@setfontsize\small\@xpt{12}%
+\abovedisplayskip 10\p@ plus2\p@ minus5\p@
+\belowdisplayskip \abovedisplayskip
+\abovedisplayshortskip  \z@ plus3\p@   
+\belowdisplayshortskip  6\p@ plus3\p@ minus3\p@
+\def\@listi{\leftmargin\leftmargini %% Added 22 Dec 87
+\topsep 6\p@ plus2\p@ minus2\p@\parsep 3\p@ plus2\p@ minus\p@
+\itemsep \parsep}}
+\renewcommand{\footnotesize}{\@setfontsize\footnotesize\@ixpt{11}%
+\abovedisplayskip 8\p@ plus2\p@ minus4\p@
+\belowdisplayskip \abovedisplayskip
+\abovedisplayshortskip \z@ plus\p@
+\belowdisplayshortskip 4\p@ plus2\p@ minus2\p@
+\def\@listi{\leftmargin\leftmargini %% Added 22 Dec 87
+\topsep 4\p@ plus2\p@ minus2\p@\parsep 2\p@ plus\p@ minus\p@
+\itemsep \parsep}}
+\renewcommand{\scriptsize}{\@setfontsize\scriptsize\@viiipt{9.5pt}} 
+\renewcommand{\tiny}{\@setfontsize\tiny\@vipt{7pt}} 
+\renewcommand{\large}{\@setfontsize\large\@xiipt{14pt}} 
+\renewcommand{\Large}{\@setfontsize\Large\@xivpt{18pt}} 
+\renewcommand{\LARGE}{\@setfontsize\LARGE\@xviipt{22pt}} 
+\renewcommand{\huge}{\@setfontsize\huge\@xxpt{25pt}} 
+\renewcommand{\Huge}{\@setfontsize\Huge\@xxvpt{30pt}} 
+\makeatother
+\usepackage{setspace}
 
 % Feynman Diagram Stuff
 \RequirePackage{luatex85}
 \usepackage{tikz-feynman}
-\tikzfeynmanset{compat=1.1.0} 
+\tikzfeynmanset{compat=1.1.0}
 
 % Random definitions for b-jet cartoon
 \usepackage{xcolor}
@@ -31,14 +65,31 @@
 % https://www.htmlcsscolor.com/hex/006400
 \definecolor{IPgreen}{HTML}{006400}
 
+% Packages & objects for object selection diagram
+\usetikzlibrary{shapes.geometric, arrows}
+\usetikzlibrary{positioning}
+\tikzstyle{selection} = [rectangle, rounded corners, minimum width=3cm, minimum height=1.5cm, text centered, text width=4.0cm, draw=black, fill=white]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+% Objects created for ttbarCR selection diagram
+\tikzstyle{ttbar_selection} = [rectangle, rounded corners, minimum width=3cm, minimum height=1.2cm, text centered, text width=3.5cm, draw=black, fill=white]
+\tikzstyle{hemisphere} = [rectangle, rounded corners, minimum width=2cm, minimum height=0.8cm, text centered, text width=3.5cm, fill=white]
+
+
+% Definitions for using atlas latex
+\newcommand*{\ATLASLATEXPATH}{atlaslatex/latex/}
+\usepackage[jetetmiss,particle,misc]{atlaslatex/latex/atlasphysics}
+\usepackage[backend=biber,sorting=none,backref=true]{biblatex}
+
 % Declare usepackages here:
+\usepackage{adjustbox}
 \usepackage{lineno}
 \usepackage{color}   % May be necessary if you want to color links
-\usepackage{hyperref} % Makes Chapter titles into links
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
 \usepackage{bm}
 \usepackage{caption,subcaption,epsfig}
+\usepackage{hyperref} % Makes Chapter titles into links
 \usepackage{cleveref}
 \hypersetup{
   colorlinks=true, % set true if you want colored links
@@ -54,10 +105,6 @@
 \setlength{\parindent}{0pt} % no indentation
 \setlength{\parskip}{2ex} % larger space between paragraphs
 
-% Definitions for using atlas latex
-\newcommand*{\ATLASLATEXPATH}{atlaslatex/latex/}
-\usepackage[jetetmiss,particle,misc]{atlaslatex/latex/atlasphysics}
-\usepackage[backend=biber,sorting=none,backref=true]{biblatex}
 
 % Define biliography resources for lookup by biber
 \addbibresource{atlaslatex/bib/ATLAS-useful.bib}
@@ -68,8 +115,9 @@
 \addbibresource{atlaslatex/bib/PubNotes.bib}
 \addbibresource{pasner_thesis.bib}
 
-
 \begin{document}
+%\doublespacing
+\begin{spacing}{2.0}
 
 % Declarations for Front Matter
 
@@ -164,4 +212,5 @@ Dedication
 Ancillary material should be put in appendices, which appear after the
 bibliography. 
 
+\end{spacing}
 \end{document}
