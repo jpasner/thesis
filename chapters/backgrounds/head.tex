@@ -1,9 +1,22 @@
 \chapter{Background Estimation} \label{chap:background}
 
-The dominant background was QCD.  I worked on the ttbar control region.  The Vqq
-and single top backgrounds were estimated from monte carlo.
+Critical to the final statistical interpretation discussed in \Cref{chap:fit}
+is the estimated contribution of the resonant and non-resonant backgrounds
+considered in this analysis. The resonant $V+\text{jets}$ and $t\bar{t}$
+processes are estimated using the MC samples discussed in
+\Cref{sec:data:bkg_mc}, whereas a data-driven technique is used to estimate the
+non-resonant QCD background. The final fit is done in the invariant mass
+spectrum of the signal candidate in the SR over the range $70~\GeV < m_{J} <
+230~\GeV$.  As shown in \Cref{simulated_background_shapes} the Higgs signal is
+small, and on the tails of the comprably larger resonant backgrounds.  This
+means that any statistical fluctuation in the MC templates could hide the
+signal.  To avoid this, smooth parametric shapes are fitted to the resonant MC
+histograms and then used as the inputs to the fit.  This chapter covers the
+creation of the $V+\text{jets}$ template, the $t\bar{t}$ template including the
+derivation of a correction to it's normalization using a fit in the
+$\text{CR}_{t\bar{t}}$, and the data-driven modeling of the QCD background in
+the $\text{CR}_{\text{QCD}}$.
 
-\input{chapters/backgrounds/qcd.tex}
-\input{chapters/backgrounds/ttbar.tex}
-\input{chapters/backgrounds/single_top.tex}
 \input{chapters/backgrounds/vqq.tex}
+\input{chapters/backgrounds/ttbar.tex}
+\input{chapters/backgrounds/qcd.tex}
