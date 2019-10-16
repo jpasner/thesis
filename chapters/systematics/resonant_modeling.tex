@@ -1,1 +1,47 @@
-\section{Uncertanties on resonant backgrounds and signal} \label{sec:systematics:resonant_modeling}
+\section{Uncertanties on Resonant Backgrounds and Signal} \label{sec:systematics:resonant_modeling}
+
+All MC templates in this analysis contain uncertainties derived from the
+large-$R$ jet energy and mass calibrations \cite{Aaboud:2018kfi} and the
+calibration of the \texttt{MV2c10} $b$-tagging algorithm \cite{Aaboud:2018xwy}
+which effects $b$, $c$, and $l$ jet flavors differently.  The jet energy and
+jet mass calibration uncertanties affect both normalization and shape of the
+templates.  This means their impact on the analysis must be determined by
+varying the jet energy and jet mass up and down within their uncertanties and
+propogating the varied templates through the entire analysis procedure.  The
+effect of the jet energy resolution uncertainty was also tested, but found to
+be negligible. The impacts of uncertainties on the calibration of the
+\texttt{MV2c10} algorithm have been found to be independent of the large-$R$
+jet mass for all MC templats and thus only affect the signal normalization.
+
+To account for the modeling uncertanties associated with the choice of MC
+generator, additional shape uncertanties are applied to the $V$ + jets and
+$t\bar{t}$ templates.  The systematic is determined by taking the difference
+between the large-$R$ jet mass shapes from two different MC generators.  For
+$V$ + jets the nominal shape was generated using \textsc{Sherpa} 2.1.1 and then
+compared to the alternate shape generated with \textsc{Herwig}++ 2.7.  For
+$t\bar{t}$ the nominal shape was generated with \textsc{Powheg-Box} 2 and
+compared with the alternate shape generated with \textsc{Sherpa} 2.1.1.
+
+The $t\bar{t}$ normalization in the SR is constrained by the $k$-factor derived
+from a fit to data in the $\text{CR}_{t\bar{t}}$ as discussed in
+\Cref{sec:background:ttbar}.  The uncertainty on the measurement was found to
+be $13\%$ and is treated as a systematic uncertainty on the $t\bar{t}$
+normalization.
+
+In order to have an accurate simulation the normalization of all MC templates
+must be scaled by the integrated luminosity of the dataset in question.  The
+systematic uncertainty on the integrated luminosity measurement is derived
+following the methodology presented in Reference \cite{Aad:2013ucp}.  For this
+analysis it was found to be $2.1\%$.
+
+Theoretical systematic uncertanties on the normalization of the $V$ + jets and
+Higgs components are added to the fit in the SR.  Theory uncertainties on the
+$V$ + jets processes result from the impact of higher order electroweak and QCD
+corrections to their differential cross sections \cite{Lindert:2017olm}. For
+Higgs production the dominant theoretical uncertainty is from ggF production
+which is taken to be $30\%$.  This is consistent with the cross section
+uncertainty calculated with the MiNLO procedure and includes the effects of the
+non-zero top-mass for Higgs bosons with $p_{T} > 400~\GeV$.  This same
+uncertainty is applied for the other production mechanisms for Higgs' with
+$p_{T} > 400~\GeV$.  The result is a total theory uncertainty on the Higgs
+cross section of $30\%$.

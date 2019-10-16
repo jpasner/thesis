@@ -1,1 +1,62 @@
 \section{Summary of Systematics} \label{sec:systematics:summary}
+
+The signal strength ($\mu_{s}$) is defined as the scale factor which multiplies
+the cross section times branching fraction that is predicted by the signal
+hypothesis being considered.  Thus, the final fit, discussed in
+\Cref{chap:fit}, of our theory based MC to the SR data provides a direct
+measurement of this signal strength and therefore a direct measurement of the
+model's prediction. However, to understand the significance and error on this
+result the statistical and systematic uncertainties must be taken into account
+during the fitting procedure.
+
+To get a sense of the the individual impact of each systematic on the total
+uncertainty for the measurement of $\mu_{s}$, the following ad hoc comparison
+is made.  First, the total uncertainty on $\mu_{s}$ ($\sigma_{tot}$) is
+determined by running the fit with all sources of error (systematic and
+statistical) allowed to float within their defined constraints.  By definition:
+
+$$ \sigma_{\text{tot}}^{2} \; = {\underbrace{\sum_{i}^{n} \sigma_{i}^{2}}_{\substack{\text{Contributions from} \\ \text{n systematics}}}} + {\underbrace{\vphantom{\sum_{i}^{n}} \sigma_{\text{stat.}}}_{\substack{\text{Contribution from} \\ \text{statistics}}}}$$
+
+Next, the fit is re-run with all systematics fixed to their pre-fit values
+except for the systematic being investigated for its impact. This gives us
+$\sigma_{i}$, the uncertainty on $\mu_{s}$ when only considering the effect of
+the $i^{th}$ nuisance parameter. Note that the statistical uncertainty
+($\sigma_{\text{stat}}$) is still included as it is inherent to the fitting
+procedure.
+
+Finally we take the difference in quadrature between $\sigma_{\text{tot}}$ and
+$\sigma_{i}$ and divide it by the measured $\mu_{s}$ value found in the final
+fit which includes all sources of uncertainty. 
+
+$$ \frac{\sqrt{\Delta \sigma_i^2}}{\mu_{s}} $$
+
+This ad hoc comparison represents the impact of the $i^{th}$ nuisance parameter
+on the total uncertainty of the measurement of $\mu_{s}$. A summary of the
+impact of each systematic for the two considered signal models (Higgs + jets
+and $V$ + jets) is presented in \Cref{table:systematic_uncertainties}
+
+\begin{table}[htpb]
+ \centering
+ \caption{
+  Summary of the impact $(\sqrt{\Delta \sigma_i^2}/\mu_{s})$ of the main systematic uncertainties on the total uncertainty, $\sigma_{tot}$, of the measured signal strength, $\mu_{s}$, for the $V$ + jets and Higgs boson + jets signals signals~\cite{ATLAS-CONF-2018-052}.}
+ \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{@{}llrrrr@{}}
+   \toprule
+   Source                    & Type           & $V$ + jets & Higgs + jets  \\ \midrule
+   Jet energy and mass scale & Norm. \& Shape & $15\%$     & $14\%$ \\
+   Jet mass resolution       & Norm. \& Shape & $20\%$     & $17\%$ \\
+   $V$ + jets modeling       & Shape          & $9\%$      & $4\%$  \\
+   $t\bar{t}$ modeling       & Shape          & $<1\%$     & $1\%$  \\
+   $b$-tagging $(b)$         & Normalization  & $11\%$     & $12\%$ \\
+   $b$-tagging $(c)$         & Normalization  & $3\%$      & $1\%$  \\
+   $b$-tagging $(l)$         & Normalization  & $4\%$      & $1\%$  \\
+   $t\bar{t}$ $k$-factor     & Normalization  & $2\%$      & $3\%$  \\
+   Luminosity                & Normalization  & $2\%$      & $2\%$  \\
+   Alternate QCD function    & Norm. \& Shape & $4\%$      & $4\%$  \\
+   $W$/$Z$ and QCD (Theory)  & Normalization  & $14\%$     &        \\
+   Higgs (Theory)            & Normalization  &            & $30\%$ \\
+   \bottomrule
+  \end{tabular}
+ \end{adjustbox}
+ \label{table:systematic_uncertainties}
+\end{table}
