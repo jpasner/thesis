@@ -1,6 +1,19 @@
 \chapter{Statistical Fit} \label{chap:fit}
 
-
+The final significance of $V$ + jets and Higgs + jets production are quantified
+through a Bayesian implementation of a likelihood function.  This procedure
+uses the information known about the systematic uncertanties and normalization
+of the signal before the fit, called priors, along with the template histograms
+representing the impact of each prior on the distribution of interest $m_{J}$.
+These priors are then iteratively updated by the data, contained in a
+likelihood function, using a Markov Chain Monte Carlo procedure.  This results
+in a marginalized probability density function (p.d.f) which represents the
+probability of there being a number of signal events present in the data.  This
+p.d.f is then used to determine the signal strength $\mu_{s}$ and its
+uncertainty as well as a 95\% credibility level (CL).  The following chapter
+will discuss the theory and implementation of these ideas in the context of the
+systematics presented in \Cref{chap:systematics} using the Bayesian Analysis
+Toolkit (BAT) \cite{Beaujean:2011zz}.
 
 \input{chapters/fit/theory.tex}
 \input{chapters/fit/priors.tex}
