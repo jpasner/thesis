@@ -1,6 +1,6 @@
 \section{Multi-jet QCD estimation} \label{sec:background:qcd}
 
-The dominant bacgkround contribution to the SR comes from the non-resonant
+The dominant background contribution to the SR comes from the non-resonant
 multijet QCD process. Unfortunately the estimation of this process through MC
 is not reliable due to the statistical precision of available samples, as well
 as underlying inaccuracies of the event generation.  Thus, a data-driven
@@ -11,7 +11,7 @@ agreement in shape of the $\text{CR}_{\text{QCD}}$ and SR over the mass range
 of the fit, $70~\GeV$ to $230~\GeV$, as seen in \Cref{fig:selection:sr_cr_shape}.
 
 The statistical precision of $\sim 1 \text{fb}^{-1}$ of the
-$\text{CR}_{\text{QCD}}$ is found to be comprable to that of the SR for a
+$\text{CR}_{\text{QCD}}$ is found to be comparable to that of the SR for a
 luminosity of $80.5 \text{fb}^{-1}$.  Thus, the $\text{CR}_{\text{QCD}}$ was
 broken into 60 slices constructed using adjacent data runs resulting in an
 average of $1.2 \text{fb}^{-1}$ of data per slice.
@@ -31,12 +31,12 @@ and the alternative model, the Formal Laurent series,
 f_{n} \left(x \middle|\,\vec{\theta}\right) = a \sum_{i=0}^{n} \frac{\theta_{i}}{x^{i+1}}, \quad a=10^{5},\,x = \frac{m_{J} + 90~\GeV}{160~\GeV}.
 \end{equation}
 
-The $\theta$ coefficeints are determined by the fit, $a$ is empirically chosen
-to keep the scale of parameters at $\mathcal{O}$, and the independent variable
-$x$ parameterizes the fit range $m_{J}\in[70,230]$ GeV to $x\in[-1,1]$ for
-\Cref{sec:background:polynomial} and $x\in[1,2]$ for \Cref{sec:background:laurent}.
-This reparameterization was exmpirically seen to provide improved numerical
-stability in the fit.
+The $\theta$ coefficients are determined by the fit, $a$ is empirically chosen
+to keep the scale of parameters at $\mathcal{O}(1)$, and the independent
+variable $x$ parameterizes the fit range $m_{J}\in[70,230]$ GeV to $x\in[-1,1]$
+for \Cref{sec:background:polynomial} and $x\in[1,2]$ for
+\Cref{sec:background:laurent}.  This reparameterization was empirically seen to
+provide improved numerical stability in the fit.
 
 Both functions are tested on a random $\text{CR}_{\text{QCD}}$ slice to
 determine the minimum number of model parameters needed to describe the shape
@@ -49,7 +49,7 @@ Wilks' theorem \cite{wilks1938} and the $F$-test
 of model parameters for both function choices.  The Wilks test preferred a
 five-parameter model for both while the $F$-test preferred a four-parameter
 model for both.  To be conservative in our final estimate, the five-parameter
-model was chosen for both the polynomail exponential function and the Formal
+model was chosen for both the polynomial exponential function and the Formal
 Laurent series.
 
 In order to determine the robustness of these fit functions they were validated
