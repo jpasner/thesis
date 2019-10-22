@@ -21,7 +21,7 @@ $L_{inst.}$ for a chosen data period as seen in
 
 For a standard Gaussian beam, $L_{inst.}$ can be written as
 
-\begin{equation}
+\begin{equation} \label{eq:inst_luminosity}
   L_{inst.} = \frac{N_{b}^{2}n_{b}f_{rev}\gamma_{r}}{4\pi\epsilon_{n}\beta^{*}}F
 \end{equation}
 
@@ -39,11 +39,41 @@ interaction point given by
 
 where $\theta_{c}$ is the full crossing angle at the interaction point,
 $\sigma_{z}$ is the RMS bunch length, and $\sigma^{*}$ is the transverse RMS
-beam size at the interaction point.
+beam size at the interaction point. Nominal values for the above quantities are
+shown in \Cref{table:nominal_values} which also demonstrates the incredible
+success of the LHC operators and accelerator teams during the LHC Run II data
+taking period.
 
-For the ATLAS experiment the integrated luminosity for each year can be seen in
-\Cref{fig:intlumivsyear} as well as an example of the instantaneous luminosity for the chosen
-year in \Cref{fig:peakLumiByFill}.
+\begin{table}[htpb]
+ \centering
+ \caption{
+  Nominal design values of LHC operations parameters at ATLAS for $25~\textrm{ns}$ bunch crossing spacing~\cite{Evans:2008zzb,PhysRevAccelBeams.19.101003}.
+  Design and ATLAS recorded values of the machine luminosity are also given for LHC Run II operations~\cite{TWiki:2018ATLASPeakLumi}.
+ }
+ \begin{tabular}{@{}llr@{}} \toprule
+  Parameter                                   & Symbol             & LHC Run II Value                \\ \midrule
+  LHC circumference                           &                    & $26,659~\mathrm{m}$             \\
+  LHC design beam energy                      &                    & $7~\TeV$                        \\
+  LHC beam energy in Run II                   &                    & $6.5~\TeV$                      \\
+  Number of protons per bunch                 & $N_{b}$            & $1.15 \times 10^{11}$           \\
+  Number of proton bunches per beam           & $n_{b}$            & $2,808$                         \\
+  Revolution frequency                        & $f_{\textrm{rev}}$ & $11.245~\mathrm{kHz}$           \\
+  Lorentz factor (design)                     & $\gamma_{r}$       & $7462.69$                       \\
+  Lorentz factor at $\sqrt{s} = 13~\TeV$      &                    & $6929.64$                       \\
+  Normalized transverse beam emittance        & $\epsilon_{n}$     & $3.75~\mu\mathrm{m}$            \\
+  Collision point beta function               & $\beta^{*}$        & $0.55~\mathrm{m}$               \\
+  Full crossing angle                         & $\theta_{c}$       & $285~\mu\mathrm{rad}$           \\
+  RMS bunch length                            & $\sigma_{z}$       & $7.55\times 10^{-2}~\mathrm{m}$ \\
+  Transverse RMS beam size                    & $\sigma^{*}$       & $16.6~\mu\mathrm{m}$            \\ \midrule
+  Peak design machine luminosity at $13~\TeV$ & $L$                & $9~\inb\mathrm{s}^{-1}$         \\
+  Peak ATLAS recorded machine luminosity      &                    & $21~\inb\mathrm{s}^{-1}$        \\
+  \bottomrule
+ \end{tabular}\label{table:nominal_values}
+\end{table}
+
+The ATLAS experiment integrated luminosity for each year can be seen in
+\Cref{fig:intlumivsyear} along with an example of the instantaneous luminosity
+for $2018$ in \Cref{fig:peakLumiByFill}.
 
 \begin{figure}[!htbp] 
 \centering
