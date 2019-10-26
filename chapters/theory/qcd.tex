@@ -1,15 +1,15 @@
 \section{Quantum Chromodynamics} \label{sec:theory:qcd}
 
 Quantum Chromodynamics is the continuation of the mathematical framework
-established by Quantum Electrodynamics (\Cref{sec:theory:qed}, this time
-for the strong force described by the $SU(3)_C$ gauge group where the $C$
-represents the "color" charge of QCD.  This color charge doesn't imply actual
-visible color, but is useful as an anology to the visible spectrum where a
-combination of red, green, and blue generates white.  For QCD the combination of
-red, green, and blue color charges results in a colorless object.  As mentioned
-in \Cref{sec:theory:fermions} the quarks will contain a color
-(anti-color) charge represented by a color triplet field which transforms under
-the general $SU(3)$ transformation as shown here
+established by the electroweak formalism in (\Cref{sec:theory:gsw}, this time
+for the strong force described by the $SU(3)_C$ gauge group, where $C$
+represents the "color" charge of QCD \cite{\cite{Campbell:2017hsr}}.  This
+color charge doesn't imply actual visible color, but is useful as an analogy to
+the visible spectrum where a combination of red, green, and blue generates
+white.  For QCD the combination of red, green, and blue color charges can
+result in a colorless object.  As mentioned in \Cref{sec:theory:fermions}, the
+quarks have a color (anti-color) charge defining color triplet field which
+transforms under the general $SU(3)$ transformation as
 
 \begin{equation}
 q = \left( \begin{matrix} q_{r} \\ q_{g} \\ q_{b} \end{matrix} \right)
@@ -17,46 +17,45 @@ q = \left( \begin{matrix} q_{r} \\ q_{g} \\ q_{b} \end{matrix} \right)
 \frac{\lambda_k}{2} \right) q
 \end{equation}
 
-Here the $\lambda_{k}$ are the generators for $SU(3)$, $\eta(x)_{k}$ is the
-space-time dependancy for each generator, and  $g_s$ is the strong coupling constant.
-As with QED, the introduction of these space-time dependant terms introduces new
-terms into the kinematic portion of the lagrangian thus spoiling our gauge
-invairance.  Again, we introduce a covariant derivative to restore invariance
+Here the $\lambda_{k}$ are the Gell-Mann generators for $SU(3)$, $\eta(x)_{k}$ is the
+space-time dependency for each generator, and  $g_s$ is the strong coupling constant.
+As with the electroweak Lagrangian, the introduction of these space-time dependent terms adds new
+terms into the kinematic portion of the Lagrangian and spoils the gauge 
+invariance.  Again, a covariant derivative is introduced 
 
 \begin{equation}
 D_{\mu} = \partial_{\mu} - ig_{s}G_{\mu}^{k}\frac{\lambda_{k}}{2}
 \end{equation}
 
-Here the $G_{\mu}^{k}$ are the new fields introduced for the 8 gluons.  These
-new fields transform under $SU(3)$ as shown in
-\Cref{eq:qcd:gluon_field}
+to restore gauge invariance. The $G_{\mu}^{k}$ are the new fields introduced
+for the 8 gluons.  These new fields transform under $SU(3)$ as
 
 \begin{equation} \label{eq:qcd:gluon_field}
 G_{\mu}^{k} \rightarrow G_{\mu}^{'k} = G_{\mu}^{k} + \partial_{\mu}\eta_{k}(x) +
 g_{s}f_{klm}\eta_{l}(x)G_{\mu}^{m}
 \end{equation}
 
-Given these definitions we can construct the QCD Lagrangian
-($\mathcal{L}_{QCD}$) as shown in \Cref{eq:qcd:qcd_lagrangian} where the
-gluon field tensor $G_{k}^{\mu\nu}$ is the one defined in
-\Cref{eq:qcd:gluon_tensor}
+Given these definitions the QCD Lagrangian ($\mathcal{L}_{QCD}$) can be
+constructed as 
 
 \begin{equation} \label{eq:qcd:qcd_lagrangian}
 \mathcal{L}_{QCD} = \bar{q}(i\gamma_{\mu}D^{\mu} - m_{q})q -
 \frac{1}{4}G_{k}^{\mu\nu}G_{k\mu\nu}
 \end{equation}
 
+where the gluon field tensor $G_{k}^{\mu\nu}$ is defined as
+
 \begin{equation} \label{eq:qcd:gluon_tensor}
 G_{k}^{\mu\nu} = \partial^{\mu}G_{k}^{\nu} - \partial^{\nu}G_{k}^{\mu} +
-g_{s}f_{klm}G_{\l}^{\mu}G_{m}^{\nu}
+g_{s}f_{klm}G_{\l}^{\mu}G_{m}^{\nu}.
 \end{equation}
 
-The strong force is peculiar in that we experimentally observe only colorless
+The strong force is peculiar in that experiments observe only colorless
 objects in the form of bound states of quarks known as hadrons.  Qualitatively,
-when a bound state of quarks (meson or baryon) is given sufficeint energy to
-separate the strong force dramatically increases in strength.  At the point
-where the objects would separate, and thus no longer be colorless, it becomes
-energetically favorable to produce a quark/anti-quark pair in a process known as
+when the potential between a bound state of quarks (meson or baryon) gets
+stronger with separation, unlike the other forces.  At the point where the
+system would separate into color-charged objects, it becomes energetically
+favorable to produce a quark/anti-quark pair in a process known as
 hadronization.  In other words, attempting to separate a bound quark state into
 its colored constituents simply results in new colorless bound states.  This
 requirement of colorless objects by the strong force is known as color

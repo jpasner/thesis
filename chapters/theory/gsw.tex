@@ -1,0 +1,117 @@
+\section{Electroweak Unification} \label{sec:theory:gsw}
+
+In the SM the electromagnetic and weak forces are unified by GSW theory into
+the Electroweak interaction which is represented by the $SU(2)_L \times U(1)_Y$
+gauge group \cite{\cite{Glashow:1961tr, Goldstone:1962es, Weinberg:1967tq}}.
+The $L$ represents the experimental observation that the weak interaction, and
+thus the $SU(2)$ transformation, only acts on left-handed particle states.  The
+$Y$ indicates that this is the $U(1)$ symmetry for the weak hypercharge $Y$
+instead of the electromagnetic charge.  The particle states for these
+interactions are solutions to the Dirac equation and are represented as isospin
+doublets ($\boldsymbol{\Psi}_{L}$) for the left-handed states, and as isospin
+singlets ($\Psi_R$) for the right-handed states.  Thus a general transformation
+from the electroweak gauge group applied to the left-handed doublet is
+represented as
+
+\begin{equation} \label{eq:gsw:doublet} 
+\boldsymbol{\Psi}_{L} \rightarrow \boldsymbol{\Psi}_{L}^{'} = \exp \left(
+\underbrace{ ig^{'} \frac{Y_L}{2}
+\zeta (x) }_{U(1)_Y} + \underbrace{ ig_{W} \boldsymbol{\alpha}(x) \cdot
+\text{\bf{T}} }_{SU(2)_L} \right) \boldsymbol{\Psi}_{L}.
+\end{equation}
+
+For the right-handed singlet the $SU(2)_L$ transformation does not contribute,
+so the transformation is
+
+\begin{equation} \label{eq:gsw:singlet} 
+{\Psi_R} \rightarrow \Psi_R^{'} = \exp \left( \underbrace{ ig^{'} \frac{Y_R}{2}
+\zeta (x) }_{U(1)_Y} \right) \Psi_R.
+\end{equation}
+
+Here the local gauge transformations have introduced space-time dependent terms
+$\boldsymbol{\alpha}(x)$ and $\zeta(x)$ into the electroweak Lagrangian.  Due
+to the derivatives contained within the kinetic term of this Lagrangian, this
+new configuration would introduce additional terms, thus violating the required
+local gauge invariance.  These additional terms can be removed by replacing the
+standard derivative ($\partial_{\mu}$) with the covariant derivative
+($D_{\mu}$), as seen in \Cref{eq:gsw:left} for the left-handed states and
+\Cref{eq:gsw:right} for the right-handed states.
+
+\begin{align} 
+\label{eq:gsw:left} 
+D_\mu &= \partial_{\mu}
+- \underbrace{\frac{1}{2}ig^{'}B_{\mu}Y_{L}}_{U(1)_Y} -
+  \underbrace{\frac{1}{2}ig_{W}\bf{W}_\mu \cdot \boldsymbol{\tau}}_{SU(2)_L} \\
+\label{eq:gsw:right} 
+D_\mu &= \partial_{\mu}  - \underbrace{\frac{1}{2}ig^{'}B_{\mu}Y_{R}}_{U(1)_Y} 
+\end{align}
+
+This introduces two new gauge fields: the weak hypercharge field $B_\mu$ and
+the charged weak fields $\boldsymbol{W_\mu}$ as well as the associated coupling
+constants $g^{'}, g_{W}, Y_{L}, Y_{R}$ and the $SU(2)$ generators
+$\boldsymbol{\tau}$.  The transformation properties of these new fields are
+given by
+
+\begin{align}
+\boldsymbol{W}_{\mu}(x) &\rightarrow \boldsymbol{W}_{\mu}^{'}(x) =
+\boldsymbol{W}_{\mu} + \partial_{\mu} \boldsymbol{\alpha}(x) +
+g_{W}\boldsymbol{W}_{\mu}(x) \times \boldsymbol{\alpha}(x)
+\\ 
+B_{\mu} &\rightarrow B_{\mu}^{'} = B_{\mu} +
+\frac{1}{g^{'}}\partial_{\mu}\zeta(x)
+\end{align}
+
+The form of these fields is chosen such that the final Lagrangian is invariant
+under $SU(2)_L \times U(1)_Y$ transformations, and thus gauge invariance has
+been restored for the kinetic term of the electroweak Lagrangian.  Inserting
+these new definitions into the Lagrangian for the field $\Psi$ that satisfies
+the free-particle Dirac equation gives
+
+\begin{equation} \label{eq:gsw:fermion_lagrangian}
+\mathcal{L} = i\boldsymbol{\bar{\Psi}}_{L}\gamma^{\mu} \left( \partial_{\mu}
+- \frac{1}{2}ig^{'}B_{\mu}Y_{L} - \frac{1}{2}ig_{W}\bf{W}_\mu \cdot
+  \boldsymbol{\tau} \right) \boldsymbol{\Psi}_{L} + i \bar{\Phi}_{R}\gamma^{\mu}
+\left(\partial_{\mu} - \frac{1}{2}ig^{'}B_{\mu}Y_{R} \right) \Phi_{R}
+\end{equation}
+
+Next the gauge field self-interaction and mass terms are constructed
+
+\begin{equation} \label{eq:gsw:gauge_lagrangian}
+\mathcal{L} = -\frac{1}{4}\boldsymbol{F}_{\mu\nu}\boldsymbol{F}^{\mu\nu}
+-\frac{1}{4}B_{\mu\nu}B^{\mu\nu} +
+\frac{1}{2}M_{W}^{2}\boldsymbol{W}_{\mu}\boldsymbol{W}^{\mu} +
+\frac{1}{2}M_{B}^{2}B_{\mu}B^{\mu}
+\end{equation}
+
+where the field tensors $\boldsymbol{F}^{\mu\nu}$ and $B^{\mu\nu}$ are defined
+to be
+
+\begin{align}
+\boldsymbol{F}^{\mu\nu}  &= \partial^{\mu}\boldsymbol{W}^{\nu} -
+\partial^{\nu}\boldsymbol{W}^{\mu} + g\boldsymbol{W}^{\mu} \times
+\boldsymbol{W}^{\nu} \\
+B^{\mu\nu} &=  \partial^{\mu}\boldsymbol{B}^{\nu} -
+\partial^{\nu}\boldsymbol{B}^{\mu}
+\end{align}
+
+The field tensor terms in \Cref{eq:gsw:gauge_lagrangian} are invariant under
+gauge transformations, but simply substituting in \Cref{eq:gsw:left} or
+\Cref{eq:gsw:right} into the mass terms shows that these terms violate gauge
+invariance. This would imply that $M_{W} = 0$ and $M_{B} = 0$, in direct
+contradiction of the observed masses of the weak gauge bosons.  This issue
+arises again for fermion mass terms, as illustrated below for the electron field
+($e$) expanded in its chiral basis.
+
+\begin{equation}
+m_{e}\bar{e}e = m_{e} \left( \begin{matrix}e^{\dagger}_{R} &
+e^{\dagger}_{L} \end{matrix} \right) \left( \begin{matrix} e_{L}
+\\ e_{R} \end{matrix} \right) = m_{e}(e^{\dagger}_{R}e_{L} +
+e^{\dagger}_{L}e_{R})
+\end{equation}
+
+Remembering that the left- and right-handed components of the electroweak
+interaction transform differently shows that this mixture of right- and left-
+handed fields violates gauge invariance. This again forces us to conclude that
+$m_{e} = 0$, in contradiction to the observation that the electron does indeed
+have mass. As mentioned in \Cref{sec:theory:bosons} the resolution to these
+mass mysteries lies in the Higgs mechanism discussed in \Cref{sec:theory:higgs}.
