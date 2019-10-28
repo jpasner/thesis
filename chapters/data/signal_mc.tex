@@ -1,34 +1,33 @@
-\section{Signal Monte Carlo} \label{sec:data:signal_mc}
+\section{Higgs Boson Signal Monte Carlo Samples} \label{sec:data:signal_mc}
 
-In order to simulate Higgs events the three leading production mechanisms at
-the LHC were considered, shown in \Cref{fig:higgs_production}: gluon-gluon
-fusion, vector boson fusion and Higgstralungh.  These three production modes
-correspondingly represent 50\%, 30\% and 20\% of the total Higgs signal before
-analysis cuts are applied.  In all samples the simulated Higgs is decayed to
-the $b\bar{b}$ final state our analysis focused on.
+In order to simulate Higgs boson events, the three leading production
+mechanisms at the LHC were considered, shown in \Cref{fig:higgs_production}:
+gluon-gluon fusion, vector boson fusion and Higgsstrahlung.  These three
+production modes represent 50\%, 30\% and 20\% of the total Higgs signal,
+respectively, before analysis cuts are applied.  In all samples the simulated
+Higgs boson is forced to decay to the $b\bar{b}$ final state.
 
-The ggF plus an associated jet events were generated using the
-HJ+MiNLO~\cite{Hamilton2015} prescription, assuming a finite top quark mass,
-with the \textsc{Powheg-Box}~\cite{Campbell2012} 2 generator and the NNPDF30
-NNLO~\cite{Hamilton:2012rf} parton distribution function.  After generation the
-events are showered using \textsc{Pythia} 8.212~\cite{Sjostrand:2014zea} with
-the AZNLO tune and the CTEQ6L1~\cite{Pumplin:2002vw} parton distribution
-function. Any $b$-hadrons produced during this process are decayed using
+The ggF $H$ + jet events were generated using the HJ+MiNLO~\cite{Hamilton2015}
+prescription, assuming a finite top quark mass, with the \textsc{Powheg-Box} 2
+generator~\cite{Campbell2012} and the NNPDF30 NNLO parton distribution
+functions~\cite{Hamilton:2012rf}.  After generation the events were showered
+using \textsc{Pythia} 8.212~\cite{Sjostrand:2014zea} with the AZNLO tune and
+the CTEQ6L1 parton distribution functions~\cite{Pumplin:2002vw}. Any
+$b$-hadrons produced during this process were decayed using
 \textsc{EvtGen}~\cite{LANGE2001152}.
 
-The VBF Higgs events also generated using the
-\textsc{Powheg-Box}~\cite{Nason:2009ai} generator with the NNPDF30
-NLO~\cite{Hamilton:2012rf} parton distribution function. Again the showering is
-performed with \textsc{Pythia} 8.212~\cite{Sjostrand:2014zea} using the AZNLO
-tune and the CTEQ6L1~\cite{Pumplin:2002vw} parton distribution function.  The
-decay of $b$-hadrons is again performed using
-\textsc{EvtGen}~\cite{LANGE2001152}.
+The VBF $H$ + jet events were also generated using the \textsc{Powheg-Box}
+generator~\cite{Nason:2009ai} with the NNPDF30 NLO parton distribution
+functions~\cite{Hamilton:2012rf}. Again the showering was performed with
+\textsc{Pythia} 8.212~\cite{Sjostrand:2014zea} using the AZNLO tune and the
+CTEQ6L1 parton distribution functions~\cite{Pumplin:2002vw}.  The decay of
+$b$-hadrons was again performed using \textsc{EvtGen}~\cite{LANGE2001152}.
 
-Higgstralung events were generated using the \textsc{Pythia}
-8.212~\cite{Sjostrand:2014zea} generator, the AZNLO tune and the
-CTEQ6L1~\cite{Pumplin:2002vw} parton distribution function.  Again the decay of
-$b$-hadrons is handled by \textsc{EvtGen}~\cite{LANGE2001152}. Unfortunately
-the \textsc{Pythia} process doesn't include the $gg \rightarrow ZH$
-contribution.  To account for this we corrected the cross section to the LHC
+Higgsstrahlung events were generated using the \textsc{Pythia} 8.212
+generator~\cite{Sjostrand:2014zea}, the AZNLO tune and the CTEQ6L1 parton
+distribution functions~\cite{Pumplin:2002vw}.  Again the decay of $b$-hadrons
+is handled by \textsc{EvtGen}~\cite{LANGE2001152}. Unfortunately the
+\textsc{Pythia} $ZH$ process does not include the $gg \rightarrow ZH$
+contribution.  To account for this the cross section is corrected to the LHC
 Higgs cross section working group's (LHCHXSWG) recommendation
 \cite{MelladoGarcia:2150771}.

@@ -1,21 +1,29 @@
 \chapter{Background Estimation} \label{chap:background}
 
-Critical to the final statistical interpretation discussed in \Cref{chap:fit}
-is the estimated contribution of the resonant and non-resonant backgrounds
-considered in this analysis. The resonant $V+\text{jets}$ and $t\bar{t}$
-processes are estimated using the MC samples discussed in
-\Cref{sec:data:bkg_mc}, whereas a data-driven technique is used to estimate the
-non-resonant QCD background. The final fit is done in the invariant mass
-spectrum of the signal candidate in the SR over the range $70~\GeV < m_{J} <
-230~\GeV$.  As shown in \Cref{simulated_background_shapes} the Higgs signal is
-small, and on the tails of the comprably larger resonant backgrounds.  This
-means that any statistical fluctuation in the MC templates could hide the
-signal.  To avoid this, smooth parametric shapes are fitted to the resonant MC
-histograms and then used as the inputs to the fit.  This chapter covers the
-creation of the $V+\text{jets}$ template, the $t\bar{t}$ template including the
-derivation of a correction to it's normalization using a fit in the
-$\text{CR}_{t\bar{t}}$, and the data-driven modeling of the QCD background in
-the $\text{CR}_{\text{QCD}}$.
+The estimated contribution of the resonant and non-resonant backgrounds is
+critical to the final statistical interpretation discussed in \Cref{chap:fit} .
+The resonant $V+\text{jets}$ and $t\bar{t}$ processes are estimated using the
+MC samples discussed in \Cref{sec:data:bkg_mc}, whereas a data-driven technique
+is used to estimate the non-resonant QCD background. The final fit is done in
+the invariant mass spectrum of the signal candidate in the SR over the range
+$70~\GeV < m_{J} < 230~\GeV$.  As shown in \Cref{simulated_background_shapes},
+the Higgs boson signal is small, and it is on the tails of the comparably
+larger resonant backgrounds.  This means that any statistical fluctuation in
+the MC templates could hide the signal.  To avoid this, smooth parametric
+shapes are fitted to the resonant MC histograms and then used as the inputs to
+the fit.  This chapter covers the creation of the $V+\text{jets}$ template; the
+$t\bar{t}$ template, including the derivation of a correction to its
+normalization using a fit in the $\text{CR}_{t\bar{t}}$; and the data-driven
+modeling of the QCD background in the $\text{CR}_{\text{QCD}}$.
+
+\begin{figure}[!htbp]
+  \centering
+  \subcaptionbox{Simulation of the contribution of non-resonant multijet QCD background in the signal region.}{\includegraphics[width=0.49\linewidth]{figures/data/QCD_logy}} \hfill
+  \subcaptionbox{Simulation of resonant $V$+jets and $t\bar{t}$ backgrounds in the signal region.  The Higgs simulation is included for comparison.}{\includegraphics[width=0.49\linewidth]{figures/data/resonant_bkg}}
+  \caption{Simulations of the non-resonant and resonant background contributions to the signal region for an integrated luminosity of $80.5~\ifb$}
+  \label{simulated_background_shapes}
+\end{figure}
+
 
 \input{chapters/backgrounds/vqq.tex}
 \input{chapters/backgrounds/ttbar.tex}

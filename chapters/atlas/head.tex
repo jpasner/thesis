@@ -1,14 +1,13 @@
 \chapter{The ATLAS Detector} \label{chap:atlas}
 
-The immense energies available at the LHC and the veritable zoo of
-particles require a general-purpose experiment in
-order to fully exploit the full range of physics opportunities.  Two
-international collaborations rose to this challenge, the CMS (Compact Muon
-Solenoid) and ATLAS (A Toroidal LHC ApparatuS) experiments.  While both have
-similar physics goals and each of them strengths and weaknesses, this
-dissertation will focus on the ATLAS experiment and the intricacies of its three
-sub-detectors and two massive magnet systems depicted in
-\Cref{fig:atlas_cutaway}.
+The immense energies available at the LHC and the veritable zoo of particles
+require a general-purpose experiment in order to fully exploit the full range
+of physics opportunities.  Two international collaborations rose to this
+challenge, the CMS (Compact Muon Solenoid) and ATLAS (A Toroidal LHC ApparatuS)
+experiments.  While both have similar physics goals and each of them strengths
+and weaknesses, this dissertation will focus on the ATLAS experiment and the
+intricacies of its three sub-detectors and two massive magnet systems depicted
+in \Cref{fig:atlas_cutaway}.
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -46,7 +45,7 @@ superconducting solenoidal magnet.  This system exploits the ionization signal
 of charged particles to track their curved trajectory through the magnetic
 field.  This curvature gives us charge information, a momentum measurement, and
 precisely-located 3D vertices crucial to the identification of the secondary
-vertices of a B-hadron decay. 
+vertices of a $b$-hadron decay. 
 
 Outside of the solenoid the particles encounter the electromagnetic and then
 the hadronic sampling calorimeters. Here, layers of scintillator and
@@ -55,28 +54,29 @@ electrons, photons, and hadrons. As the goal is to completely absorb the energy
 of all outgoing particles, the calorimeter has a nearly $4\pi$ solid angle
 coverage.
 
-Finally we have the muon system surrounding the calorimeter and equipped with
-its own toroidal magnet system.  Here the charged muons bend in the magnetic
-field while leaving a trail of ionization in the Muon Spectrometer (MS) before
-exiting the detector completely.  Neutrinos are the only other Standard Model
-particle that leave the detector; however they, do so without detection.  A
-depiction of the various particle interactions with the different detector
-sub-systems can be seen in \Cref{fig:detector_interactions}.
+The outermost subsystem, the muon spectrometer, surrounds the calorimeter and
+is equipped with its own toroidal magnet system.  Here the charged muons bend
+in the magnetic field while leaving a trail of ionization in the Muon
+Spectrometer (MS) before exiting the detector completely.  Neutrinos are the
+only other Standard Model particle that leave the detector; however they, do so
+without detection.  A depiction of the various particle interactions with the
+different detector sub-systems can be seen in \Cref{fig:detector_interactions}.
 
-\begin{figure}[!htbp]
-  \begin{center}
-    \includegraphics[width=0.9\linewidth]{figures/atlas/detector_interactions}
-    \caption{This slice of the ATLAS detector depicts how different particles
-interact with each component of the detector it crosses.  A dashed line
+\begin{figure}[!htbp] 
+\begin{center}
+\includegraphics[width=0.9\linewidth]{figures/atlas/detector_interactions}
+\caption{This slice of the ATLAS detector depicts how different particles
+interact with each component of the detector they cross.  A dashed line
 indicates no interaction while a solid line indicates interaction. Electrons
 (yellow/green) and charged hadrons (red) interact with the tracker and curve in
 the solenoid's magnetic field.  Electrons and photons (yellow/green) are
-absorbed by the Electromagnetic calorimeter.  All hadrons (red/yellow) are
-absorbed by the Hadronic calorimeter. The muons (orange) curve in both the
+absorbed by the electromagnetic calorimeter.  All hadrons (red/yellow) are
+absorbed by the hadronic calorimeter. The muons (orange) curve in both the
 solenoid and toroid magnetic fields before exiting the detector. Finally, the
-neutrinos (white) pass through the entire detector without interacting.}
-    \label{fig:detector_interactions}
-  \end{center}
+neutrinos (white) pass through the entire detector without interacting
+\cite{Pasztor:2048697}.} 
+\label{fig:detector_interactions}
+ \end{center}
 \end{figure}
 
 \input{chapters/atlas/coordinates.tex} 

@@ -1,23 +1,22 @@
-\section{Multi-jet QCD estimation} \label{sec:background:qcd}
+\section{Multijet QCD estimation} \label{sec:background:qcd}
 
 The dominant background contribution to the SR comes from the non-resonant
 multijet QCD process. Unfortunately the estimation of this process through MC
-is not reliable due to the statistical precision of available samples, as well
-as underlying inaccuracies of the event generation.  Thus, a data-driven
-estimate was employed by fitting the large-$R$ jet mass distribution, $m_{J}$,
-in the SR with a parametric function after validation of the procedure in the
+is not reliable due to the statistical precision of available samples and the
+underlying inaccuracies of the event generation.  Thus, a data-driven estimate
+was employed by fitting the large-$R$ jet mass distribution, $m_{J}$, in the SR
+with a parametric function after validation of the procedure in the
 $\text{CR}_{\text{QCD}}$.  This approach is further motivated by the good
 agreement in shape of the $\text{CR}_{\text{QCD}}$ and SR over the mass range
 of the fit, $70~\GeV$ to $230~\GeV$, as seen in
 \Cref{fig:selection:sr_cr_shape}. A brief summary of this process is presented
-below, with in-depth details available in Reference
-\cite{Feickert:2690521}.
+below, with in-depth details available in Reference \cite{Feickert:2690521}.
 
-The statistical precision of $\sim 1 \text{fb}^{-1}$ of the
+The statistical precision of $\sim 1~\ifb$ of the
 $\text{CR}_{\text{QCD}}$ is found to be comparable to that of the SR for a
-luminosity of $80.5 \text{fb}^{-1}$.  Thus, the $\text{CR}_{\text{QCD}}$ was
+luminosity of $80.5~\ifb$.  Thus, the $\text{CR}_{\text{QCD}}$ was
 broken into 60 slices constructed using adjacent data runs resulting in an
-average of $1.2 \text{fb}^{-1}$ of data per slice.
+average of $1.2~\ifb$ of data per slice.
 
 Two families of parametric functions were used for this modeling.  The
 polynomial exponential function was chosen to be the nominal model
@@ -27,7 +26,7 @@ polynomial exponential function was chosen to be the nominal model
 f_{n} \left(x \middle|\,\vec{\theta}\right) = \theta_{0}\, \exp\left(\sum_{i=1}^{n} \theta_{i}\,x^{i}\right), \quad x = \frac{m_{J} - 150~\GeV}{80~\GeV},
 \end{equation}
 
-and the alternative model, the Formal Laurent series,
+and the alternative model, the formal Laurent series,
 
 \begin{equation}
 \label{sec:background:laurent}
@@ -52,13 +51,13 @@ Wilks' theorem \cite{wilks1938} and the $F$-test
 of model parameters for both function choices.  The Wilks test preferred a
 five-parameter model for both while the $F$-test preferred a four-parameter
 model for both.  To be conservative in our final estimate, the five-parameter
-model was chosen for both the polynomial exponential function and the Formal
+model was chosen for both the polynomial exponential function and the formal
 Laurent series.
 
-In order to determine the robustness of these fit functions they were validated
+In order to determine the robustness of these fit functions, they were validated
 using all of the $\text{CR}_{\text{QCD}}$ slices.  For these validation studies
 the fit included properly scaled $Z$ + jets, $W$ + jets, $t\bar{t}$ and single
 top contributions in addition to the $\text{CR}_{\text{QCD}}$ slice. Within the
-statistical precision given by the different data slices, the $\chi^{2}/ndf$
+statistical precision given by the different data slices, the $\chi^{2}/\text{ndf}$
 from the individual fits is found to follow the expected distribution of a good
 fit.

@@ -1,18 +1,18 @@
 \chapter{Physics Object Definitions} \label{chap:objects}
 
-In order to analyze our data we must first give definitions for how we
-reconstruct the detector level output into representations of real physical
-particles (physics objects).  This process begins once an event is accepted by
-the ATLAS trigger system, discussed in \Cref{sec:atlas:trigger}, to be recorded
-to disk.  This low-level detector output, such as energy deposits in the
-calorimeters or hits in the inner detector, is then fed into a system of
-algorithms which build objects of interest such as jets and muons.  These
-complex objects can then be used as representations of the true SM particles as
-part of our analysis.  Since these representations are only as good as our
-measurment and reconstruction algorithms, they are then calibrated and given an
-uncertainty as discussed in \Cref{chap:systematics}. This chapter gives an
-overview of the methodology used to reconstruct the objects required for the
-Boosted $H \rightarrow b\bar{b}$ analysis.
+In order to analyze the data one must first reconstruct the detector-level
+output into representations of real physical particles (physics objects).  This
+process begins once an event is accepted by the ATLAS trigger system and
+recorded to disk, as discussed in \Cref{sec:atlas:trigger}.  This raw detector
+output, such as energy deposits in the calorimeters or hits in the inner
+detector, is then fed into a system of algorithms which build objects of
+interest such as jets and muons.  These complex objects can then be used as
+representations of the true SM particles in the analysis.  Since these
+representations are only as good as the measurement and reconstruction
+algorithms, they are then calibrated and given an uncertainty as discussed in
+\Cref{chap:systematics}. This chapter gives an overview of the methodology used
+to reconstruct the objects required for the boosted $H \rightarrow b\bar{b}$
+analysis.
 
 \input{chapters/objects/jets.tex}
 \input{chapters/objects/flavor_tagging.tex}
