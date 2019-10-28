@@ -42,17 +42,42 @@ provide improved numerical stability in the fit.
 
 Both functions are tested on a random $\text{CR}_{\text{QCD}}$ slice to
 determine the minimum number of model parameters needed to describe the shape
-of the distribution.  The $Z$ + jets, $W$ + jets, and
-$k$-factor corrected $t\bar{t}$ contributions are all scaled
-by their cross sections times the luminosity and then subtracted from the slice
-to remove bias from the fit.  The results of a likelihood ratio test with
-Wilks' theorem \cite{wilks1938} and the $F$-test
-\cite{snecdecor1991statistical} were both used to determine the minimum number
-of model parameters for both function choices.  The Wilks test preferred a
-five-parameter model for both while the $F$-test preferred a four-parameter
-model for both.  To be conservative in our final estimate, the five-parameter
-model was chosen for both the polynomial exponential function and the formal
-Laurent series.
+of the distribution.  The $Z$ + jets, $W$ + jets, and $k$-factor corrected
+$t\bar{t}$ contributions are all scaled by their cross sections times the
+luminosity and then subtracted from the slice to remove bias from the fit.  The
+results of a likelihood ratio test with Wilks' theorem \cite{wilks1938} and the
+$F$-test \cite{snecdecor1991statistical} were both used to determine the
+minimum number of model parameters for both function choices.  The two
+statistical tests were performed for all $\text{CR}_{\text{QCD}}$ data slices
+and the relative frequencies of the observed $p$-values were iteratively summed
+as shown in \Cref{sec:backgrounds:parameter_tests} for both function choices.
+The Wilks test preferred a five-parameter model for both while the $F$-test
+preferred a four-parameter model for both.  To be conservative in our final
+estimate, the five-parameter model was chosen for both the polynomial
+exponential function and the formal Laurent series.
+
+\begin{figure}[!htbp]
+\centering
+\subcaptionbox{Polynomial exponential Wilks test\label{sec:backgrounds:poly_wilks_test}}{
+\includegraphics[width=0.48\linewidth]{figures/backgrounds/poly_wilks_test}
+}\hfill
+\subcaptionbox{Polynomial exponential F test \label{sec:backgrounds:poly_f_test}}{
+\includegraphics[width=0.48\linewidth]{figures/backgrounds/poly_f_test}
+}
+\subcaptionbox{Formal Laurent Wilks test\label{sec:backgrounds:formal_wilks_test}}{
+\includegraphics[width=0.48\linewidth]{figures/backgrounds/formal_wilks_test}
+}\hfill
+\subcaptionbox{Formal Laurent F test \label{sec:backgrounds:formal_f_test}}{
+\includegraphics[width=0.48\linewidth]{figures/backgrounds/formal_f_test}
+}
+\caption{Empirical cumulative distribution function (CDF) for the test
+$p$-values for the two statistical tests applied to both function choices where
+the a priori threshold $\alpha$ is shown as a vertical black line. In both
+tests $p$-values below $\alpha = 0.1$ show preference for the model with more
+parameters, while $p$-values above $\alpha = 0.1$ indicate a preference for the
+model with fewer parameters \cite{Alison:2649017}.}
+\label{sec:background:parameter_tests}
+\end{figure}
 
 In order to determine the robustness of these fit functions, they were validated
 using all of the $\text{CR}_{\text{QCD}}$ slices.  For these validation studies
