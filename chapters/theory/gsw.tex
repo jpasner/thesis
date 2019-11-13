@@ -1,7 +1,7 @@
 \section{Electroweak Unification} \label{sec:theory:gsw}
 
 In the SM the electromagnetic and weak forces are unified by GSW theory into
-the Electroweak interaction which is represented by the $SU(2)_L \times U(1)_Y$
+the electroweak interaction which is represented by the $SU(2)_L \times U(1)_Y$
 gauge group \cite{Glashow:1961tr, Goldstone:1962es, Weinberg:1967tq}.
 The $L$ represents the experimental observation that the weak interaction, and
 thus the $SU(2)$ transformation, only acts on left-handed particle states.  The
@@ -53,10 +53,12 @@ $\boldsymbol{\tau}$.  The transformation properties of these new fields are
 given by
 
 \begin{align}
+\label{eq:gsw:w_transform}
 \boldsymbol{W}_{\mu}(x) &\rightarrow \boldsymbol{W}_{\mu}^{'}(x) =
 \boldsymbol{W}_{\mu} + \partial_{\mu} \boldsymbol{\alpha}(x) +
 g_{W}\boldsymbol{W}_{\mu}(x) \times \boldsymbol{\alpha}(x)
 \\ 
+\label{eq:gsw:b_transform}
 B_{\mu} &\rightarrow B_{\mu}^{'} = B_{\mu} +
 \frac{1}{g^{'}}\partial_{\mu}\zeta(x)
 \end{align}
@@ -70,8 +72,8 @@ the free-particle Dirac equation gives
 \begin{equation} \label{eq:gsw:fermion_lagrangian}
 \mathcal{L} = i\boldsymbol{\bar{\Psi}}_{L}\gamma^{\mu} \left( \partial_{\mu}
 - \frac{1}{2}ig^{'}B_{\mu}Y_{L} - \frac{1}{2}ig_{W}\bf{W}_\mu \cdot
-  \boldsymbol{\tau} \right) \boldsymbol{\Psi}_{L} + i \bar{\Phi}_{R}\gamma^{\mu}
-\left(\partial_{\mu} - \frac{1}{2}ig^{'}B_{\mu}Y_{R} \right) \Phi_{R}
+  \boldsymbol{\tau} \right) \boldsymbol{\Psi}_{L} + i \bar{\Psi}_{R}\gamma^{\mu}
+\left(\partial_{\mu} - \frac{1}{2}ig^{'}B_{\mu}Y_{R} \right) \Psi_{R}
 \end{equation}
 
 Next the gauge field self-interaction and mass terms are constructed
@@ -95,23 +97,23 @@ B^{\mu\nu} &=  \partial^{\mu}\boldsymbol{B}^{\nu} -
 \end{align}
 
 The field tensor terms in \Cref{eq:gsw:gauge_lagrangian} are invariant under
-gauge transformations, but simply substituting in \Cref{eq:gsw:left} or
-\Cref{eq:gsw:right} into the mass terms shows that these terms violate gauge
+gauge transformations, but simply substituting \Cref{eq:gsw:w_transform} or
+\Cref{eq:gsw:b_transform} into the mass terms shows that these terms violate gauge
 invariance. This would imply that $M_{W} = 0$ and $M_{B} = 0$, in direct
 contradiction of the observed masses of the weak gauge bosons.  This issue
-arises again for fermion mass terms, as illustrated below for the electron field
-($e$) expanded in its chiral basis.
+arises again for fermion mass terms, as illustrated below for the bottom quark field
+($b$) expanded in its chiral basis.
 
 \begin{equation}
-m_{e}\bar{e}e = m_{e} \left( \begin{matrix}e^{\dagger}_{R} &
-e^{\dagger}_{L} \end{matrix} \right) \left( \begin{matrix} e_{L}
-\\ e_{R} \end{matrix} \right) = m_{e}(e^{\dagger}_{R}e_{L} +
-e^{\dagger}_{L}e_{R})
+m_{b}\bar{b}b = m_{b} \left( \begin{matrix}b^{\dagger}_{R} &
+b^{\dagger}_{L} \end{matrix} \right) \left( \begin{matrix} b_{L}
+\\ b_{R} \end{matrix} \right) = m_{b}(b^{\dagger}_{R}b_{L} +
+b^{\dagger}_{L}b_{R})
 \end{equation}
 
 Remembering that the left- and right-handed components of the electroweak
 interaction transform differently shows that this mixture of right- and left-
 handed fields violates gauge invariance. This again forces us to conclude that
-$m_{e} = 0$, in contradiction to the observation that the electron does indeed
+$m_{b} = 0$, in contradiction to the observation that the bottom quark does indeed
 have mass. As mentioned in \Cref{sec:theory:bosons} the resolution to these
 mass mysteries lies in the Higgs mechanism discussed in \Cref{sec:theory:higgs}.
