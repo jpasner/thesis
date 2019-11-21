@@ -3,9 +3,9 @@
 In order to simulate Higgs boson events, the three leading production
 mechanisms at the LHC were considered, shown in \Cref{fig:higgs_production}:
 gluon-gluon fusion, vector boson fusion and Higgsstrahlung.  These three
-production modes represent 50\%, 30\% and 20\% of the total Higgs signal,
-respectively, before analysis cuts are applied.  In all samples the simulated
-Higgs boson is forced to decay to the $b\bar{b}$ final state.
+production modes represent approximately 88\%, 7\% and 4\% of the total Higgs
+signal, respectively, before analysis cuts are applied.  In all samples the
+simulated Higgs boson is forced to decay to the $b\bar{b}$ final state.
 
 The ggF $H$ + jet events were generated using the HJ+MiNLO~\cite{Hamilton2015}
 prescription, assuming a finite top quark mass, with the \textsc{Powheg-Box} 2
@@ -29,5 +29,6 @@ distribution functions~\cite{Pumplin:2002vw}.  Again the decay of $b$-hadrons
 is handled by \textsc{EvtGen}~\cite{LANGE2001152}. Unfortunately the
 \textsc{Pythia} $ZH$ process does not include the $gg \rightarrow ZH$
 contribution.  To account for this the cross section is corrected to the LHC
-Higgs cross section working group's (LHCHXSWG) recommendation
-\cite{MelladoGarcia:2150771}.
+Higgs cross section working group's (LHCHXSWG) recommended
+$\sigma_{\text{NLO+NLL}}^{\text{ggZH}}$ with NLO + Next to Leading Log (NLL)
+accuracy \cite{MelladoGarcia:2150771}.

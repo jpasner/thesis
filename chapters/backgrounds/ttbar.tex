@@ -48,7 +48,7 @@ extrapolation of the $k$-factor into the $\text{CR}_{\text{QCD}}$ and SR.
   \begin{feynman}
     % initial state particles
     \vertex (i1) {\(q\)};
-    \vertex [below=2cm of i1] (i2) {\(q\)};
+    \vertex [below=2cm of i1] (i2) {\(\bar{q}\)};
 
     % vertices
     \vertex [below right=1.cm and 1cm of i1] (a);
@@ -59,14 +59,14 @@ extrapolation of the $k$-factor into the $\text{CR}_{\text{QCD}}$ and SR.
     \vertex [below right=0.3cm and 0.5cm of b] (t2);
 
     \vertex [above right=0.7cm and 0.7cm of t1] (W1);
-    \vertex [blue, right=1.0cm of t1] (f1) {\(b\)};
+    \vertex [blue, right=1.0cm of t1] (f1) {\(\bar{b}\)};
 
     \vertex [blue, right=1.0cm of t2] (f2) {\(b\)};
     \vertex [below right=0.7cm and 0.7cm of t2] (W2);
 
-    \vertex [above right=0.1cm and .6cm of W1] (f3) {\(\mu\)};
-    \vertex [below right=0.1cm and .6cm of W1] (f4) {\(\nu_{\mu}\)};
-    \vertex [above right=0.1cm and .6cm of W2] (f5) {\(q\)};
+    \vertex [above right=0.1cm and .6cm of W1] (f3) {\(\bar{\nu}_{\mu}\)};
+    \vertex [below right=0.1cm and .6cm of W1] (f4) {\(\mu^{-}\)};
+    \vertex [above right=0.1cm and .6cm of W2] (f5) {\(\bar{q}\)};
     \vertex [below right=0.1cm and .6cm of W2] (f6) {\(q\)};
 
     \diagram* {
@@ -75,13 +75,13 @@ extrapolation of the $k$-factor into the $\text{CR}_{\text{QCD}}$ and SR.
 
       (a) -- [gluon, edge label'=\(g\)] (b),
 
-      (t1) -- [orange, fermion, edge label'=\(t\)] (b)
+      (t1) -- [orange, fermion, edge label'=\(\bar{t}\)] (b)
         -- [orange, fermion, edge label'=\(t\)] (t2),
 
       (f1) -- [blue, fermion] (t1)
-        -- [red, boson, edge label=\(W\)] (W1),
-      (f2) -- [blue, fermion] (t2)
-        -- [red, boson, edge label'=\(W\)] (W2),
+        -- [red, boson, edge label=\(W^{-}\)] (W1),
+      (f2) -- [blue, anti fermion] (t2)
+        -- [red, boson, edge label'=\(W^{+}\)] (W2),
 
       (f3) -- [fermion] (W1)
         -- [fermion] (f4),
@@ -97,7 +97,7 @@ extrapolation of the $k$-factor into the $\text{CR}_{\text{QCD}}$ and SR.
 \includegraphics[width=0.48\linewidth]{figures/backgrounds/ttbar_cartoon}
 }
 
-\caption{(a) Feynman diagram of $t\bar{t}$ decay to $b$-quarks and leptonic $W$-boson decays. (b) Cartoon depicting $t\bar{t}$ decay to $b$-quarks and leptonic $W$-boson decays in center of mass frame.}
+\caption{(a) Feynman diagram of semi-leptonic $t\bar{t}$ decay. (b) Cartoon depicting semi-leptonic $t\bar{t}$ decay to $b$-quarks in center of mass frame.}
 \label{sec:background:ttbar_depiction}
 
 \end{figure}
@@ -110,13 +110,12 @@ multijet and $t\bar{t}$ MC samples. This distribution shows the expected
 back-to-back topology of the $t\bar{t}$ system depicted in
 \Cref{sec:backgrounds:ttbar_cartoon} versus the multijet sample where the muons
 come from the signal candidate due to hadron decays in flight. Thus, a cut of
-$\Delta\phi(\text{muon} - \text{signal}) > \frac{2\pi}{3}$ was chosen to reduce
+$\Delta\phi(\text{muon} - \text{signal}) > \frac{2\pi}{3}$ was chosen\footnote{Note that
+while \Cref{sec:backgrounds:phi_study} indicates an optimal
+$\Delta\phi(\text{muon} - \text{signal})$ cut of 1.09956, $\frac{2\pi}{3}$ was
+chosen to reject as much multijet background as possible.} to reduce
 the QCD contribution by several orders of magnitude while only reducing the
-$t\bar{t}$ contribution by roughly a factor of three~\footnote{This is expected
-as the leptonic decay of $W$ is mostly agnostic to lepton flavor giving them
-roughly uniform branching fractions, $BR(W \rightarrow \mu \nu_{\mu}) / BR(W
-\rightarrow l \nu_l) = \frac{1}{3}$.  This is known as the universality of the
-weak interaction}.
+$t\bar{t}$ contribution by roughly a factor of five.
 
 The QCD contribution is further suppressed by a cut on the muon $\pT$.
 \Cref{sec:backgrounds:pt_study} compares the $\pT$ spectra for $t\bar{t}$ and
@@ -164,29 +163,31 @@ The pre- and post-fit distributions for the $\text{CR}_{t\bar{t}}$ are shown in
 \Cref{sec:background:ttbar_fit} with the pull distributions shown in
 \Cref{sec:background:ttbar_pulls}.  The JES and JMR systematics are constrained
 by information about the peak in $t\bar{t}$ which was not available in the
-dataset used to derive the recommendations. A $k$-factor of $0.84 \pm 0.11$ is
-found for $\text{CR}_{t\bar{t}}$, showing that the MC overestimates the
-$t\bar{t}$ yield as expected (see \Cref{sec:background:mismodeling}). This
-value is used to constrain the $t\bar{t}$ contribution in the final fit to the
-SR. The results for all three $t\bar{t}$ control regions are given in
-\Cref{table:ttbar_kfactors}.  All three regions are consistent with each other
-and the results of the dedicated boosted top quark study presented in reference
+dataset used to derive the recommendations\footnote{Note that the
+$\text{CR}_{t\bar{t}}$ and final fit are not simultaneous so these JES and JMR
+constraints do not affect the final fit.}. A systematic uncertainty dominated
+$k$-factor of $0.84 \pm 0.11$ is found for $\text{CR}_{t\bar{t}}$, showing that
+the MC overestimates the $t\bar{t}$ yield as expected (see
+\Cref{sec:background:mismodeling}). This value is used to constrain the
+$t\bar{t}$ contribution in the final fit to the SR. The results for all three
+$t\bar{t}$ control regions are given in \Cref{table:ttbar_kfactors}.  All three
+regions are consistent with each other and the results presented in reference
 \cite{ATLAS:2016jct}.
 
 \begin{table}
   \centering
   \caption{The \ttbar scale factors and their uncertainties from the three \ttbar
-control regions. The value for CRttbar is used in the Signal Region. NOTE:
-CRttbar2 fit failed due to low statistics but is almostly completely dominated
+control regions. The value for $\text{CR}_{t\bar{t}}$ is used in the Signal Region. NOTE:
+$\text{CR}_{t\bar{t}2}$ fit failed due to low statistics but is almostly completely dominated
 by ttbar in this region.  The value here is the simple ratio of number of events in ttbar
 vs. data, and the uncertainty is the $t\bar{t}$ statistical uncertainty.}
   \begin{tabular}{@{}lrr@{}}
     \toprule
     Region & scale factor & uncertainty \\
     \midrule
-    CRttbar0 & $0.87$ & $0.12$ \\
-    CRttbar  & $0.84$ & $0.11$ \\
-    CRttbar2 & $0.96$ & $0.21$ \\
+    $\text{CR}_{t\bar{t}0}$ & $0.87$ & $0.12$ \\
+    $\text{CR}_{t\bar{t}}$  & $0.84$ & $0.11$ \\
+    $\text{CR}_{t\bar{t}2}$ & $0.96$ & $0.21$ \\
     \bottomrule
   \end{tabular}
   \label{table:ttbar_kfactors}

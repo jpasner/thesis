@@ -15,13 +15,14 @@ jet mass for all MC templates and thus only affect the signal normalization.
 
 To account for the modeling uncertainties associated with the choice of MC
 generator, additional shape uncertainties are applied to the $V$ + jets and
-$t\bar{t}$ templates.  The systematic uncertainty is determined by taking the
-difference between the large-$R$ jet mass shapes from two different MC
-generators.  For $V$ + jets the nominal shape was generated using
-\textsc{Sherpa} 2.1.1 and then compared to the alternate shape generated with
-\textsc{Herwig}++ 2.7.  For $t\bar{t}$ the nominal shape was generated with
-\textsc{Powheg-Box} 2 and compared with the alternate shape generated with
-\textsc{Sherpa} 2.1.1.
+$t\bar{t}$ templates\footnote{Note that no dedicated uncertainty for Higgs
+shape was generated because the theory uncertainty is so large}.  The
+systematic uncertainty is determined by taking the difference between the
+large-$R$ jet mass shapes from two different MC generators.  For $V$ + jets the
+nominal shape was generated using \textsc{Sherpa} 2.1.1 and then compared to
+the alternate shape generated with \textsc{Herwig}++ 2.7.  For $t\bar{t}$ the
+nominal shape was generated with \textsc{Powheg-Box} 2 and compared with the
+alternate shape generated with \textsc{Sherpa} 2.1.1.
 
 The $t\bar{t}$ normalization in the SR is constrained by the $k$-factor derived
 from a fit to data in the $\text{CR}_{t\bar{t}}$ as discussed in
@@ -42,7 +43,9 @@ corrections to their differential cross sections \cite{Lindert:2017olm}. For
 Higgs boson production the dominant theoretical uncertainty is from ggF
 production which is taken to be $30\%$.  This is consistent with the cross
 section uncertainty calculated with the MiNLO procedure and includes the
-effects of the non-zero top-mass for Higgs bosons with $\pT > 400~\GeV$.  This
-same uncertainty is applied for the other production mechanisms for Higgs' with
-$\pT > 400~\GeV$.  The result is a total theory uncertainty on the Higgs boson
+effects of the non-zero top-mass for Higgs bosons with $\pT > 400~\GeV$
+\cite{Jones:2018hbb}.  If the finite top mass is implemented correctly the
+resulting uncertainty does not depend on $p_{T}^{H}$.  This same uncertainty is
+then applied for the other production mechanisms for Higgs' with $\pT >
+400~\GeV$.  The result is a total theory uncertainty on the Higgs boson
 production cross section of $30\%$.
