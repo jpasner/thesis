@@ -15,7 +15,7 @@ represented as
 
 \begin{equation} \label{eq:gsw:doublet} 
 \boldsymbol{\Psi}_{L} \rightarrow \boldsymbol{\Psi}_{L}^{'} = \exp \left(
-\underbrace{ ig^{'} \frac{Y_L}{2}
+\underbrace{ ig^{'} \frac{Y}{2}
 \zeta (x) }_{U(1)_Y} + \underbrace{ ig_{W} \boldsymbol{\alpha}(x) \cdot
 \text{\bf{T}} }_{SU(2)_L} \right) \boldsymbol{\Psi}_{L}.
 \end{equation}
@@ -24,7 +24,7 @@ For the right-handed singlet the $SU(2)_L$ transformation does not contribute,
 so the transformation is
 
 \begin{equation} \label{eq:gsw:singlet} 
-{\Psi_R} \rightarrow \Psi_R^{'} = \exp \left( \underbrace{ ig^{'} \frac{Y_R}{2}
+{\Psi_R} \rightarrow \Psi_R^{'} = \exp \left( \underbrace{ ig^{'} \frac{Y}{2}
 \zeta (x) }_{U(1)_Y} \right) \Psi_R.
 \end{equation}
 
@@ -40,22 +40,22 @@ standard derivative ($\partial_{\mu}$) with the covariant derivative
 \begin{align} 
 \label{eq:gsw:left} 
 D_\mu &= \partial_{\mu}
-- \underbrace{\frac{1}{2}ig^{'}B_{\mu}Y_{L}}_{U(1)_Y} -
+- \underbrace{\frac{1}{2}ig^{'}B_{\mu}Y}_{U(1)_Y} -
   \underbrace{\frac{1}{2}ig_{W}\bf{W}_\mu \cdot \boldsymbol{\tau}}_{SU(2)_L} \\
 \label{eq:gsw:right} 
-D_\mu &= \partial_{\mu}  - \underbrace{\frac{1}{2}ig^{'}B_{\mu}Y_{R}}_{U(1)_Y} 
+D_\mu &= \partial_{\mu}  - \underbrace{\frac{1}{2}ig^{'}B_{\mu}Y}_{U(1)_Y} 
 \end{align}
 
 This introduces two new gauge fields: the weak hypercharge field $B_\mu$ and
 the charged weak fields $\boldsymbol{W_\mu}$ as well as the associated coupling
-constants $g^{'}, g_{W}, Y_{L}, Y_{R}$ and the $SU(2)$ generators
-$\boldsymbol{\tau}$.  The transformation properties of these new fields are
-given by
+constants $g^{'}, g_{W}$, the hypercharge operator $Y$, and the $SU(2)$
+generators $\boldsymbol{\tau}$.  The transformation properties of these new
+fields are given by
 
 \begin{align}
 \label{eq:gsw:w_transform}
 \boldsymbol{W}_{\mu}(x) &\rightarrow \boldsymbol{W}_{\mu}^{'}(x) =
-\boldsymbol{W}_{\mu} + \partial_{\mu} \boldsymbol{\alpha}(x) +
+\boldsymbol{W}_{\mu} + \frac{1}{g_{W}}\partial_{\mu} \boldsymbol{\alpha}(x) +
 g_{W}\boldsymbol{W}_{\mu}(x) \times \boldsymbol{\alpha}(x)
 \\ 
 \label{eq:gsw:b_transform}
@@ -71,9 +71,9 @@ the free-particle Dirac equation gives
 
 \begin{equation} \label{eq:gsw:fermion_lagrangian}
 \mathcal{L} = i\boldsymbol{\bar{\Psi}}_{L}\gamma^{\mu} \left( \partial_{\mu}
-- \frac{1}{2}ig^{'}B_{\mu}Y_{L} - \frac{1}{2}ig_{W}\bf{W}_\mu \cdot
+- \frac{1}{2}ig^{'}B_{\mu}Y - \frac{1}{2}ig_{W}\bf{W}_\mu \cdot
   \boldsymbol{\tau} \right) \boldsymbol{\Psi}_{L} + i \bar{\Psi}_{R}\gamma^{\mu}
-\left(\partial_{\mu} - \frac{1}{2}ig^{'}B_{\mu}Y_{R} \right) \Psi_{R}
+\left(\partial_{\mu} - \frac{1}{2}ig^{'}B_{\mu}Y \right) \Psi_{R}
 \end{equation}
 
 Next the gauge field self-interaction and mass terms are constructed
@@ -90,18 +90,18 @@ to be
 
 \begin{align}
 \boldsymbol{F}^{\mu\nu}  &= \partial^{\mu}\boldsymbol{W}^{\nu} -
-\partial^{\nu}\boldsymbol{W}^{\mu} + g\boldsymbol{W}^{\mu} \times
+\partial^{\nu}\boldsymbol{W}^{\mu} + g_{W}\boldsymbol{W}^{\mu} \times
 \boldsymbol{W}^{\nu} \\
 B^{\mu\nu} &=  \partial^{\mu}\boldsymbol{B}^{\nu} -
 \partial^{\nu}\boldsymbol{B}^{\mu}
 \end{align}
 
-The field tensor terms in \Cref{eq:gsw:gauge_lagrangian} are invariant under
+The kinetic terms in \Cref{eq:gsw:gauge_lagrangian} are invariant under
 gauge transformations, but simply substituting \Cref{eq:gsw:w_transform} or
 \Cref{eq:gsw:b_transform} into the mass terms shows that these terms violate gauge
 invariance. This would imply that $M_{W} = 0$ and $M_{B} = 0$, in direct
 contradiction of the observed masses of the weak gauge bosons.  This issue
-arises again for fermion mass terms, as illustrated below for the bottom quark field
+arises again for fermion mass terms, as is evident below for the bottom quark field
 ($b$) expanded in its chiral basis.
 
 \begin{equation}
