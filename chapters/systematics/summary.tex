@@ -3,7 +3,7 @@
 The signal strength ($\mu_{s}$) is defined as the scale factor which multiplies
 the cross section times branching fraction that is predicted by the signal
 hypothesis being considered.  Thus, the final fit, discussed in
-\Cref{chap:fit}, of our theory-based MC to the SR data provides a direct
+\Cref{chap:fit}, of the theory-based MC to the SR data provides a direct
 measurement of this signal strength and therefore a direct measurement of the
 model's prediction given the data. However, to understand the significance and
 error on this result the statistical and systematic uncertainties must be taken
@@ -15,10 +15,12 @@ is made.  First, the total uncertainty on $\mu_{s}$ ($\sigma_{\text{tot}}$) is
 determined by running the fit with all sources of error (systematic and
 statistical) allowed to float within their defined constraints.  By definition:
 
-$$ \sigma_{\text{tot}}^{2} \; = {\underbrace{\sum_{i}^{n} \sigma_{i}^{2}}_{\substack{\text{Contributions from} \\ n \text{systematics}}}} + {\underbrace{\vphantom{\sum_{i}^{n}} \sigma_{\text{stat.}}^{2}}_{\substack{\text{Contribution from} \\ \text{statistics}}}}$$
+\begin{equation}
+ \sigma_{\text{tot}}^{2} \; = {\underbrace{\sum_{i}^{n} \sigma_{i}^{2}}_{\substack{\text{Contributions from} \\ n \text{systematics}}}} + {\underbrace{\vphantom{\sum_{i}^{n}} \sigma_{\text{stat.}}^{2}}_{\substack{\text{Contribution from} \\ \text{statistics}}}}
+\end{equation}
 
 Next, the fit is re-run with all systematics fixed to their pre-fit values
-except for the systematic being investigated for its impact. This gives us
+except for the systematic being investigated for its impact. This gives
 $\sigma_{i}$, the uncertainty on $\mu_{s}$ when only considering the effect of
 the $i^{th}$ nuisance parameter. Note that the statistical uncertainty
 ($\sigma_{\text{stat}}$) is still included as it is inherent to the fitting
@@ -28,7 +30,9 @@ Finally, the difference in quadrature between $\sigma_{\text{tot}}$ and
 $\sigma_{i}$ is found and divided by the measured $\mu_{s}$ value found in the
 final fit which includes all sources of uncertainty. 
 
-$$ \frac{\sqrt{\Delta \sigma_i^2}}{\mu_{s}} = \frac{\sqrt{\sigma_{\text{tot}}^2 - \sigma_i^2}}{\mu_{s}} $$
+\begin{equation} 
+\frac{\sqrt{\Delta \sigma_i^2}}{\mu_{s}} = \frac{\sqrt{\sigma_{\text{tot}}^2 - \sigma_i^2}}{\mu_{s}}
+\end{equation}
 
 This ad hoc comparison represents the impact of the $i^{th}$ nuisance parameter
 on the total uncertainty of the measurement of $\mu_{s}$. A summary of the

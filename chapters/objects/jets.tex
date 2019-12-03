@@ -28,13 +28,14 @@ chosen collection of objects:
   \item Repeat until all objects have been clustered into jets and the object collection is empty.
 \end{enumerate}
 
-In the above iterative process the choice of parameter P corresponds to three choices of jet clustering algorithm:
+In the above iterative process the choice of parameter $P$ corresponds to three
+choices of jet clustering algorithm:
 
 \begin{enumerate}
 
   \item[$P = 1$] This defines the $k_{t}$ algorithm \cite{Catani:1993hr}.  Here the algorithm prioritizes the clustering of soft objects first and then gradually moves on to harder objects.  This has the effect of creating irregular shaped jets that evolve from the ``outside-in" as seen in \Cref{sec:objects:kt}
   \item[$P = 0$] This defines the Cambridge-Aachen algorithm \cite{Dokshitzer:1997in}.  In this case the effect of the energy of the jet is ignored, and instead the jets are clustered based on their geometric distance only.  Again this results in irregular shaped jets as seen in \Cref{sec:objects:Cam_Aachen}
-  \item[$P = -1$] This defines the anti-$k_{t}$ algorithm \cite{Cacciari:2008gp}.  This algorithm prioritizes the clustering of hard objects first and then clusters the surrounding softer objects.  This results in mostly cone-like jets which center on the hardest object(s) as seen in \Cref{sec:objects:anti_kt}.
+  \item[$P = -1$] This defines the anti-$k_{t}$ algorithm which was used in this analysis \cite{Cacciari:2008gp}.  This algorithm prioritizes the clustering of hard objects first and then clusters the surrounding softer objects.  This results in mostly cone-like jets which center on the hardest object(s) as seen in \Cref{sec:objects:anti_kt}.
 \end{enumerate}
 
 \begin{figure}[!htbp]
@@ -100,13 +101,14 @@ and $R_{\text{max}}=0.4$, in order to maximize the truth subjet double
 $b$-tagging efficiency \cite{ATL-PHYS-PUB-2017-010}, as seen in
 \Cref{vr_parameters}.  In \Cref{sec:objects:average_deltaR} the VR Track Jets
 properly describe the truth $\Delta R$ distribution for $b$-hadrons while the
-$R=0.2$ fixed track jets deviate for higher Higgs jet $\pT$.  Furthermore, in
-\Cref{sec:objects:leading_vr} and \Cref{sec:objects:subleading_vr} the VR track
-jets do an equally good or better job of identifying the subjets associated
-with $b$-hadrons when compared to the $R=0.2$ fixed radius track jets.  This
-ability to give a flat efficiency across the entire Higgs $\pT$ spectrum while
-accurately describing the topology makes these VR track jets the perfect choice
-for this analysis.
+$R=0.2$ fixed track jets deviate for higher Higgs jet $\pT$. This deviation is
+caused by the subjets being so collimated that they begin to overlap.
+Furthermore, in \Cref{sec:objects:leading_vr} and
+\Cref{sec:objects:subleading_vr} the VR track jets do an equally good or better
+job of identifying the subjets associated with $b$-hadrons when compared to the
+$R=0.2$ fixed radius track jets.  This ability to give a flat efficiency across
+the entire Higgs $\pT$ spectrum while accurately describing the topology makes
+these VR track jets the perfect choice for this analysis.
 
 \begin{figure}[!htbp]
   \centering
