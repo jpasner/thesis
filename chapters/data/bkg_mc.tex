@@ -13,7 +13,49 @@ generator~\cite{Sjostrand:2007gs} with the A14 tune and the NNPDF23 LO
 PDF~\cite{Carrazza:2013axa} using \textsc{EvtGen} to decay the resulting
 $b$-hadrons~\cite{LANGE2001152}.  To maintain a constant statistical precision
 over a large momentum range, the weighted events were generated with a flat \pT
-spectrum.
+spectrum. The QCD samples used to develop the background model are summarized
+in \Cref{table:data:QCD}.
+
+\begin{sidewaystable}
+  \centerline{
+  \centering
+  {\tiny
+  \begin{tabular}{l|c|cccc}
+    \textbf{Dataset} & \textbf{Campaign} & \textbf{xsec (pb)} & \shortstack{\textbf{Filter} \\ \textbf{Efficiency}} & \shortstack{\textbf{Events} \\ \textbf{Generated}} & \shortstack{\textbf{Effective} \\  \textbf{Luminosity (\ifb)}} \\
+    \hline
+    \hline
+    361020.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ0W & MC16a & 78420e+06 & 0.9755 & 16000000 & 2.0915e-07 \\
+    361021.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ1W & MC16a & 78420e+06 & 0.00067143 & 15998000 & 7.5762e-05 \\
+    361022.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ2W & MC16a & 24332e+05 & 0.00033423 & 15989500 & 0.0053309 \\
+    361023.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ3W & MC16a & 26454e+03 & 0.00032016 & 15879500 & 0.44989 \\
+    361024.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ4W & MC16a & 25463e+01 & 0.00053138 & 15925500 & 29.858 \\
+    361025.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ5W & MC16a & 4553.5 & 0.00092409 & 15993500 & 1103.2 \\
+    361026.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ6W & MC16a & 257.53 & 0.00094242 & 17834000 & 25916 \\
+    361027.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ7W & MC16a & 16.215 & 0.0003928 & 15983000 & 35888 \\
+    361028.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ8W & MC16a & 0.62503 & 0.010176 & 15999000 & 25154e+02 \\
+    361029.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ9W & MC16a & 0.019639 & 0.012076 & 13995500 & 59013e+03 \\
+    361030.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ10W & MC16a & 0.0011962 & 0.0059087 & 13985000 & 19786e+05 \\
+    361031.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ11W & MC16a & 4.2259e-05 & 0.0026761 & 15948000 & 1.4102e+11 \\
+    361032.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ12W & MC16a & 1.0367e-06 & 0.00042592 & 15995600 & 3.6226e+13 \\
+    \hline
+    361020.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ0W & MC16d & 78420e+06 & 0.9755 & 15987000 & 2.0898e-07 \\
+    361021.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ1W & MC16d & 78420e+06 & 0.00067143 & 15997000 & 7.5728e-05 \\
+    361022.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ2W & MC16d & 24332e+05 & 0.00033423 & 15981000 & 0.005331 \\
+    361023.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ3W & MC16d & 26454e+03 & 0.00032016 & 15878500 & 0.45043 \\
+    361024.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ4W & MC16d & 25463e+01 & 0.00053138 & 15974500 & 29.968 \\
+    361025.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ5W & MC16d & 4553.5 & 0.00092409 & 15991500 & 1103.6 \\
+    361026.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ6W & MC16d & 257.53 & 0.00094242 & 17880400 & 25979 \\
+    361027.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ7W & MC16d & 16.215 & 0.0003928 & 15116500 & 33886e+01 \\
+    361028.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ8W & MC16d & 0.62503 & 0.010176 & 15987000 & 25136e+02 \\
+    361029.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ9W & MC16d & 0.019639 & 0.012076 & 14511500 & 61189+03 \\
+    361030.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ10W & MC16d & 0.0011962 & 0.0059087 & 15988000 & 22620e+05 \\
+    361031.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ11W & MC16d & 4.2259e-05 & 0.0026761 & 15993000 & 1.4142e+11 \\
+    361032.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ12W & MC16d & 1.0367e-06 & 0.00042592 & 15640000 & 3.5421e+13 \\
+  \end{tabular}}
+  }
+\caption{List of datasets used for QCD Monte Carlo \cite{Krizka:2310645}.}
+\label{table:data:QCD}
+\end{sidewaystable}
 
 Hadronically decaying $W$ and $Z$ events were produced with a maximum of four
 additional partons at leading order (LO).  This was accomplished with the
@@ -22,13 +64,73 @@ distribution functions~\cite{Lai:2010vv}.  For leptonically decaying $W$ and
 $Z$ events samples were produced with a maximum of two additional partons at LO
 and a maximum of two at next-to-leading order (NLO).  Next the LO hadronic $W$
 and $Z$ cross sections were corrected by applying multiplicative ``$k$-factors"
-derived from the corresponding NLO leptonic $W$ and $Z$ samples.  These corrections
-were 1.28 for the $W$+jets and 1.37 for the $Z$+jets \cite{Aaboud:2018zba}. An
-alternate sample of hadronically decaying $W$ and $Z$ events was produced for
-cross checks using the \text{Herwig}++2.7.1 generator~\cite{Bahr:2008pv} with
-the UEEE4 tune~\cite{Buckley:2018wdv} and the CTEQ6L1~\cite{Pumplin:2002vw}.
-Unlike the \textsc{Sherpa} samples these \textsc{Herwig} samples only contained
-one additional parton in the matrix element.
+derived from the corresponding NLO leptonic $W$ and $Z$ samples.  These
+corrections were 1.28 for the $W$+jets and 1.37 for the $Z$+jets
+\cite{Aaboud:2018zba}. An alternate sample of hadronically decaying $W$ and $Z$
+events was produced for cross checks using the \text{Herwig}++2.7.1
+generator~\cite{Bahr:2008pv} with the UEEE4 tune~\cite{Buckley:2018wdv} and the
+CTEQ6L1~\cite{Pumplin:2002vw}.  Unlike the \textsc{Sherpa} samples these
+\textsc{Herwig} samples only contained one additional parton in the matrix
+element. The hadronic $W$+jets and $Z$+jets samples used in this
+analysis~\footnote{Note that the leptonically decaying $W$ and $Z$
+samples were only used to derive correction factors and thus are not
+presented.} are summarized in \Cref{table:data:V_hadronic}.
+
+\begin{sidewaystable}
+  \centerline{
+  \centering
+  {\tiny
+  \begin{tabular}{l|c|cccc}
+    \textbf{Dataset} & \textbf{Campaign} & \textbf{xsec (pb)} & \shortstack{\textbf{Filter} \\ \textbf{Efficiency}} & \shortstack{\textbf{Events} \\ \textbf{Generated}} & \shortstack{\textbf{Effective} \\  \textbf{Luminosity (\ifb)}} \\
+    \hline
+    \hline
+    304307.Sherpa\_CT10\_Wqq\_Pt280\_500 & MC16a & 29.487 & 1.0 & 150000 & 4.8429 \\
+    304308.Sherpa\_CT10\_Wqq\_Pt500\_1000 & MC16a & 2.162 & 1.0 & 30000 & 12.646 \\
+    304309.Sherpa\_CT10\_Wqq\_Pt1000 & MC16a & 0.046218 & 1.0 & 15000 & 273.61 \\
+    \hline
+    304307.Sherpa\_CT10\_Wqq\_Pt280\_500 & MC16d & 29.481 & 1.0 & 140000 & 4.5533 \\
+    304308.Sherpa\_CT10\_Wqq\_Pt500\_1000 & MC16d & 2.1642 & 1.0 & 30000 & 13.431 \\
+    304309.Sherpa\_CT10\_Wqq\_Pt1000 & MC16d & 0.046152 & 1.0 & 15000 & 287.55 \\
+    \hline
+    \hline
+    304707.Sherpa\_CT10\_Zqq\_Pt280\_500 & MC16a & 12.623 & 1.0 & 75000 & 5.8079 \\
+    304708.Sherpa\_CT10\_Zqq\_Pt500\_1000 & MC16a & 0.90771 & 1.0 & 15000 & 16.090 \\
+    304709.Sherpa\_CT10\_Zqq\_Pt1000 & MC16a & 0.018344 & 1.0 & 10000 & 251.86 \\
+    \hline
+    304707.Sherpa\_CT10\_Zqq\_Pt280\_500 & MC16d & 12.644 & 1.0 & 75000 & 5.6273 \\
+    304708.Sherpa\_CT10\_Zqq\_Pt500\_1000 & MC16d & 0.90886 & 1.0 & 15000 & 16.278 \\
+    304709.Sherpa\_CT10\_Zqq\_Pt1000 & MC16d & 0.018264 & 1.0 & 10000 & 524.45 \\
+    \hline
+    \hline
+    304673.Herwigpp\_UEEE5CTEQ6L1\_Wjhadronic\_280\_500 & MC16a & 13.491 & 1.0 & 150000 & 11.119 \\
+    304674.Herwigpp\_UEEE5CTEQ6L1\_Wjhadronic\_500\_700 & MC16a & 0.91592 & 1.0 & 39000 & 42.580 \\
+    304675.Herwigpp\_UEEE5CTEQ6L1\_Wjhadronic\_700\_1000 & MC16a & 0.17413 & 1.0 & 30000 & 172.29 \\
+    304676.Herwigpp\_UEEE5CTEQ6L1\_Wjhadronic\_1000\_1400 & MC16a & 0.021936 & 1.0 & 30000 & 1367.6 \\
+    304677.Herwigpp\_UEEE5CTEQ6L1\_Wjhadronic\_1400 & MC16a & 0.0022502 & 1.0 & 20000 & 8888.1 \\
+    \hline
+    304673.Herwigpp\_UEEE5CTEQ6L1\_Wjhadronic\_280\_500 & MC16d & 13.491 & 1.0 & 190000 & 14.083 \\
+    304674.Herwigpp\_UEEE5CTEQ6L1\_Wjhadronic\_500\_700 & MC16d & 0.91592 & 1.0 & 50000 & 54.590 \\
+    304675.Herwigpp\_UEEE5CTEQ6L1\_Wjhadronic\_700\_1000 & MC16d & 0.17413 & 1.0 & 40000 & 229.71 \\
+    304676.Herwigpp\_UEEE5CTEQ6L1\_Wjhadronic\_1000\_1400 & MC16d & 0.021936 & 1.0 & 40000 & 1823.5 \\
+    304677.Herwigpp\_UEEE5CTEQ6L1\_Wjhadronic\_1400 & MC16d & 0.0022502 & 1.0 & 30000 & 13332 \\
+    \hline
+    \hline
+    304678.Herwigpp\_UEEE5CTEQ6L1\_Zjhadronic\_280\_500 & MC16a & 5.4672 & 1.0 & 75000 & 13.718 \\
+    304679.Herwigpp\_UEEE5CTEQ6L1\_Zjhadronic\_500\_700 & MC16a & 0.37032 & 1.0 & 20000 & 54.007 \\
+    304680.Herwigpp\_UEEE5CTEQ6L1\_Zjhadronic\_700\_1000 & MC16a & 0.070961 & 1.0 & 15000 & 211.38 \\
+    304681.Herwigpp\_UEEE5CTEQ6L1\_Zjhadronic\_1000\_1400 & MC16a & 0.0087931 & 1.0 & 15000 & 1705.9 \\
+    304682.Herwigpp\_UEEE5CTEQ6L1\_Zjhadronic\_1400 & MC16a & 0.00089549 & 1.0 & 10000 & 11167 \\
+    \hline
+    304678.Herwigpp\_UEEE5CTEQ6L1\_Zjhadronic\_280\_500 & MC16d & 5.4672 & 1.0 & 100000 & 18.291 \\
+    304679.Herwigpp\_UEEE5CTEQ6L1\_Zjhadronic\_500\_700 & MC16d & 0.37032 & 1.0 & 30000 & 81.011 \\
+    304680.Herwigpp\_UEEE5CTEQ6L1\_Zjhadronic\_700\_1000 & MC16d & 0.070961 & 1.0 & 20000 & 281.84 \\
+    304681.Herwigpp\_UEEE5CTEQ6L1\_Zjhadronic\_1000\_1400 & MC16d & 0.0087931 & 1.0 & 20000 & 2274.5 \\
+    304682.Herwigpp\_UEEE5CTEQ6L1\_Zjhadronic\_1400 & MC16d & 0.00089549 & 1.0 & 20000 & 22334 \\
+  \end{tabular}}
+  }
+\caption{List of datasets used for hadronically decaying $W$+jets and $Z$+jets Monte Carlo \cite{Krizka:2310645}.}
+\label{table:data:V_hadronic}
+\end{sidewaystable}
 
 Our $t\bar{t}$ samples were generated using \textsc{Powheg-Box}
 2~\cite{Campbell2012} and the NNPDF30 NLO parton distribution
@@ -41,12 +143,68 @@ into three categories; all-hadronic, semi-leptonic, all-leptonic. Additional
 $t\bar{t}$ events were generated with the \textsc{Sherpa} 2.2.1
 generator~\cite{Gleisberg:2008ta} using the NNPDF30 NNLO parton distribution
 functions~\cite{Ball:2014uwa}.  This second sample was used as a cross check of
-the main samples generated with \textsc{Powheg-Box} 2 + \textsc{Pythia} 8.
+the main samples generated with \textsc{Powheg-Box} 2 + \textsc{Pythia} 8. The
+$t\bar{t}$ samples used in this analysis are summarized in
+\Cref{table:data:ttbar}.
+
+\begin{sidewaystable}
+  \centerline{
+  \centering
+  {\tiny
+  \begin{tabular}{l|c|cccc}
+    \textbf{Dataset} & \textbf{Campaign} & \textbf{xsec (pb)} & \shortstack{\textbf{Filter} \\ \textbf{Efficiency}} & \shortstack{\textbf{Events} \\ \textbf{Generated}} & \shortstack{\textbf{Effective} \\  \textbf{Luminosity (\ifb)}} \\
+    \hline
+    \hline
+    410470.PhPy8EG\_A14\_ttbar\_hdamp258p75\_nonallhad & MC16a & 729.77 & 0.54384 & 60413000 & 148.78 \\
+    410471.PhPy8EG\_A14\_ttbar\_hdamp258p75\_allhad & MC16a & 729.78 & 0.45627 & 19994000 & 59.101 \\
+    410472.PhPy8EG\_A14\_ttbar\_hdamp258p75\_dil & MC16a & 729.77 & 0.10546 & 39974000 & 511.18 \\
+    \hline
+    410470.PhPy8EG\_A14\_ttbar\_hdamp258p75\_nonallhad & MC16d & 729.77 & 0.54384 & 74486000 & 184.71 \\
+    410471.PhPy8EG\_A14\_ttbar\_hdamp258p75\_allhad & MC16d & 729.78 & 0.45627 & 24714000 & 73.047 \\
+    410472.PhPy8EG\_A14\_ttbar\_hdamp258p75\_dil & MC16d & 729.77 & 0.10546 & 44876000 & 573.88 \\
+    \hline
+    \hline
+    410249.Sherpa\_221\_NNPDF30NNLO\_ttbar\_AllHadronic\_MEPS\_NLO & MC16a & 330.54 & 1.0 & 9993000 & 4.0608 \\
+    410250.Sherpa\_221\_NNPDF30NNLO\_ttbar\_SingleLeptonP\_MEPS\_NLO & MC16a & 158.76 & 1.0 & 14987000 & 8.9811 \\
+    410251.Sherpa\_221\_NNPDF30NNLO\_ttbar\_SingleLeptonM\_MEPS\_NLO & MC16a & 158.97 & 1.0 & 14991000 & 5.0114 \\
+    410252.Sherpa\_221\_NNPDF30NNLO\_ttbar\_dilepton\_MEPS\_NLO & MC16a & 76.277 & 1.0 & 9995000 & 1.2000 \\
+    \hline
+    410249.Sherpa\_221\_NNPDF30NNLO\_ttbar\_AllHadronic\_MEPS\_NLO & MC16d & 330.44 & 1.0 & 9988000 & 2.6319 \\
+    410250.Sherpa\_221\_NNPDF30NNLO\_ttbar\_SingleLeptonP\_MEPS\_NLO & MC16d & 158.74 & 1.0 & 14979000 & 15.336 \\
+    410251.Sherpa\_221\_NNPDF30NNLO\_ttbar\_SingleLeptonM\_MEPS\_NLO & MC16d & 159.01 & 1.0 & 14986000 & 12.569 \\
+    410252.Sherpa\_221\_NNPDF30NNLO\_ttbar\_dilepton\_MEPS\_NLO & MC16d & 76.09 & 1.0 & 9983000 & 0.48186 \\
+  \end{tabular}}
+  }
+\caption{List of datasets used for $t\bar{t}$ Monte Carlo \cite{Krizka:2310645}.}
+\label{table:data:ttbar}
+\end{sidewaystable}
 
 Single-top samples, containing a single top/anti-top quark and a
-$W^{-}$/$W^{+}$, were generated with \textsc{Powheg-Box}
-2~\cite{Campbell2012} with the NNPDF30 parton distribution
-functions~\cite{Lai:2010vv}. This process was showered using \textsc{Pythia}
-8.230~\cite{Sjostrand:2014zea} configured with the A14 tune and the NNPDF23
-parton distribution functions~\cite{Carrazza:2013axa} with all resulting
-$b$-hadrons decayed via \textsc{EvtGen}~\cite{LANGE2001152}.
+$W^{-}$/$W^{+}$, were generated with \textsc{Powheg-Box} 2~\cite{Campbell2012}
+with the NNPDF30 parton distribution functions~\cite{Lai:2010vv}. This process
+was showered using \textsc{Pythia} 8.230~\cite{Sjostrand:2014zea} configured
+with the A14 tune and the NNPDF23 parton distribution
+functions~\cite{Carrazza:2013axa} with all resulting $b$-hadrons decayed via
+\textsc{EvtGen}~\cite{LANGE2001152}. The single-top samples used in this
+analysis are summarized in \Cref{table:data:single_top}.
+
+\begin{sidewaystable}
+  \centerline{
+  \centering
+  {\tiny
+  \begin{tabular}{l|c|cccc}
+    \textbf{Dataset} & \textbf{Campaign} & \textbf{xsec (pb)} & \shortstack{\textbf{Filter} \\ \textbf{Efficiency}} & \shortstack{\textbf{Events} \\ \textbf{Generated}} & \shortstack{\textbf{Effective} \\  \textbf{Luminosity (\ifb)}} \\
+    \hline
+    \hline
+    410646.PowhegPythia8EvtGen\_A14\_Wt\_DR\_inclusive\_top & MC16a & 37.936 & 1.0 & 4996000 & 130.45 \\
+    410647.PowhegPythia8EvtGen\_A14\_Wt\_DR\_inclusive\_antitop & MC16a & 37.905 & 1.0 & 4999000 & 130.65 \\
+    \hline
+    410646.PowhegPythia8EvtGen\_A14\_Wt\_DR\_inclusive\_top & MC16d & 37.936 & 1.0 & 6243000 & 162.99 \\
+    410647.PowhegPythia8EvtGen\_A14\_Wt\_DR\_inclusive\_antitop & MC16d & 37.905 & 1.0 & 6240000 & 163.10 \\
+  \end{tabular}}
+  }
+\caption{List of datasets used for single-top Monte Carlo \cite{Krizka:2310645}.}
+\label{table:data:single_top}
+\end{sidewaystable}
+
+

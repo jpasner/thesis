@@ -6,7 +6,7 @@ gluon-gluon fusion, vector boson fusion and Higgsstrahlung.  These three
 production modes represent approximately 88\%, 7\% and 4\% of the total Higgs
 signal, respectively, before analysis cuts are applied.  In all samples the
 simulated Higgs boson is forced to decay to the $b\bar{b}$ final state.
-
+ 
 The ggF $H$ + jet events were generated using the HJ+MiNLO~\cite{Hamilton2015}
 prescription, assuming a finite top quark mass, with the \textsc{Powheg-Box} 2
 generator~\cite{Campbell2012} and the NNPDF30 NNLO parton distribution
@@ -14,7 +14,9 @@ functions~\cite{Hamilton:2012rf}.  After generation the events were showered
 using \textsc{Pythia} 8.212~\cite{Sjostrand:2014zea} with the AZNLO tune and
 the CTEQ6L1 parton distribution functions~\cite{Pumplin:2002vw}. Any
 $b$-hadrons produced during this process were decayed using
-\textsc{EvtGen}~\cite{LANGE2001152}.
+\textsc{EvtGen}~\cite{LANGE2001152}. During generation a parton level filter of
+$k_{T} > 200~\GeV$ was used to select high momentum events.  This filtering is
+reflected in the cross section in \Cref{table:data:signal}.
 
 The VBF $H$ + jet events were also generated using the \textsc{Powheg-Box}
 generator~\cite{Nason:2009ai} with the NNPDF30 NLO parton distribution
@@ -22,6 +24,9 @@ functions~\cite{Hamilton:2012rf}. Again the showering was performed with
 \textsc{Pythia} 8.212~\cite{Sjostrand:2014zea} using the AZNLO tune and the
 CTEQ6L1 parton distribution functions~\cite{Pumplin:2002vw}.  The decay of
 $b$-hadrons was again performed using \textsc{EvtGen}~\cite{LANGE2001152}.
+During generation the produced Higgs boson was required to have a $p_{T} >
+250~\GeV$.  This filtering is reflected in the filtering efficiency in
+\Cref{table:data:signal}.
 
 Higgsstrahlung events were generated using the \textsc{Pythia} 8.212
 generator~\cite{Sjostrand:2014zea}, the AZNLO tune and the CTEQ6L1 parton
@@ -31,4 +36,31 @@ is handled by \textsc{EvtGen}~\cite{LANGE2001152}. Unfortunately the
 contribution.  To account for this the cross section is corrected to the LHC
 Higgs cross section working group's (LHCHXSWG) recommended
 $\sigma_{\text{NLO+NLL}}^{\text{ggZH}}$ with NLO + Next to Leading Log (NLL)
-accuracy \cite{MelladoGarcia:2150771}.
+accuracy \cite{MelladoGarcia:2150771}. During generation a filter of $p_{T} >
+350~\GeV$ was used to select for high momentum events. This
+filtering is reflected in the filtering efficiency in \Cref{table:data:signal}.
+
+\begin{sidewaystable}
+  \centerline{
+  \centering
+  {\tiny
+  \begin{tabular}{l|c|cccc}
+    \textbf{Dataset} & \textbf{Campaign} & \textbf{xsec (pb)} & \shortstack{\textbf{Filter} \\ \textbf{Efficiency}} & \shortstack{\textbf{Events} \\ \textbf{Generated}} & \shortstack{\textbf{Effective} \\  \textbf{Luminosity (\ifb)}} \\
+    \hline
+    \hline
+    309450.PowhegPy8EG\_NNLOPS\_nnlo\_30\_ggH125\_bb\_kt200 & MC16a & 0.4763 & 1.0 & 400000 & 839.1 \\
+    345931.PowhegPy8EG\_NNPDF30\_AZNLOCTEQ6L1\_VBFH125\_bb & MC16a & 3.7296 & 0.026877 & 499500 & 4794 \\
+    309451.Pythia8EvtGen\_A14NNPDF23LO\_WH125\_bb\_fj350 & MC16a & 0.63487 & 0.01306 & 100000 & 12061 \\
+    309452.Pythia8EvtGen\_A14NNPDF23LO\_ZH125\_bb\_fj350 & MC16a & 0.34656 & 0.013036 & 100000 & 22135 \\
+    \hline
+    309450.PowhegPy8EG\_NNLOPS\_nnlo\_30\_ggH125\_bb\_kt200 & MC16d & 0.4763 & 1.0 & 499000 & 1047 \\
+    345931.PowhegPy8EG\_NNPDF30\_AZNLOCTEQ6L1\_VBFH125\_bb & MC16d & 3.7296 & 0.026877 & 650000 & 6238 \\
+    309451.Pythia8EvtGen\_A14NNPDF23LO\_WH125\_bb\_fj350 & MC16d & 0.63487 & 0.01306 & 130000 & 15679 \\
+    309452.Pythia8EvtGen\_A14NNPDF23LO\_ZH125\_bb\_fj350 & MC16d & 0.34656 & 0.013036 & 130000 & 28775 \\
+  \end{tabular}}
+  }
+\caption{List of datasets used for Higgs boson Monte Carlo \cite{Krizka:2310645}.}
+\label{table:data:signal}
+\end{sidewaystable}
+
+
