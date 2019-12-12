@@ -143,8 +143,21 @@ and $VV$ events. The above $\text{CR}_{t\bar{t}}$ selections are summarized visu
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=1.0\linewidth]{figures/backgrounds/ttbar_selection}
-\caption{Diagram of the $\text{CR}_{t\bar{t}}$ selection criteria \cite {Feickert:2690521}.}
+%\includegraphics[width=1.0\linewidth]{figures/backgrounds/ttbar_selection}
+\resizebox{\linewidth}{!}{
+\begin{tikzpicture}[thick, node distance=2cm]
+ \node (semi-leptonic) [selection] {$\mu$ only\\semi-leptonic $t\bar{t}$};
+ \node (b-tag) [selection, right of=semi-leptonic, node distance=4.5cm] {Signal jet: \\at least 1 tight $b$-tag\\VR track-jet};
+ \node (muon) [selection, right of=b-tag, node distance=4.5cm, fill=green!30] {muon:\\$p_{T} > 40~\mathrm{GeV}$ $\Delta\phi\left(\mu, \mathrm{signal}\right) > 2\pi/3$};
+ \node (Wjets) [selection, right of=muon, node distance=4.5cm, fill=green!30] {large-$R$ jet:\\1 tight $b$-tagged VR track-jet\\$\Delta R\left(\mu, \mathrm{jet}\right) < 1.5$};
+ \node (hemisphere) [hemisphere, above right of=muon, node distance=2.6cm, fill=green!30] {Opposite hemisphere};
+
+ \draw [arrow] (semi-leptonic) -- (b-tag);
+ \draw [arrow] (b-tag) -- (muon);
+ \draw [arrow] (muon) -- (Wjets);
+\end{tikzpicture}
+}
+\caption{Diagram of the $\text{CR}_{t\bar{t}}$ selection criteria.}
 \label{sec:background:ttbar_selection_diagram}
 \end{figure}
 
