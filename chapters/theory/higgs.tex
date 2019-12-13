@@ -33,11 +33,42 @@ electroweak gauge symmetry $SU(2)_L \times U(1)_Y$.  The definition is
 Here the $\mu^{2} < 0$ and $\lambda > 0$ are constrained such that the
 potential forms a ring stable minima.  The shape of this potential is shown in
 \Cref{fig:higgs_potential} and is often described as the ``Mexican-hat" or
-"wine-bottle" potential. 
+``wine-bottle" potential. 
 
 \begin{figure}[!h]
   \begin{center}
-    \includegraphics[width=0.4\linewidth]{figures/theory/higgs_potential.png}
+\resizebox{0.4\linewidth}{!}{
+\begin{tikzpicture}
+        \begin{axis}[
+            hide axis,
+            %axis lines=middle,
+%            axis on top,
+%            axis line style={blue,dashed,thick},
+%            ymin=-2,ymax=2,
+%            xmin=-2,xmax=2,
+%            zmin=-2,zmax=2,
+            samples=30,
+            domain=0:360,
+            y domain=0:1.25,clip=false
+        ]
+        \addplot3 [surf, shader=flat, draw=black, fill=white, z buffer=sort]
+           ({sin(x)*y}, {cos(x)*y}, {(y^2-1)^2});
+        \draw[blue,thick,dashed] (axis cs:0,0,0) -- (axis cs:1,0,0)
+                    node[below,font=\footnotesize]{$\phi_{\text{IM}}$};
+        \draw[blue,thick,-stealth] (axis cs:1,0,0) -- (axis cs:1.3,0,0)
+                    node[above,font=\footnotesize]{$\hat{y}$};
+        \draw[blue,thick,dashed] (axis cs:0,0,0) -- (axis cs:0,-1,0)
+                    node[left=2mm,font=\footnotesize]{$\phi_{\text{RE}}$};
+        \draw[blue,thick,-stealth] (axis cs:0,-1,0) -- (axis cs:0,-1.5,0)
+                    node[right=1mm,font=\footnotesize]{$\hat{x}$};
+        \draw[blue,thick,dashed] (axis cs:0,0,0) -- (axis cs:0,0,1)
+                    %node[left=2mm,font=\footnotesize]{$\phi_{\text{RE}}$}
+                    ;
+        \draw[blue,thick,-stealth] (axis cs:0,0,1) -- (axis cs:0,0,1.3)
+                    node[right,font=\footnotesize]{$\hat{z}$};
+        \end{axis}
+    \end{tikzpicture}
+}
     \caption{ A lower-dimensionality representation of the shape of the Higgs
 potential.  The central peak represents a rotationally symmetric
 unstable state, while the trough represents the infinite number of minima that
@@ -59,7 +90,7 @@ broken.  For ease of calculation the coordinate system is oriented such that
 \end{equation} 
 
 Next small perturbations around the minimum of the Higgs
-potential are parametrized as 
+potential are parametrized as:
 
 \begin{equation} \label{eq:higgs:broken_higgs}
 \left\langle \boldsymbol{\Phi}(x) \right\rangle = \frac{1}{\sqrt{2}} \left(
@@ -74,7 +105,7 @@ $\theta^{i}(x) = 0$ and expanding the kinetic term of
 \Cref{eq:higgs:lagrangian} around the vev gives
 
 \begin{equation} \label{eq:higgs:boson_masses}
-\mathcal{L}_{\text{Higgs},K} = \frac{g^{2}v^{2}}{8} \left(
+\mathcal{L}_{\text{Higgs},\text{K}} = \frac{g^{2}v^{2}}{8} \left(
 (W_{\mu}^{-})^{\dagger}W^{-\mu} + (W_{\mu}^{+})^{\dagger}W^{+\mu} \right) +
 \frac{1}{2} \left( \begin{matrix} W_{\mu}^{3\dagger} & B_{\mu}^{\dagger}
 \end{matrix} \right) \boldsymbol{M}^{2} \left( \begin{matrix} W^{3\mu} \\ B^{\mu}
@@ -143,12 +174,12 @@ v}_{m_{b}} \left( \bar{b}_{L}b_{R} + \bar{b}_{R}b_{L}  \right)
 \bar{b}_{L}b_{R} + \bar{b}_{R}b_{L}  \right) 
 \end{align}
 %
-In this way mass terms are generated for the fermion field and the gauge
+In this way mass terms are generated for the fermion field, and the gauge
 invariance of the Lagrangian is maintained via the proper combination of
 covariant derivatives and fields.  This operation also produces the second term
 which represents the coupling of the bottom quark to the Higgs itself and thus
 gives the form of its coupling constant $g_{b,h}$.  Using this newly found
-mass of the bottom quark $m_{b}$ the coupling can be written as
+mass of the bottom quark $m_{b}$, the coupling can be written as
 %
 \begin{equation}
 g_{b,h} = \frac{g_{b}}{\sqrt{2}} = \frac{m_{b}}{v}.
@@ -160,7 +191,7 @@ to the mass of the fermion itself.
 \subsection{The Higgs Boson}
 
 It has been shown that the Higgs mechanism properly mixes the gauge fields to
-provide the correct gauge-invariant mass terms, and also properly combines the
+provide the correct gauge-invariant mass terms, and it also properly combines the
 left and right chiral states of fermions to produce their mass terms.  During
 spontaneous symmetry breaking of the electroweak potential three of the four
 degrees of freedom in the Higgs doublet (\Cref{eq:higgs:higgs_field}) become
@@ -181,8 +212,8 @@ $\boldsymbol{\Phi}$ given in \Cref{eq:higgs:broken_higgs} gives
 %
 The first term is constant and thus can be ignored.  The second term is the
 mass term for the Higgs boson, $m_h = \sqrt{-2\mu^{2}} = \sqrt{2\lambda}v$.
-Remembering that $h = h(x)$ was used for small radial perturbations of the
+Because $h = h(x)$ was used for small radial perturbations of the
 Higgs field the Higgs boson can be identified as a radial excitation of the
 Higgs field.  Finally, the third and fourth terms represent the Higgs boson
 self-couplings.  With these couplings and mass terms in hand the next step is
-to experimentally verify this theory as discussed next in \Cref{chap:higgs}.
+to verify this theory experimentally as discussed next in \Cref{chap:higgs}.
