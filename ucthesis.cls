@@ -434,8 +434,9 @@ Copyright \copyright\ by\par
 
 \def\abstract{
 \begin{alwayssingle}
-\pagestyle{empty}
-\thispagestyle{empty}
+%\pagestyle{empty}
+%\thispagestyle{empty}
+\phantomsection
 \addcontentsline{toc}{chapter}{\abstractname}
 %\setcounter{page}{1}
 \begin{center}
@@ -459,6 +460,7 @@ by\par
 
 \newenvironment{dedication}
 {\begin{alwayssingle}
+\phantomsection
 \addcontentsline{toc}{chapter}{\dedicationname}}
 {\end{alwayssingle}}
 
@@ -469,6 +471,7 @@ by\par
 
 \newenvironment{acknowledgements}
 {\begin{alwayssingle}
+\phantomsection
 \addcontentsline{toc}{chapter}{\acknowledgename}
 \begin{center}
 {\large \bfseries \acknowledgename}
